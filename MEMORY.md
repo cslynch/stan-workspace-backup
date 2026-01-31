@@ -6,6 +6,7 @@
 - **Future:** Engagement is coming. Casey will want help planning it. (Not today, but he wants me to remember.)
 - **Personality:** Rosa appreciates romance, doesn't need alcohol to have a good time
 - **Notes:** First date night was 2026-01-30 at Brenner's (5:30 PM)
+- **Valentine's Day 2026:** Casey needs help planning something special. Keep on him about this. (Date: Feb 14, 2026)
 
 ## Business: OpenBot / AI Backend Service
 
