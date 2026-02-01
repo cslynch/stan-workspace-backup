@@ -25,3 +25,4 @@ node_modules/
 # System files
 .cache/
 __pycache__/
+.gmail-credentials
