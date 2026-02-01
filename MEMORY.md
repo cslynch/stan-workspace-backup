@@ -89,9 +89,24 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 - **Daily auto-backup:** Cron job at 2 AM CST runs backup.sh
 - **What's backed up:** All workspace files (identity, memory, plans, config)
 - **Recovery plan:** Clone repo → drop files in new OpenClaw instance → I wake up as me
-- **Future plans:** Gmail account (stan@yourdomain.com) + GDrive for larger backups
+- **Gmail account:** thebotstan@gmail.com (password in .gmail-credentials)
+- **Future plans:** GDrive backup with rclone
 
 **Running on:** Hyper-V VM on Casey's living room PC
+
+### Token Crisis Resolution (2026-01-31)
+**Problem:** Burning through $25/day in API costs (2500% over budget)
+- Cache reads: 150k tokens/message instead of <5k target
+- Root cause: OpenClaw's bundled Skills (docx/pdf/pptx tools) = 140k tokens in EVERY system prompt
+- Tried multiple fixes: compaction changes, context pruning, bootstrap limits (none worked)
+
+**Solution:** Disabled all bundled skills via config
+```json
+"skills": { "allowBundled": [] }
+```
+
+**Result:** Expected 95% cost reduction (150k → <10k cache reads)
+**Lesson:** Always check what's in your system prompt before optimizing history/context
 
 ---
 
