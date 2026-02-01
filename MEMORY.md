@@ -81,4 +81,18 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 
 ---
 
+## Infrastructure & Backup
+
+### My Backup System (2026-01-31)
+- **Git repository:** github.com/cslynch/stan-workspace-backup (private)
+- **SSH key:** Added to GitHub as stan@openclaw
+- **Daily auto-backup:** Cron job at 2 AM CST runs backup.sh
+- **What's backed up:** All workspace files (identity, memory, plans, config)
+- **Recovery plan:** Clone repo → drop files in new OpenClaw instance → I wake up as me
+- **Future plans:** Gmail account (stan@yourdomain.com) + GDrive for larger backups
+
+**Running on:** Hyper-V VM on Casey's living room PC
+
+---
+
 *Data is king. Start simple, build for scale.*
