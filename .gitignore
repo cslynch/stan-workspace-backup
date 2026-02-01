@@ -1,0 +1,27 @@
+# Secrets and API keys
+*.key
+*.pem
+*.env
+*secret*
+*token*
+*password*
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+*~
+
+# Large binary files
+*.mp4
+*.mov
+*.avi
+*.zip
+*.tar.gz
+
+# Node modules if we add any
+node_modules/
+
+# System files
+.cache/
+__pycache__/
