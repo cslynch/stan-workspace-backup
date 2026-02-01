@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List - Casey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #newItem {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        #newItem:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        #addBtn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        #addBtn:hover {
+            transform: translateY(-2px);
+        }
+        
+        #addBtn:active {
+            transform: translateY(0);
+        }
+        
+        .tag-input {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        #newTags {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        
+        .tag-suggestions {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .tag-btn {
+            padding: 5px 12px;
+            background: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tag-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .filters {
+            padding: 15px 30px;
+            background: #f1f3f5;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-tag {
+            padding: 8px 15px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .filter-tag.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .filter-tag:hover {
+            border-color: #667eea;
+        }
+        
+        #searchBox {
+            flex: 1;
+            min-width: 200px;
+            padding: 8px 15px;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .list-container {
+            padding: 30px;
+            min-height: 300px;
+        }
+        
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .list-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .list-item.completed {
+            opacity: 0.6;
+        }
+        
+        .list-item.completed .item-text {
+            text-decoration: line-through;
+        }
+        
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+        
+        .item-text {
+            flex: 1;
+            font-size: 1.1em;
+        }
+        
+        .item-tags {
+            display: flex;
+            gap: 5px;
+            margin-right: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            padding: 4px 10px;
+            background: #667eea;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+        
+        .delete-btn {
+            padding: 5px 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        
+        .delete-btn:hover {
+            background: #c82333;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+        
+        .empty-state svg {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+        
+        .stats {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .export-btn {
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        
+        .export-btn:hover {
+            background: #218838;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            .input-group {
+                flex-direction: column;
+            }
+            
+            #addBtn {
+                width: 100%;
+            }
+            
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .item-tags {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Shopping List</h1>
+            <div class="subtitle">Casey & Rosa</div>
+        </header>
+        
+        <div class="controls">
+            <div class="input-group">
+                <input type="text" id="newItem" placeholder="What do you need?" autocomplete="off">
+                <button id="addBtn">Add</button>
+            </div>
+            <div class="tag-input">
+                <input type="text" id="newTags" placeholder="Tags (comma-separated): groceries, amazon, house-stuff">
+                <div class="tag-suggestions">
+                    <button class="tag-btn" data-tag="groceries">🥑 Groceries</button>
+                    <button class="tag-btn" data-tag="amazon">📦 Amazon</button>
+                    <button class="tag-btn" data-tag="house-stuff">🏠 House</button>
+                    <button class="tag-btn" data-tag="hardware">🔧 Hardware</button>
+                    <button class="tag-btn" data-tag="urgent">⚡ Urgent</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <input type="text" id="searchBox" placeholder="🔍 Search items...">
+            <div class="filter-tag active" data-filter="all">All</div>
+            <div class="filter-tag" data-filter="active">Active</div>
+            <div class="filter-tag" data-filter="completed">Completed</div>
+        </div>
+        
+        <div class="list-container" id="listContainer">
+            <div class="empty-state">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                </svg>
+                <p>Your list is empty. Add some items!</p>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <span id="itemCount">0 items</span>
+            <button class="export-btn" id="exportBtn">📄 Export to Markdown</button>
+        </div>
+    </div>
+    
+    <script>
+        // Data structure
+        let items = JSON.parse(localStorage.getItem('shoppingList') || '[]');
+        let currentFilter = 'all';
+        let searchQuery = '';
+        
+        // DOM elements
+        const newItemInput = document.getElementById('newItem');
+        const newTagsInput = document.getElementById('newTags');
+        const addBtn = document.getElementById('addBtn');
+        const listContainer = document.getElementById('listContainer');
+        const searchBox = document.getElementById('searchBox');
+        const itemCount = document.getElementById('itemCount');
+        const exportBtn = document.getElementById('exportBtn');
+        
+        // Add item
+        function addItem() {
+            const text = newItemInput.value.trim();
+            if (!text) return;
+            
+            const tags = newTagsInput.value
+                .split(',')
+                .map(t => t.trim())
+                .filter(t => t);
+            
+            items.push({
+                id: Date.now(),
+                text: text,
+                tags: tags,
+                completed: false,
+                createdAt: new Date().toISOString()
+            });
+            
+            newItemInput.value = '';
+            newTagsInput.value = '';
+            saveAndRender();
+        }
+        
+        // Delete item
+        function deleteItem(id) {
+            items = items.filter(item => item.id !== id);
+            saveAndRender();
+        }
+        
+        // Toggle completion
+        function toggleItem(id) {
+            const item = items.find(i => i.id === id);
+            if (item) item.completed = !item.completed;
+            saveAndRender();
+        }
+        
+        // Filter and search
+        function getFilteredItems() {
+            return items.filter(item => {
+                // Filter by status
+                if (currentFilter === 'active' && item.completed) return false;
+                if (currentFilter === 'completed' && !item.completed) return false;
+                
+                // Search
+                if (searchQuery) {
+                    const search = searchQuery.toLowerCase();
+                    const textMatch = item.text.toLowerCase().includes(search);
+                    const tagMatch = item.tags.some(tag => tag.toLowerCase().includes(search));
+                    if (!textMatch && !tagMatch) return false;
+                }
+                
+                return true;
+            });
+        }
+        
+        // Render list
+        function render() {
+            const filtered = getFilteredItems();
+            
+            if (filtered.length === 0) {
+                listContainer.innerHTML = `
+                    <div class="empty-state">
+                        <svg fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                        </svg>
+                        <p>${searchQuery ? 'No items match your search' : 'Your list is empty. Add some items!'}</p>
+                    </div>
+                `;
+            } else {
+                listContainer.innerHTML = filtered.map(item => `
+                    <div class="list-item ${item.completed ? 'completed' : ''}">
+                        <input type="checkbox" class="checkbox" ${item.completed ? 'checked' : ''} 
+                               onchange="toggleItem(${item.id})">
+                        <div class="item-text">${item.text}</div>
+                        <div class="item-tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <button class="delete-btn" onclick="deleteItem(${item.id})">✕</button>
+                    </div>
+                `).join('');
+            }
+            
+            // Update stats
+            const activeCount = items.filter(i => !i.completed).length;
+            const totalCount = items.length;
+            itemCount.textContent = `${activeCount} active / ${totalCount} total`;
+        }
+        
+        // Save and render
+        function saveAndRender() {
+            localStorage.setItem('shoppingList', JSON.stringify(items));
+            render();
+        }
+        
+        // Export to markdown
+        function exportToMarkdown() {
+            const categories = {};
+            
+            items.forEach(item => {
+                if (item.tags.length === 0) {
+                    if (!categories['Uncategorized']) categories['Uncategorized'] = [];
+                    categories['Uncategorized'].push(item);
+                } else {
+                    item.tags.forEach(tag => {
+                        if (!categories[tag]) categories[tag] = [];
+                        categories[tag].push(item);
+                    });
+                }
+            });
+            
+            let markdown = '# SHOPPING LIST\n\n';
+            markdown += `*Last updated: ${new Date().toISOString().split('T')[0]}*\n\n`;
+            
+            Object.keys(categories).sort().forEach(category => {
+                markdown += `## ${category.charAt(0).toUpperCase() + category.slice(1)}\n`;
+                categories[category].forEach(item => {
+                    const checkbox = item.completed ? '[x]' : '[ ]';
+                    markdown += `- ${checkbox} ${item.text}\n`;
+                });
+                markdown += '\n';
+            });
+            
+            // Download
+            const blob = new Blob([markdown], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'SHOPPING.md';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        // Event listeners
+        addBtn.addEventListener('click', addItem);
+        newItemInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') addItem();
+        });
+        
+        // Tag suggestions
+        document.querySelectorAll('.tag-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tag = btn.dataset.tag;
+                const current = newTagsInput.value;
+                newTagsInput.value = current ? `${current}, ${tag}` : tag;
+            });
+        });
+        
+        // Filters
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+                tag.classList.add('active');
+                currentFilter = tag.dataset.filter;
+                render();
+            });
+        });
+        
+        // Search
+        searchBox.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            render();
+        });
+        
+        // Export
+        exportBtn.addEventListener('click', exportToMarkdown);
+        
+        // Initial render
+        render();
+    </script>
+</body>
+</html>

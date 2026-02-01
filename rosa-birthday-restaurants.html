@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosa's Birthday - Restaurant Comparison</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+        padding: 40px 20px;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+        color: white;
+    }
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+        font-size: 20px;
+        opacity: 0.9;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    .card-header {
+        padding: 30px;
+        text-align: center;
+    }
+    .card-header.pink {
+        background: linear-gradient(135deg, #ffeef8, #ffd4e8);
+    }
+    .card-header.french {
+        background: linear-gradient(135deg, #e8d5f2, #dab8eb);
+    }
+    .card-header.upscale {
+        background: linear-gradient(135deg, #d4e4f7, #b8d4f1);
+    }
+    .card-header h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+        color: #333;
+    }
+    .card-header .location {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    .score {
+        display: inline-block;
+        background: #ff1493;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .card-body {
+        padding: 30px;
+    }
+    .detail {
+        margin-bottom: 20px;
+    }
+    .detail .label {
+        font-weight: bold;
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .detail .value {
+        color: #333;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .highlight {
+        background: #fff9e6;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #ffd700;
+        margin-top: 15px;
+    }
+    .ambiance-bar {
+        width: 100%;
+        height: 12px;
+        background: #e0e0e0;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-top: 8px;
+    }
+    .ambiance-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #ff6b9d, #c44569);
+        transition: width 0.5s ease;
+    }
+    footer {
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🌸 Rosa's Birthday Dinner 🌸</h1>
+        <p>April 22, 2026 | San Antonio Romantic Restaurants | Pink Aesthetic</p>
+    </header>
+
+    <div class="grid">
+        <!-- Little Em's Oyster Bar -->
+        <div class="card">
+            <div class="card-header pink">
+                <h2>Little Em's Oyster Bar</h2>
+                <div class="location">📍 Southtown | 55 min from Canyon Lake</div>
+                <div class="score">9.2/10</div>
+            </div>
+            <div class="card-body">
+                <div class="detail">
+                    <div class="label">💰 PRICE RANGE</div>
+                    <div class="value">$$ ($25-50/person)</div>
+                </div>
+                <div class="detail">
+                    <div class="label">✨ AMBIANCE RATING</div>
+                    <div class="ambiance-bar"><div class="ambiance-fill" style="width: 92%"></div></div>
+                    <div class="value" style="margin-top: 8px;">Bright, airy, white & pink aesthetic. Instagram-worthy perfection.</div>
+                </div>
+                <div class="detail">
+                    <div class="label">🍽️ BEST DISHES</div>
+                    <div class="value">
+                        • Fresh oysters ($1 during happy hour!)<br>
+                        • Seafood entrees<br>
+                        • Craft cocktails
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="label">💖 ROSA COMPATIBILITY</div>
+                    <div class="highlight">
+                        <strong>PERFECT AESTHETIC MATCH</strong><br>
+                        The pink & white decor is exactly Rosa's vibe. Light, fresh, romantic. Michelin Guide listed. Happy hour deals make it fun without being stuffy.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brasserie Mon Chou Chou -->
+        <div class="card">
+            <div class="card-header french">
+                <h2>Brasserie Mon Chou Chou</h2>
+                <div class="location">📍 The Pearl | 55 min from Canyon Lake</div>
+                <div class="score">9.5/10</div>
+            </div>
+            <div class="card-body">
+                <div class="detail">
+                    <div class="label">💰 PRICE RANGE</div>
+                    <div class="value">$$$ ($60-100/person)</div>
+                </div>
+                <div class="detail">
+                    <div class="label">✨ AMBIANCE RATING</div>
+                    <div class="ambiance-bar"><div class="ambiance-fill" style="width: 95%"></div></div>
+                    <div class="value" style="margin-top: 8px;">Pastel pink walls, glittering brass, elegant French brasserie. "Jacques Demy pink" aesthetic.</div>
+                </div>
+                <div class="detail">
+                    <div class="label">🍽️ BEST DISHES</div>
+                    <div class="value">
+                        • Tableside raclette with Bayonne ham ($29)<br>
+                        • Bavette steak with secret sauce ($39)<br>
+                        • Duck confit ($37)<br>
+                        • Crème brûlée ($12)
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="label">💖 ROSA COMPATIBILITY</div>
+                    <div class="highlight">
+                        <strong>TOP CHOICE - ULTIMATE ROMANCE</strong><br>
+                        Pink aesthetic + French elegance + amazing food. At The Pearl (walkable district, post-dinner stroll). Special occasion-worthy. This screams "birthday celebration."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signature Restaurant -->
+        <div class="card">
+            <div class="card-header upscale">
+                <h2>Signature Restaurant</h2>
+                <div class="location">📍 La Cantera Resort | 65 min from Canyon Lake</div>
+                <div class="score">8.7/10</div>
+            </div>
+            <div class="card-body">
+                <div class="detail">
+                    <div class="label">💰 PRICE RANGE</div>
+                    <div class="value">$$$$ ($80-120/person)</div>
+                </div>
+                <div class="detail">
+                    <div class="label">✨ AMBIANCE RATING</div>
+                    <div class="ambiance-bar"><div class="ambiance-fill" style="width: 87%"></div></div>
+                    <div class="value" style="margin-top: 8px;">Upscale resort dining, Hill Country views, polished elegance. More classic than pink/playful.</div>
+                </div>
+                <div class="detail">
+                    <div class="label">🍽️ BEST DISHES</div>
+                    <div class="value">
+                        • Gulf seafood & fresh oysters<br>
+                        • House-aged sirloin<br>
+                        • Hill Country venison, quail<br>
+                        • Seasonal menu rotations
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="label">💖 ROSA COMPATIBILITY</div>
+                    <div class="highlight">
+                        <strong>SOLID CHOICE - CLASSIC ELEGANCE</strong><br>
+                        Michelin-recommended, beautiful setting, top-tier food. Lacks the pink aesthetic but makes up for it in prestige. Great for engagement vibes later.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        🧭 Researched by Stan | Web Search + Web Fetch + Canvas | Feb 1, 2026
+    </footer>
+</div>
+</body>
+</html>

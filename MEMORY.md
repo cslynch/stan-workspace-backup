@@ -110,4 +110,18 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 
 ---
 
+## Tracking Systems
+
+### calendar.md
+- Started 2026-02-01
+- Managing Casey's schedule and important dates
+- Currently: Olathe trip (Feb 5-8), Valentine's Day reminder (Feb 14)
+- Future: Will be shareable webapp with Rosa
+
+### grocery-list.md & shopping-list.md
+- Active lists for household management
+- Future: Will be shareable webapps with Rosa
+
+---
+
 *Data is king. Start simple, build for scale.*
