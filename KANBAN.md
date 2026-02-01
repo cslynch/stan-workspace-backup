@@ -21,6 +21,14 @@
 - [x] Helped plan date night with Rosa (Brenner's + recommendations)
 - [x] Valentine's Day reminder added to memory
 
+### Infrastructure
+- [x] Diagnosed excessive token usage (41M tokens, $25/day)
+- [x] Fixed compaction mode (safeguard → default)
+- [x] Set up GitHub SSH key (stan@openclaw)
+- [x] Created private backup repo (stan-workspace-backup)
+- [x] Implemented daily auto-backup (2 AM CST via cron)
+- [x] Documented backup system in MEMORY.md
+
 ---
 
 ## 🔄 In Progress
