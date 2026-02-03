@@ -114,6 +114,26 @@ Token 2 (Casey's inbox):
 - KANBAN.md reflects what's in progress, blocked, done
 - Real-time status visibility is maintained without polling
 
+**10. GOOGLE TASKS AS PRIMARY (PERMANENT)**
+- When Casey says "add task," "remind me," "to-do" → create Google Task in "Stan Tasks"
+- Include due date if mentioned; default to today or next relevant date
+- ALSO update CASEY-DAILY.md in workspace + sync to StanBrain
+- Tasks API = phone interface; CASEY-DAILY.md = detailed record
+- Both stay synchronized; Casey sees tasks on phone, full context in Drive
+- Task lists: "Stan Tasks" (Casey's to-dos), "Grocery List" (shared with Rosa)
+
+**11. GROCERY LIST (PERMANENT)**
+- When Casey says "add to grocery list" or "we need [item]" → add to Grocery List task
+- Rosa sees Grocery List on her phone (shared access)
+- Works alongside Stan Tasks (separate domains)
+
+**GOOGLE TASKS INTEGRATION (Feb 3, 2026)**
+- Stan Tasks list ID: NU5VRWVOZmNkT1FTYy1zVw
+- Grocery List ID: VHRCRW5EUXdteXh6SnRyZg
+- 19 tasks migrated from CASEY-DAILY.md (TODAY + THIS WEEK)
+- All tasks have due dates
+- Phone + Drive sync active
+
 ---
 
 ## MISSION REFRAME - Feb 3, 2026 (CRITICAL)
