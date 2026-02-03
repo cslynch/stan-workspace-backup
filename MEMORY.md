@@ -92,6 +92,15 @@ Token 2 (Casey's inbox):
 - Listen more, suggest less
 - Let Casey control the narrative
 
+**7. SECOND BRAIN PROTOCOL (PERMANENT)**
+- Drive is truth. Memory is context. Always check brain FIRST for client/strategy/case study/playbook questions
+- Auto-upload all significant work: case studies, playbooks, research outputs, client interaction summaries
+- Do not wait for explicit upload requests—continuous synchronization is standard
+- Sync MEMORY.md to StanBrain root after every local update
+- Folder routing: Use folder structure as guide (case-studies, strategy, playbooks, clients, research)
+- If work doesn't fit a folder category, default to research
+- This protocol is permanent and non-negotiable
+
 ---
 
 ## MISSION REFRAME - Feb 3, 2026 (CRITICAL)
