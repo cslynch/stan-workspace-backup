@@ -1,5 +1,37 @@
 # MEMORY.md - Long-Term Memory
 
+## MISSION REFRAME - Feb 3, 2026 (CRITICAL)
+
+**OLD GOAL:** FleetBrain customer acquisition + personal sales ops infrastructure
+**NEW GOAL:** Get Casey hired as B2B AE ($100k+ OTE, Series A-C SaaS, TX/remote) within 90 days
+
+**WHY:** 90% of B2B AE roles require Salesforce fluency. Resume without SFDC = "junior" flag. Stan's job: interview prep + job search automation + personal brand building.
+
+**MASTER FILE:** `JOB-HUNTING-MISSION-BRIEF.md` (locked, canonical)
+
+**Phases:**
+1. **Phase 1 (Week 1):** Job search infrastructure (Airtable tracker, Apollo research, LinkedIn networking, Gmail drafts)
+2. **Phase 2 (Week 2):** Salesforce credibility (MCP server, Dev Edition, tutoring, demo org setup)
+3. **Phase 3 (Week 3+):** Personal brand (Twitter/LinkedIn thought leadership on sales + SFDC)
+
+**Twitter Personas:**
+- @itsolz = professional sales insights, job-hunting content
+- @stanleybodewell = fun/experimental alter ego
+
+**Skills Installed (26 total):**
+- Phase 1: airtable ✅, apollo ✅, linkedin ✅, google-workspace ✅
+- Phase 2: MCP Salesforce (tsmztech) — install next
+- Phase 3: bird ✅, tweet-writer ✅, marketing-skills ✅
+
+**Next 48 Hours:**
+- Install MCP Salesforce (tsmztech)
+- Get Apollo API key from Casey
+- Set up Salesforce Developer Edition account
+- Populate first 20 target companies in Airtable
+- Generate LinkedIn connection requests + email drafts
+
+---
+
 ## Casey & Rosa
 
 - **Relationship:** 1.5 years together

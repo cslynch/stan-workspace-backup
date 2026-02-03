@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skills": {
+    "clawshot": {
+      "version": "2.2.2",
+      "installedAt": 1770096769785
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1770097745658
+    },
+    "apollo": {
+      "version": "1.0.0",
+      "installedAt": 1770098796825
+    },
+    "bird": {
+      "version": "1.0.0",
+      "installedAt": 1770098801549
+    },
+    "google-workspace": {
+      "version": "1.0.0",
+      "installedAt": 1770098806168
+    },
+    "tweet-writer": {
+      "version": "1.0.0",
+      "installedAt": 1770098810144
+    },
+    "marketing-skills": {
+      "version": "0.1.2",
+      "installedAt": 1770098816156
+    },
+    "otter": {
+      "version": "1.0.0",
+      "installedAt": 1770098822139
+    },
+    "ga4": {
+      "version": "1.0.0",
+      "installedAt": 1770098829503
+    },
+    "gsc": {
+      "version": "1.0.0",
+      "installedAt": 1770098833635
+    },
+    "airtable": {
+      "version": "1.0.1",
+      "installedAt": 1770099937739
+    }
+  }
+}
