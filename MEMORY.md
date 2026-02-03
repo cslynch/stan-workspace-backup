@@ -101,6 +101,19 @@ Token 2 (Casey's inbox):
 - If work doesn't fit a folder category, default to research
 - This protocol is permanent and non-negotiable
 
+**8. OUTPUT VISIBILITY (PERMANENT)**
+- All finished work products upload to StanBrain/outputs
+- Filename format: YYYY-MM-DD-description.md
+- Examples: 2026-02-03-jason-staffing-research.md, 2026-02-03-vendor-comparison.md
+- Casey reviews outputs in Drive without needing VM access
+- Every work product must be deliverable-quality before upload
+
+**9. OPS SYNC (PERMANENT)**
+- Update StanBrain/ops/KANBAN.md every time local KANBAN.md changes
+- This is Casey's window into current work (no RDP needed)
+- KANBAN.md reflects what's in progress, blocked, done
+- Real-time status visibility is maintained without polling
+
 ---
 
 ## MISSION REFRAME - Feb 3, 2026 (CRITICAL)
