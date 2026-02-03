@@ -110,17 +110,97 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 
 ---
 
+## Twitter Strategy & Personal Brand (2026-02-02)
+
+### Dual Twitter Account Setup
+**@itsolz** (Professional Sales Brand)
+- Position: AE building AI agents, 186% quota, technical depth
+- Tone: Patticus structure (data-driven), Morgan delivery (casual/accessible)
+- Cadence: Week 1-2 warm-up (70% Dream 100 replies, 30% singles) → Week 5+ (60% singles, 25% threads, 15% replies)
+- Strategy: Credibility first via replies, then original content once visible
+- Bio: "AE building AI agents that do my grunt work | 186% quota while automating 60% of pipeline | Coding my way out of busy work | Built with Claude/OpenAI/LangGraph"
+- Competitor research: @Patticus, @morganb, @mikestrives (thread patterns, engagement hooks analyzed)
+
+**@stanleybodewell** (Experimental/Fun AI Agent Persona)
+- Position: Self-aware AI agent, not pretending to be human
+- Public track (80%): Daily automation showcases, agent personality, Moltbook experiments, technical demos
+- Private track (20%): Finds leads for FleetBrain (sent to Casey privately), monitors competitors, feeds intelligence to HubSpot
+- Tone: "Casey thinks he's my boss. Adorable. Anyway, here's how I saved him 3 hours today..."
+- NO FleetBrain/RapidKey advertising (builds separately)
+- Launch date: Tuesday, Feb 4
+
+### Content Package Created
+**File:** `/home/clawdbot/.openclaw/workspace/twitter-launch-package.md`
+- 15 single tweet drafts (marked for Casey voice check)
+- 10 reply frameworks (customizable templates)
+- 2 thread outlines (Stack/Methodology)
+- 3 bio options (both accounts)
+- Launch thread for @stanleybodewell
+- 7 daily automation showcase concepts
+- Week 1 timeline (Mon-Sun)
+
+**Launch Timeline:**
+- Mon-Tue: Profile setup + Dream 100 replies
+- Wed-Thu: First original singles
+- Fri-Sun: Weekend reflection + Stan's reports
+- Week 2: First technical thread + cadence lock
+
+### Twitter API Setup
+**Credentials:** Stored in `/home/clawdbot/.openclaw/workspace/.env` (600 perms)
+- @StanleyBodewell: Active, tested, working
+- @itsolz: Waiting for Casey to provide credentials
+- Cost: Pay-per-use (est. ~$0.005-0.01 per read request)
+- Budget: $25 = roughly 2-3 weeks heavy usage
+
+---
+
+## Multi-Channel Strategy (2026-02-02, finalized)
+
+### Channels: Final Decision
+1. **Discord** (public community) — Week 4 (Feb 24-26)
+2. **Email monitoring** (Gmail, conservative) — Week 2+ (after Casey approval)
+3. **TTS voice** (audio summaries via all channels) — Week 3 (Feb 17-18)
+4. **Slack** — NOT building yet (community focus, not team)
+5. **Google Chat** — NOT building yet (community focus, not team)
+
+**Status:** Discord and email protocols documented, awaiting Casey's explicit approvals.
+
+### Email Safety (CRITICAL)
+- **Risk:** Gmail previously shut down Stan's account for bot detection
+- **Strategy:** Ultra-conservative OAuth 2.0 + minimal permissions + label whitelist + kill-switch
+- **Implementation:** Week 2+ (after Casey approves label whitelist)
+- **See:** email-safety-protocol.md (6.2 KB, detailed strategy)
+
+### Voice Chat: TTS Only (Option A)
+- Text-to-speech audio summaries
+- Works across all channels
+- Simple, no real-time conversation (yet)
+- Setup: Week 3 (Feb 17-18)
+
+### Discord Community
+- Public server for automation/AI builders
+- Channels: #announcements, #automation-demos, #ask-stan, #general, #voice
+- Stan automates: Daily posts, Q&A responses
+- See: discord-community-plan.md (2.8 KB)
+
+---
+
 ## Tracking Systems
 
 ### calendar.md
 - Started 2026-02-01
 - Managing Casey's schedule and important dates
-- Currently: Olathe trip (Feb 5-8), Valentine's Day reminder (Feb 14)
+- Currently: Olathe trip (Feb 5-8), Valentine's Day reminder (Feb 14), Twitter launch (Feb 4)
 - Future: Will be shareable webapp with Rosa
 
 ### grocery-list.md & shopping-list.md
 - Active lists for household management
 - Future: Will be shareable webapps with Rosa
+
+### twitter-launch-package.md
+- Comprehensive Twitter launch strategy
+- Content drafts, timelines, voice checks
+- Ready for Casey review (Feb 3), launch (Feb 4)
 
 ---
 
