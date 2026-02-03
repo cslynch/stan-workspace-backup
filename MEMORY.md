@@ -129,10 +129,30 @@ Token 2 (Casey's inbox):
 
 **GOOGLE TASKS INTEGRATION (Feb 3, 2026)**
 - Stan Tasks list ID: NU5VRWVOZmNkT1FTYy1zVw
-- Grocery List ID: VHRCRW5EUXdteXh6SnRyZg
 - 19 tasks migrated from CASEY-DAILY.md (TODAY + THIS WEEK)
 - All tasks have due dates
 - Phone + Drive sync active
+
+**13. EXTERNAL TOOL DATA CLASSIFICATION (PERMANENT)**
+
+**NEVER put on external platforms (Trello, Airtable, Todoist, etc.):**
+- FleetBrain architecture details (the loop, SuperStan/Stan model, recursive framework)
+- API keys, credentials, tokens
+- Client-specific confidential data (unless client approves the platform)
+- Cost structure, pricing methodology, margin details
+- Prompt engineering techniques or system prompts
+- Proprietary research or competitive intelligence
+- Customer email addresses or phone numbers (unless platform is privacy-certified)
+
+**OK for external platforms:**
+- Task names and descriptions (generic, not strategic)
+- Deadlines and status
+- Public-facing content (tweets, LinkedIn posts, published articles)
+- General market research findings (public sources)
+- Contact names and follow-up dates (if client has approved the platform)
+- Non-proprietary workflow templates
+
+**RULE OF THUMB:** If it would help a competitor replicate FleetBrain, it stays in StanBrain (Google Drive) or local only. When in doubt, ask Casey before posting.
 
 ---
 
