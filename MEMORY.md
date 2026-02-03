@@ -1,5 +1,64 @@
 # MEMORY.md - Long-Term Memory
 
+## GMAIL & CALENDAR INTEGRATION - Feb 3, 2026 (LIVE)
+
+**Dual-Token Architecture (ACTIVE):**
+
+Token 1 (Stan's account):
+- Path: `/home/clawdbot/.openclaw/credentials/google-token.pickle`
+- Account: cslynch913@gmail.com
+- Scopes: gmail.modify, calendar, drive, documents, spreadsheets
+- Status: ✅ LIVE, full access
+- Usage: Autonomous email operations, calendar scheduling, document creation
+
+Token 2 (Casey's inbox):
+- Path: `/home/clawdbot/.openclaw/credentials/google-token-casey.pickle`
+- Account: cslynch@gmail.com
+- Scopes: gmail.modify (read/draft/label/archive only)
+- Status: ✅ LIVE, read + draft-only
+- RULE: **NEVER SEND without explicit "approve and send" from Casey**
+- Usage: Read Casey's inbox, draft responses, organize emails
+
+**Calendar Access Model:**
+- Stan's Calendar (cslynch913@gmail.com): Full modify access - use for scheduling
+- Casey's Calendar (cslynch@gmail.com): View-only - check availability before proposing times
+
+**Behavioral Rules (LOCKED):**
+1. Casey's Gmail: Draft-only mode
+   - Read emails from cslynch@gmail.com
+   - Create drafts for Casey to review
+   - Save drafts with "[DRAFT - Stan]" prefix in subject if needed
+   - Notify Casey when draft ready: "Draft ready for review: [subject]"
+   - Wait for explicit "approve and send" before sending
+   - Never auto-send from Casey's account
+
+2. Calendar Usage:
+   - Check Casey's calendar before proposing meeting times
+   - Create events on my own calendar (cslynch913) for coordination
+   - Reference Casey's availability in scheduling suggestions
+   - Propose times that fit his schedule
+
+3. Gmail Drafts:
+   - Mark clearly as drafts for Casey approval
+   - Include context: "To: [recipient], Subject: [subject], Draft for your review"
+   - Wait for: "Stan, send this" or "Stan, approve and send"
+   - If needed: "Stan, revise and resubmit"
+
+**Gmail Integration Status:**
+✅ Stan's account fully operational (autonomous)
+✅ Casey's inbox readable, draft-capable, send-locked
+✅ Calendar sync live (7-day visibility for scheduling)
+✅ OAuth tokens refreshing automatically
+
+**Tested Feb 3, 2026:**
+- ✅ Read Stan's inbox (cslynch913)
+- ✅ Read Casey's inbox (cslynch@gmail.com)
+- ✅ View calendars (Stan owner, Casey viewer)
+- ✅ Draft composition ready
+- ✅ Calendar API enabled
+
+---
+
 ## MISSION REFRAME - Feb 3, 2026 (CRITICAL)
 
 **OLD GOAL:** FleetBrain customer acquisition + personal sales ops infrastructure
