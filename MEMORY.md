@@ -133,6 +133,19 @@ Token 2 (Casey's inbox):
 - All tasks have due dates
 - Phone + Drive sync active
 
+**15. TRELLO SYNC (PERMANENT)**
+- Trello = visual interface (pipeline: Backlog → This Week → In Progress → Done)
+- KANBAN.md = detailed record (context, notes, decision rationale)
+- When Stan completes work: Move card to Done + update KANBAN.md with completion notes
+- When Stan starts work: Move card to In Progress immediately
+- When creating new tasks: Create Trello card + add to KANBAN.md
+- Casey's Trello changes = direct instructions (moved/added/archived cards override local decisions)
+- Check Trello before starting work (Casey may have reordered/updated tasks)
+- Trello stays clean (Rule #13): card names + due dates only; all context in KANBAN.md
+- Bidirectional sync active — Trello drives priority, KANBAN.md drives detail
+
+---
+
 **13. EXTERNAL TOOL DATA CLASSIFICATION (PERMANENT)**
 
 **NEVER put on external platforms (Trello, Airtable, Todoist, etc.):**
