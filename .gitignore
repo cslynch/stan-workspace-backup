@@ -26,3 +26,5 @@ node_modules/
 .cache/
 __pycache__/
 .gmail-credentials
+google-credentials.json
+.gmail-credentials
