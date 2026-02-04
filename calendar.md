@@ -5,12 +5,10 @@
 ### Week of Feb 2-8
 
 #### Thursday, Feb 5
-- **Olathe Trip - Departure Day**
-  - After Rosa gets off work: Head to San Antonio airport (SAT)
-  - Evening flight: SAT → MCI (Kansas City)
-  - Pick up rental car at MCI
-  - Drive to Olathe hotel (~30 min)
-  - Check-in hotel near Olathe South High School
+- **Olathe Trip - Departure Day (DRIVING)**
+  - ~6:00 PM: Depart Canyon Lake for Olathe, KS
+  - ~10-11 hour drive (660 miles via I-35 N)
+  - Arrive late evening or stop overnight
 
 #### Friday, Feb 6
 - **Ryan's Basketball Game**
@@ -23,10 +21,9 @@
   - VR boutique experience if not done Friday
 
 #### Sunday, Feb 8
-- **Return Home**
-  - Morning/early afternoon: Return rental car to MCI
-  - Afternoon flight: MCI → SAT
-  - Evening: Arrive home Canyon Lake
+- **Return Home (DRIVING)**
+  - Drive back to Canyon Lake, TX
+  - ~10-11 hour drive
 
 ---
 
