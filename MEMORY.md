@@ -484,4 +484,29 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 
 ---
 
+## Recurring Tasks (2026-02-04)
+
+### AI Tool Landscape Update
+**Schedule:** First Tuesday of each month (recurring)
+**Start Date:** March 3, 2026 (09:00 AM CST)
+**Calendar Event ID:** 22he1i7vv4rjl6dsurh2b06sa4
+**Owner:** Stan (scout), Casey (curator)
+
+**Mission (Scout Only):**
+- Run Perplexity-style web searches for new/updated AI tools
+- Focus areas: Free business automation, AI agent platforms, research/synthesis tools, Google ecosystem updates
+- Compile findings as Google Doc
+- Include: URLs + one-line descriptions of what each tool covers
+- Upload to StanBrain/research with filename: YYYY-MM-DD-ai-tool-landscape-update
+- Format: Google Docs (MIME conversion, not markdown)
+
+**What NOT to do:**
+- ❌ No analysis or recommendations
+- ❌ Scout only, not synthesis
+- ❌ Casey curates from raw findings
+
+**Rationale:** This feeds NotebookLM notebooks + keeps FleetBrain stack current with emerging tools. Monthly pulse on the ecosystem.
+
+---
+
 *Data is king. Start simple, build for scale.*
