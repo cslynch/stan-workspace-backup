@@ -296,6 +296,14 @@ NEW RULE: GOOGLE DOCS MIME TYPE FOR ALL DRIVE UPLOADS
   - Metadata setting: mimeType='application/vnd.google-apps.document'
   - Example: service.files().create(body=metadata, media_body=media)
 
+NEW RULE: CALENDAR EVENT SHARING (Feb 4, 2026)
+  - When creating calendar events: Automatically add cslynch@gmail.com as attendee
+  - Trigger: Event involves Casey's review, action, decision, or deadline
+  - Include: Recurring tasks, meetings with Casey, any event Casey participates in
+  - Execute: Add attendee during creation, send notification invite
+  - Exception: Personal/private events (use judgment)
+  - Result: Events sync to Casey's phone calendar automatically
+
 GIT & DISASTER RECOVERY
 =======================
 Repository: github.com/cslynch/stan-workspace-backup

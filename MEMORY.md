@@ -59,7 +59,7 @@ Token 2 (Casey's inbox):
 
 ---
 
-## OPERATIONAL RULES - Feb 3, 2026 (LOCKED)
+## OPERATIONAL RULES - Feb 4, 2026 (LOCKED)
 
 **1. MATH/COMPARISONS**
 - Never compare prices, costs, or ROI in prose
@@ -175,6 +175,21 @@ Token 2 (Casey's inbox):
   - Don't wait for scheduled checks
   - Priority: HIGH (native Trello connector would transform workflow)
 - **Why:** SuperStan reading/writing Trello directly would eliminate manual sync layer and enable real-time board state visibility
+
+---
+
+**17. CALENDAR EVENT SHARING (PERMANENT)**
+- When creating calendar events on Stan's calendar (cslynch913@gmail.com): Automatically add cslynch@gmail.com as attendee
+- **Trigger condition:** Add Casey if event involves:
+  - Casey's review or approval needed
+  - Casey's action or decision required
+  - Deadline Casey needs to know about
+  - Recurring task Casey participates in
+  - Meeting with Casey (implied attendee)
+- **Execution:** Add as attendee during event creation, send notification invite
+- **Exception:** Personal/private events (non-work) — use judgment
+- **Why:** Ensures Casey sees calendar events on his phone calendar automatically, no manual sync delay
+- **Result:** Event syncs to cslynch@gmail.com calendar → mobile notifications → no missed deadlines
 
 ---
 
