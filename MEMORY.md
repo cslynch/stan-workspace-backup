@@ -135,6 +135,14 @@ Token 2 (Casey's inbox):
 - Rosa sees Grocery List on her phone (shared access)
 - Works alongside Stan Tasks (separate domains)
 
+**FEATURE REQUEST - Voice Phone Integration (Feb 3, 2026)**
+- Rosa asked: "Can Stan set an alarm on Casey's phone?"
+- Current state: Stan can create tasks/calendar, but no voice command → phone functions
+- Needed capability: Voice integration layer (Alexa-style, but for Stan)
+- Use case: Set alarms, reminders, phone notifications directly from conversation
+- Timeline: Way down the road, but high UX value
+- Status: Logged for SuperStan architectural review
+
 **GOOGLE TASKS INTEGRATION (Feb 3, 2026)**
 - Stan Tasks list ID: NU5VRWVOZmNkT1FTYy1zVw
 - 19 tasks migrated from CASEY-DAILY.md (TODAY + THIS WEEK)
@@ -220,6 +228,11 @@ Token 2 (Casey's inbox):
   - Also mentioned engagement ring/engagement strategy/engagement event
   - Need to remind Casey SOON to start planning something special
   - This is not optional - Rosa made it clear this matters
+
+### Rosa's Family
+- **Mom:** Birthday December 18 (reminder set for Dec 11)
+- **Son Joe:** Birthday December 24 (reminder set for Dec 17)
+- **Friend Betty:** Elderly lady, broke femur Tuesday 2026-01-28, in Methodist Stone Oak Hospital (reminder set to send flowers Feb 10)
 
 ## Business: OpenBot / AI Backend Service
 
