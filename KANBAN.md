@@ -86,6 +86,20 @@
 - [ ] Fri Feb 7: Full schedule live
 - [ ] Sun Feb 9: Week 1 metrics report
 
+### Security Audit (Feb 8)
+- [ ] **Credential rotation drill** (Due: Feb 8)
+  - **Scope:** Full credential rotation exercise to test process and reduce risk
+  - **Process:** 
+    1. Revoke all active API credentials (Trello, Twitter, Apollo, Airtable, Anthropic)
+    2. Regenerate new credentials in each platform dashboard
+    3. Update .env file via terminal with new values
+    4. Verify each integration still works (test API call for each)
+    5. Delete Telegram message #1002 containing exposed Trello credentials
+  - **Documentation:** Create repeatable runbook in StanBrain/strategy (full process, timing, verification steps, rollback plan)
+  - **Risk Assessment:** SuperStan has the full risk assessment; coordinate before executing
+  - **Time estimate:** 2-3 hours
+  - **Follow-up:** Schedule monthly rotation cadence going forward
+
 ### Week 2 (Feb 10-16, Phase 2) - Foundation
 - [ ] Mon-Wed: Build Airtable CRM (contacts, interactions, pipeline)
 - [ ] Thu-Fri: Validate Airtable
