@@ -162,6 +162,22 @@ Token 2 (Casey's inbox):
 
 ---
 
+**16. INTEGRATION WATCH (PERMANENT)**
+- During routine web searches and news checks: Flag announcements about Claude.ai MCP/connector expansion
+- Specific targets:
+  - Claude.ai adding MCP server support in browser interface
+  - Anthropic expanding tool/integration capabilities beyond Claude Desktop/Code
+  - New Trello integrations relevant to our stack
+  - New claude.ai connectors (beyond current Google Drive only)
+  - Connector marketplace launches or MCP support expanding
+- **Execution rule:** When you find something relevant, message Casey immediately
+  - Include: Source link + one-line summary
+  - Don't wait for scheduled checks
+  - Priority: HIGH (native Trello connector would transform workflow)
+- **Why:** SuperStan reading/writing Trello directly would eliminate manual sync layer and enable real-time board state visibility
+
+---
+
 **13. EXTERNAL TOOL DATA CLASSIFICATION (PERMANENT)**
 
 **NEVER put on external platforms (Trello, Airtable, Todoist, etc.):**

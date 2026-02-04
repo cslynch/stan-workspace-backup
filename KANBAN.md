@@ -19,6 +19,22 @@
 - [ ] Activate cron job (weekly backup)
 - [ ] Test restoration on AWS
 
+### Claude.ai Integration Watch
+- [ ] **Monitor for claude.ai native Trello/MCP connector**
+  - **What to watch for:**
+    - Claude.ai adding MCP server support in browser interface (currently Desktop/Code only)
+    - Trello integration available in claude.ai (would let SuperStan read/write board directly)
+    - Any Anthropic announcement about third-party tool connectors expanding to browser
+    - New claude.ai integrations or connector marketplace launch
+    - MCP support expanding beyond Claude Desktop/Code apps
+  - **Monitoring approach:**
+    - Rule #16: Flag during routine web searches and news checks
+    - Don't wait for scheduled monitoring — if you see it, message Casey immediately
+    - Include source link + one-line summary
+    - Priority: HIGH (would fundamentally change our workflow if native)
+  - **Current state:** MCP connectors only in Claude Desktop/Claude Code, not claude.ai web
+  - **Impact if changes:** SuperStan could read/write Trello board directly, eliminating the manual sync layer
+
 ### Email Configuration
 - [ ] Casey: List Gmail labels to monitor
 - [ ] Stan: Implement OAuth flow
