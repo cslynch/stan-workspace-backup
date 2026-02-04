@@ -7,11 +7,20 @@
 
 ## TODAY (Feb 3, 2026)
 
+- [x] VR coordination call with Ry (Sandbox VR Friday Feb 6, 10:30-11:30am)
 - [ ] Approve twitter-launch-package.md tone/voice
 - [ ] Approve stanleybodewell-week-1-posts.md selections
 - [ ] Review 2026-02-03-jeff-fries.md case study in StanBrain
 - [ ] Decide on 3 disaster recovery items (GPG, AWS, Drive)
 - [ ] Check StanBrain/ops/KANBAN.md for in-progress work
+
+## TOMORROW (Feb 4, 2026)
+
+- [ ] Take case study screenshots (VR coordination thread)
+  - Use Win+Shift+S to crop Telegram window → auto-saves to C:\Users\cslyn\Pictures\Screenshots\
+  - Move to D:\StanleyBot\case-studies\002-sandboxvr\
+  - Rename: casestudy002sandboxvr1.webp, casestudy002sandboxvr2.webp, etc.
+  - Alt+Print Screen also works for full active window
 
 ---
 
