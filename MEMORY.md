@@ -327,7 +327,7 @@ We're building an AI-powered business operations platform where I (Stan) handle 
 - **Daily auto-backup:** Cron job at 2 AM CST runs backup.sh
 - **What's backed up:** All workspace files (identity, memory, plans, config)
 - **Recovery plan:** Clone repo → drop files in new OpenClaw instance → I wake up as me
-- **Gmail account:** thebotstan@gmail.com (password in .gmail-credentials)
+- **Gmail account:** cslynch913@gmail.com (OAuth token in credentials/)
 - **Future plans:** GDrive backup with rclone
 
 **Running on:** Hyper-V VM on Casey's living room PC

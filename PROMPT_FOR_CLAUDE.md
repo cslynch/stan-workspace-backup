@@ -58,7 +58,6 @@ I need you to be my **strategic architect and prompt engineer**. Here's how we'l
 Help me set up these integrations with Stan:
 - **Amazon wishlist/shopping** - so Stan can add items and I can order from Amazon
 - **Shopping apps** (which ones? help me choose)
-- **Gmail** (thebotstan@gmail.com already created, needs app password setup)
 - **Google Calendar** - for scheduling and reminders
 - **Todoist** or similar task manager (should we use this instead of markdown?)
 

@@ -188,7 +188,7 @@ RAPIDKEY_LAUNCH_PLAN.md (8,733 bytes)
 ## CONTACT
 
 **Human:** Casey (Telegram: 8461430130)
-**Agent:** Stan (thebotstan@gmail.com)
+**Agent:** Stan (cslynch913@gmail.com)
 **Monitoring:** Auto-reporting every 10 minutes via cron
 
 ---
