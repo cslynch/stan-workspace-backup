@@ -1,0 +1,241 @@
+CEDAR STONE VENTURES - CHIMNEY ROCK EQUITY TREATMENT COMPARISON
+February 4, 2026
+
+THE QUESTION:
+Should the $63,601.45 in post-purchase costs count as additional equity contributions (changing the ownership split) or as operating expenses reimbursed before profit distribution?
+
+CURRENT RECORDED EQUITY:
+Casey: $90,234.00 (79.2%)
+Dwayne: $23,706.22 (20.8%)
+Total: $113,940.22
+
+ACTUAL CASH DEPLOYED:
+Casey: $118,448.06 ($90,234.00 equity + $28,214.06 operating expenses)
+Dwayne: $59,093.61 ($23,706.22 equity + $35,387.39 operating expenses)
+HELOC: $68.00
+Total: $177,609.67
+
+THE GAP: $63,601.45 in post-purchase costs (septic, utilities, land prep, repairs, etc.)
+
+═══════════════════════════════════════════════════════════════════
+
+METHOD A: POST-PURCHASE COSTS ARE OPERATING EXPENSES
+(Partners get reimbursed for equity + opex, then split profit 79.2% / 20.8%)
+
+Sale Price: $250,000
+
+WATERFALL:
+Gross Sale Price                                $250,000.00
+Less: Closing Costs (6%)                        -$15,000.00
+───────────────────────────────────────────────────────────────────
+Net Proceeds After Closing                      $235,000.00
+
+Less: HELOC Payoff                                   -$68.00
+───────────────────────────────────────────────────────────────────
+Available for Distribution                      $234,932.00
+
+REIMBURSEMENTS:
+Casey Equity                                     $90,234.00
+Casey Operating Expenses                         $28,214.06
+Dwayne Equity                                    $23,706.22
+Dwayne Operating Expenses                        $35,387.39
+───────────────────────────────────────────────────────────────────
+Total Reimbursements                            $177,541.67
+───────────────────────────────────────────────────────────────────
+Remaining Profit to Split                        $57,390.33
+
+PROFIT DISTRIBUTION (79.2% Casey / 20.8% Dwayne):
+Casey Profit Share (79.2%)                       $45,453.10
+Dwayne Profit Share (20.8%)                      $11,937.23
+
+TOTAL PAYOUTS:
+Casey: $90,234.00 + $28,214.06 + $45,453.10 =   $163,901.16
+Dwayne: $23,706.22 + $35,387.39 + $11,937.23 =   $71,030.84
+
+RETURN ON INVESTMENT:
+Casey ROI: ($163,901.16 / $118,448.06) - 1 =     +38.4%
+Dwayne ROI: ($71,030.84 / $59,093.61) - 1 =      +20.2%
+
+───────────────────────────────────────────────────────────────────
+
+Sale Price: $300,000
+
+WATERFALL:
+Gross Sale Price                                $300,000.00
+Less: Closing Costs (6%)                        -$18,000.00
+───────────────────────────────────────────────────────────────────
+Net Proceeds After Closing                      $282,000.00
+
+Less: HELOC Payoff                                   -$68.00
+───────────────────────────────────────────────────────────────────
+Available for Distribution                      $281,932.00
+
+REIMBURSEMENTS:
+Casey Equity                                     $90,234.00
+Casey Operating Expenses                         $28,214.06
+Dwayne Equity                                    $23,706.22
+Dwayne Operating Expenses                        $35,387.39
+───────────────────────────────────────────────────────────────────
+Total Reimbursements                            $177,541.67
+───────────────────────────────────────────────────────────────────
+Remaining Profit to Split                       $104,390.33
+
+PROFIT DISTRIBUTION (79.2% Casey / 20.8% Dwayne):
+Casey Profit Share (79.2%)                       $82,677.11
+Dwayne Profit Share (20.8%)                      $21,713.22
+
+TOTAL PAYOUTS:
+Casey: $90,234.00 + $28,214.06 + $82,677.11 =   $201,125.17
+Dwayne: $23,706.22 + $35,387.39 + $21,713.22 =   $80,806.83
+
+RETURN ON INVESTMENT:
+Casey ROI: ($201,125.17 / $118,448.06) - 1 =     +69.8%
+Dwayne ROI: ($80,806.83 / $59,093.61) - 1 =      +36.7%
+
+═══════════════════════════════════════════════════════════════════
+
+METHOD B: POST-PURCHASE COSTS ARE ADDITIONAL EQUITY
+(All invested capital counts as equity, profit split 66.7% Casey / 33.3% Dwayne)
+
+New Equity Totals:
+Casey: $118,448.06 (66.7%)
+Dwayne: $59,093.61 (33.3%)
+Total: $177,541.67 (excluding HELOC)
+
+Sale Price: $250,000
+
+WATERFALL:
+Gross Sale Price                                $250,000.00
+Less: Closing Costs (6%)                        -$15,000.00
+───────────────────────────────────────────────────────────────────
+Net Proceeds After Closing                      $235,000.00
+
+Less: HELOC Payoff                                   -$68.00
+───────────────────────────────────────────────────────────────────
+Available for Distribution                      $234,932.00
+
+REIMBURSEMENTS:
+Casey Total Investment                          $118,448.06
+Dwayne Total Investment                          $59,093.61
+───────────────────────────────────────────────────────────────────
+Total Reimbursements                            $177,541.67
+───────────────────────────────────────────────────────────────────
+Remaining Profit to Split                        $57,390.33
+
+PROFIT DISTRIBUTION (66.7% Casey / 33.3% Dwayne):
+Casey Profit Share (66.7%)                       $38,279.33
+Dwayne Profit Share (33.3%)                      $19,111.00
+
+TOTAL PAYOUTS:
+Casey: $118,448.06 + $38,279.33 =               $156,727.39
+Dwayne: $59,093.61 + $19,111.00 =                $78,204.61
+
+RETURN ON INVESTMENT:
+Casey ROI: ($156,727.39 / $118,448.06) - 1 =     +32.3%
+Dwayne ROI: ($78,204.61 / $59,093.61) - 1 =      +32.3%
+
+───────────────────────────────────────────────────────────────────
+
+Sale Price: $300,000
+
+WATERFALL:
+Gross Sale Price                                $300,000.00
+Less: Closing Costs (6%)                        -$18,000.00
+───────────────────────────────────────────────────────────────────
+Net Proceeds After Closing                      $282,000.00
+
+Less: HELOC Payoff                                   -$68.00
+───────────────────────────────────────────────────────────────────
+Available for Distribution                      $281,932.00
+
+REIMBURSEMENTS:
+Casey Total Investment                          $118,448.06
+Dwayne Total Investment                          $59,093.61
+───────────────────────────────────────────────────────────────────
+Total Reimbursements                            $177,541.67
+───────────────────────────────────────────────────────────────────
+Remaining Profit to Split                       $104,390.33
+
+PROFIT DISTRIBUTION (66.7% Casey / 33.3% Dwayne):
+Casey Profit Share (66.7%)                       $69,628.33
+Dwayne Profit Share (33.3%)                      $34,762.00
+
+TOTAL PAYOUTS:
+Casey: $118,448.06 + $69,628.33 =               $188,076.39
+Dwayne: $59,093.61 + $34,762.00 =                $93,855.61
+
+RETURN ON INVESTMENT:
+Casey ROI: ($188,076.39 / $118,448.06) - 1 =     +58.8%
+Dwayne ROI: ($93,855.61 / $59,093.61) - 1 =      +58.8%
+
+═══════════════════════════════════════════════════════════════════
+
+KEY DIFFERENCES AT $250K SALE:
+
+                        Method A        Method B        Delta
+                        (OpEx)          (Equity)        
+Casey Total Payout:     $163,901        $156,727        -$7,174
+Dwayne Total Payout:    $71,031         $78,205         +$7,174
+Casey ROI:              +38.4%          +32.3%          -6.1%
+Dwayne ROI:             +20.2%          +32.3%          +12.1%
+
+Method A: Casey gets higher ROI due to 79/21 profit split
+Method B: Equal ROI for both partners (32.3%)
+
+KEY DIFFERENCES AT $300K SALE:
+
+                        Method A        Method B        Delta
+                        (OpEx)          (Equity)        
+Casey Total Payout:     $201,125        $188,076        -$13,049
+Dwayne Total Payout:    $80,807         $93,856         +$13,049
+Casey ROI:              +69.8%          +58.8%          -11.0%
+Dwayne ROI:             +36.7%          +58.8%          +22.1%
+
+Method A: Casey gets significantly higher ROI due to 79/21 profit split
+Method B: Equal ROI for both partners (58.8%)
+
+═══════════════════════════════════════════════════════════════════
+
+DECISION FRAMEWORK:
+
+Choose Method A (Operating Expenses) if:
+- Original $113,940 equity defines ownership permanently
+- Post-purchase costs were understood as shared operating expenses
+- Partners agreed to 79/21 profit split from the beginning
+- Higher returns for larger equity holder is the intended structure
+
+Choose Method B (Additional Equity) if:
+- Every dollar spent earns proportional ownership
+- Partners want equal risk/reward (equal ROI)
+- Fairness means total capital deployed determines profit share
+- Simpler accounting (one equity number, not equity + opex tracking)
+
+═══════════════════════════════════════════════════════════════════
+
+PROFITABILITY ANALYSIS:
+
+Both methods are PROFITABLE at both price points.
+
+Break-even sale price: ~$204,000 (covers invested capital + closing costs + HELOC)
+
+At current scenarios:
+$250k sale = $57,390 total profit to split
+$300k sale = $104,390 total profit to split
+
+To maximize returns:
+- Add missing projected costs to model ($42k driveway, holding costs, HELOC interest)
+- Target sale price $350k+ (Dwayne's base scenario)
+- Minimize time to sale (reduce holding costs)
+
+═══════════════════════════════════════════════════════════════════
+
+NEXT STEPS:
+
+1. Casey and Dwayne: Decide which method reflects partnership intent
+2. Document decision in Operating Agreement
+3. Apply consistently to Oak Trail and future properties
+4. Update exit calcs spreadsheet with chosen method
+5. Add missing projected costs
+6. Re-run scenarios at target sale prices
+
+═══════════════════════════════════════════════════════════════════

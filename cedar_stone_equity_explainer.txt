@@ -1,0 +1,171 @@
+CEDAR STONE VENTURES - CHIMNEY ROCK EQUITY TREATMENT COMPARISON
+February 4, 2026
+
+THE QUESTION:
+Should the $63,670 in post-purchase costs count as additional equity contributions (changing the ownership split) or as operating expenses deducted before profit distribution?
+
+CURRENT RECORDED EQUITY:
+Casey: $90,234 (79.2%)
+Dwayne: $23,706 (20.8%)
+Total: $113,940
+
+ACTUAL CASH DEPLOYED:
+Casey: $118,448
+Dwayne: $59,094
+HELOC: $68
+Total: $177,610
+
+THE GAP: $63,670 in post-purchase costs (septic $20k, utilities $15k, land prep $12k, etc.)
+
+═══════════════════════════════════════════════════════════════════
+
+METHOD A: POST-PURCHASE COSTS ARE OPERATING EXPENSES
+(Original equity split: Casey 79.2% / Dwayne 20.8%)
+
+Sale Price: $250,000
+
+Gross Sale Price                                $250,000.00
+Less: Closing Costs (6%)                        -$15,000.00
+Net Proceeds After Closing                      $235,000.00
+
+Less: HELOC Payoff                                   -$68.00
+Less: Operating Expenses Already Paid            -$63,670.00
+Less: Original Equity Investment               -$113,940.00
+
+Net Profit to Distribute                         $57,322.00
+
+Casey Payout (79.2%):                            $45,399.02
+Dwayne Payout (20.8%):                           $11,922.98
+
+TOTAL RETURN ON INVESTMENT:
+Casey ROI: $45,399 on $118,448 invested = -61.7% (LOSS)
+Dwayne ROI: $11,923 on $59,094 invested = -79.8% (LOSS)
+
+───────────────────────────────────────────────────────────────────
+
+Sale Price: $300,000
+
+Gross Sale Price                                $300,000.00
+Less: Closing Costs (6%)                        -$18,000.00
+Net Proceeds After Closing                      $282,000.00
+
+Less: HELOC Payoff                                   -$68.00
+Less: Operating Expenses Already Paid            -$63,670.00
+Less: Original Equity Investment               -$113,940.00
+
+Net Profit to Distribute                        $104,322.00
+
+Casey Payout (79.2%):                            $82,623.02
+Dwayne Payout (20.8%):                           $21,698.98
+
+TOTAL RETURN ON INVESTMENT:
+Casey ROI: $82,623 on $118,448 invested = -30.2% (LOSS)
+Dwayne ROI: $21,699 on $59,094 invested = -63.3% (LOSS)
+
+═══════════════════════════════════════════════════════════════════
+
+METHOD B: POST-PURCHASE COSTS ARE ADDITIONAL EQUITY
+(Revised equity split: Casey 66.7% / Dwayne 33.3%)
+
+New Equity Totals:
+Casey: $118,448 (66.7%)
+Dwayne: $59,094 (33.3%)
+Total: $177,542 (excluding HELOC)
+
+Sale Price: $250,000
+
+Gross Sale Price                                $250,000.00
+Less: Closing Costs (6%)                        -$15,000.00
+Net Proceeds After Closing                      $235,000.00
+
+Less: HELOC Payoff                                   -$68.00
+Less: Total Equity Investment                  -$177,542.00
+
+Net Profit to Distribute                         $57,390.00
+
+Casey Payout (66.7%):                            $38,279.13
+Dwayne Payout (33.3%):                           $19,110.87
+
+TOTAL RETURN ON INVESTMENT:
+Casey ROI: $38,279 on $118,448 invested = -67.7% (LOSS)
+Dwayne ROI: $19,111 on $59,094 invested = -67.7% (LOSS)
+
+───────────────────────────────────────────────────────────────────
+
+Sale Price: $300,000
+
+Gross Sale Price                                $300,000.00
+Less: Closing Costs (6%)                        -$18,000.00
+Net Proceeds After Closing                      $282,000.00
+
+Less: HELOC Payoff                                   -$68.00
+Less: Total Equity Investment                  -$177,542.00
+
+Net Profit to Distribute                        $104,390.00
+
+Casey Payout (66.7%):                            $69,628.13
+Dwayne Payout (33.3%):                           $34,761.87
+
+TOTAL RETURN ON INVESTMENT:
+Casey ROI: $69,628 on $118,448 invested = -41.2% (LOSS)
+Dwayne ROI: $34,762 on $59,094 invested = -41.2% (LOSS)
+
+═══════════════════════════════════════════════════════════════════
+
+KEY DIFFERENCES AT $250K SALE:
+
+                        Method A        Method B        Delta
+                        (OpEx)          (Equity)        
+Casey Payout:           $45,399         $38,279         -$7,120
+Dwayne Payout:          $11,923         $19,111         +$7,188
+
+Method A favors Casey (79/21 split).
+Method B equalizes losses (both at -67.7% ROI).
+
+KEY DIFFERENCES AT $300K SALE:
+
+                        Method A        Method B        Delta
+                        (OpEx)          (Equity)        
+Casey Payout:           $82,623         $69,628         -$12,995
+Dwayne Payout:          $21,699         $34,762         +$13,063
+
+Method A favors Casey (79/21 split).
+Method B equalizes losses (both at -41.2% ROI).
+
+═══════════════════════════════════════════════════════════════════
+
+RECOMMENDATION:
+
+Both scenarios show LOSSES at $250k and $300k sale prices because total invested ($177,610) exceeds net proceeds after costs.
+
+Break-even sale price (Method A): ~$285,000
+Break-even sale price (Method B): ~$285,000
+
+To make profit, need to sell above $285k OR reduce projected costs (e.g., cheaper driveway, hold longer to reduce urgency).
+
+DECISION FRAMEWORK:
+
+Choose Method A (Operating Expenses) if:
+- Original equity contributions were meant to define ownership
+- Post-purchase costs were understood as shared expenses
+- Partners are comfortable with 79/21 split on profits/losses
+
+Choose Method B (Additional Equity) if:
+- Every dollar spent should count toward ownership
+- Partners want risk/reward proportional to total capital deployed
+- Fairness means equal ROI regardless of who funded what
+
+This decision should be documented in your Operating Agreement before either property sells.
+
+═══════════════════════════════════════════════════════════════════
+
+NEXT STEPS:
+
+1. Decide which method reflects your partnership intent
+2. Document the decision in an Operating Agreement
+3. Apply consistently to Oak Trail and all future properties
+4. Update exit calcs spreadsheet with the chosen method
+5. Add missing projected costs ($42k driveway, holding costs, HELOC interest)
+6. Re-run scenarios at realistic sale prices ($300k-400k range)
+
+═══════════════════════════════════════════════════════════════════

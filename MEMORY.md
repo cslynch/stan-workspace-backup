@@ -260,10 +260,23 @@ Token 2 (Casey's inbox):
   - Need to remind Casey SOON to start planning something special
   - This is not optional - Rosa made it clear this matters
 
-### Rosa's Family
-- **Mom:** Birthday December 18 (reminder set for Dec 11)
-- **Son Joe:** Birthday December 24 (reminder set for Dec 17)
+### Birthdays
+- **Casey:** March 10 (reminder set for Feb 24)
+- **Rosa:** April 22 (reminder set for April 8)
+- **Rosa's mom:** December 18 (reminder set for Dec 4)
+- **Joe (Rosa's son):** December 24 (reminder set for Dec 10)
+
+### Rosa's Family & Friends
+- **Mom:** Birthday December 18
+- **Son Joe:** Birthday December 24
 - **Friend Betty:** Elderly lady, broke femur Tuesday 2026-01-28, in Methodist Stone Oak Hospital (reminder set to send flowers Feb 10)
+
+### Birthday Trip Planning (April 2026)
+- **Dates:** Last week of April (April 24-May 1)
+- **Occasion:** Celebrate both Casey & Rosa's birthdays
+- **Requirements:** Clear water, soft sand, snorkeling
+- **Options researched:** Cozumel (best value), Turks & Caicos (most beautiful), Florida Keys (easiest)
+- **Plan document:** birthday-trip-april-2026.md
 
 ## Business: OpenBot / AI Backend Service
 
