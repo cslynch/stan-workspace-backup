@@ -153,7 +153,10 @@ casey@fleetbrain.ai and stan@fleetbrain.ai are pending Google Workspace domain v
 
 - Running on Haiku (claude-haiku-4-5) - stay on this model
 - Sessions cleared (no group chat history carried over)
-- bootstrapMaxChars = 8000 (MEMORY.md was truncated at 24k, now trimmed)
-- OpenClaw v2026.2.6 available (not installed yet)
-- Tailscale on Mater: installed but not authenticated yet
-- DM/group policies: currently wide open (known issue, tracked)
+- bootstrapMaxChars = 8000 (MEMORY.md trimmed, under limit)
+- ✅ OpenClaw v2026.2.6 installed and running. Updated Feb 8.
+- ✅ Tailscale on Mater: Connected. IP: 100.71.67.28. Authenticated Feb 8.
+- ✅ DM/group policies: Pairing mode. Random users blocked. Changed Feb 8.
+- ✅ GPG encrypt .env: DONE (Feb 8 03:43, stored in .env.gpg)
+- ✅ Email routing: VERIFIED (cslynch913@gmail.com primary send account)
+- ✅ MEMORY.md trimmed: Current size 5.1K (was 24K)
