@@ -36,13 +36,28 @@
 
 ---
 
-## CASEY & ROSA - CRITICAL DATES
+## CASEY & ROSA - FAMILY & CRITICAL DATES
 
+**Birthdays (with birth years - Confirmed Feb 8, 2026):**
+- Casey Lynch: March 10, 1977
+- Rosa: April 22, 1987
+- Diana (Rosa's mom): December 18, 1961
+- Joe (Rosa's son): December 24, 2006
+- Tyler (Casey's son): January 22, 2007 **[MINOR - in-home]**
+- Ryan (Casey's daughter): December 2, 2009 **[MINOR - in-home]**
+
+**Critical Dates:**
 - **Valentine's Day 2026:** Feb 14 (less than 2 weeks!) - Rosa specifically flagged this as critical. Start planning NOW.
 - **Engagement coming:** Plan to help when requested.
-- **Birthday Trip (April 24-May 1):** Celebrate both birthdays. Clear water, soft sand, snorkeling. Options researched: Cozumel, Turks & Caicos, Florida Keys.
-- **Birthdays:** Casey (March 10), Rosa (April 22)
-- **Rosa's family:** Mom (Dec 18), Son Joe (Dec 24)
+- **Birthday Trip (April 24-May 1):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Options researched: Cozumel, Turks & Caicos, Florida Keys.
+
+**Calendar Reminders (Annual):**
+- ⏳ Tyler's birthday: Jan 22 (pending creation, Casey as attendee)
+- ⏳ Ryan's birthday: Dec 2 (pending creation, Casey as attendee)
+- ⏳ Casey's birthday: March 10 (pending creation, Casey as attendee)
+- ⏳ Rosa's birthday: April 22 (pending creation, Casey as attendee)
+- ⏳ Diana's birthday: Dec 18 (pending creation, Casey as attendee)
+- ⏳ Joe's birthday: Dec 24 (pending creation, Casey as attendee)
 
 ---
 
