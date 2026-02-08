@@ -1,202 +1,190 @@
 # KANBAN - Project Status
-**Last Updated:** Feb 2, 2026 23:16 CST  
-**Updated By:** Stan
+**Last Updated:** Feb 8, 2026 09:15 CST  
+**Updated By:** Stan (Master Tracker Sync)
+**Trello Board:** StanOps (sync via Rule #15: clean names on Trello, detail in KANBAN.md only)
 
 ---
 
-## BACKLOG (To Start)
+## BACKLOG (To Start - No Due Dates)
 
-### Disaster Recovery
-- [ ] Decide GPG passphrase
-- [ ] Confirm Google Drive folder structure
-- [ ] Decide AWS account strategy
-- [ ] Encrypt .env to .env.gpg
-- [ ] Upload .env.gpg to Drive
-- [ ] Test decryption
-- [ ] Document OpenClaw config
-- [ ] Create DISASTER-RECOVERY.md
-- [ ] Build backup-stan.sh script
-- [ ] Activate cron job (weekly backup)
-- [ ] Test restoration on AWS
+### DEFERRED ITEMS
+- [ ] Docker sandboxing for Stan VM
+- [ ] Audit 27 ClawHub skills for security
+- [ ] Credential rotation schedule
+- [ ] Separate dangerous tool combinations
+- [ ] Connect Stan to Salesforce dev org
+- [ ] Salesforce tutoring sessions
+- [ ] Finish Jake bootstrap (OpenClaw + Telegram bot on Lightning)
 
 ### Claude.ai Integration Watch
-- [ ] **Monitor for claude.ai native Trello/MCP connector**
-  - **What to watch for:**
-    - Claude.ai adding MCP server support in browser interface (currently Desktop/Code only)
-    - Trello integration available in claude.ai (would let SuperStan read/write board directly)
-    - Any Anthropic announcement about third-party tool connectors expanding to browser
-    - New claude.ai integrations or connector marketplace launch
-    - MCP support expanding beyond Claude Desktop/Code apps
-  - **Monitoring approach:**
-    - Rule #16: Flag during routine web searches and news checks
-    - Don't wait for scheduled monitoring — if you see it, message Casey immediately
-    - Include source link + one-line summary
-    - Priority: HIGH (would fundamentally change our workflow if native)
-  - **Current state:** MCP connectors only in Claude Desktop/Claude Code, not claude.ai web
-  - **Impact if changes:** SuperStan could read/write Trello board directly, eliminating the manual sync layer
+- [ ] **Monitor for native Trello/MCP connector**
+  - Watch for: claude.ai MCP server support, Trello integration, connector marketplace launch
+  - Trigger: Flag immediately with source link if found (Rule #16)
+  - Impact: Would eliminate manual Trello sync layer
 
-### Email Configuration
-- [ ] Casey: List Gmail labels to monitor
+### Email Configuration (Blocked on Casey)
+- [ ] Casey: Provide Gmail label whitelist
 - [ ] Stan: Implement OAuth flow
 - [ ] Stan: Test read-only access
-- [ ] Casey: Authorize (explicit go-ahead)
-- [ ] Stan: Activate email monitoring
+- [ ] Casey: Explicit authorization
+- [ ] Stan: Activate monitoring
 
-### Twitter Launch (In Progress)
-- [ ] Casey: Approve twitter-launch-package.md
-- [ ] Casey: Approve stanleybodewell-week-1-posts.md
-- [ ] Casey: Select bios (both accounts)
-- [ ] Casey: Select 10-14 singles for @itsolz
-- [ ] Casey: Select 1 thread (A or B)
-- [ ] Stan: Lock all content in scheduler
+---
+
+## THIS WEEK (Due Feb 8-14)
+
+### INFRASTRUCTURE (Critical Path - Feb 8)
+- [ ] Verify Google Workspace domain (fleetbrain.ai) — phone rate limit reset check
+- [ ] Install Tailscale on Mater + phone
+- [ ] GPG encrypt .env on VM (DONE Feb 8 03:43)
+  - ✅ Encrypted with passphrase stored in Bitwarden
+  - ✅ File: /home/clawdbot/.openclaw/workspace/.env.gpg (819 bytes)
+- [ ] Fix email routing — send from cslynch913@gmail.com only, never cslynch@
+- [ ] Update OpenClaw to v2026.2.6 (awaiting Casey go-signal)
+
+### SECURITY (Feb 8-10)
+- [ ] Run `openclaw security audit --fix` (tighten file permissions)
+- [ ] Install Clawdex + scan all 27 installed skills
+- [ ] Run Snyk mcp-scan against skill configs
+- [ ] Remove unused skills (reduce from 27 to essential set)
+- [ ] Fix email OAuth scoping (cslynch@ = drafts only, not send)
+- [ ] Grep workspace for dead references (thebotstan@, LastPass, 1Password)
+
+### CASE STUDY WORK (Feb 8-10)
+- [ ] Export Telegram chat logs (Ryan + Deb conversations)
+- [ ] Compile evidence for case studies #0, #2, #3, #4, #5, #6
+- [ ] Gather screenshots + conversation transcripts
+- [ ] Apply anonymization rule to all external-facing output
+
+### TAILSCALE AUTH (Feb 8 - Blocking Step 4)
+- [ ] **Set Tailscale operator permissions on Mater VM**
+  - **Action (Casey):** Run on VM: `sudo tailscale set --operator=$USER`
+  - **Why:** Allows Stan to run `tailscale up --accept-routes` without sudo
+  - **Then:** Stan runs `tailscale up`, gets login URL
+  - **Casey:** Authenticate on phone via URL
+  - **Status:** Blocked on Casey action
+
+### STAN OPS (Feb 8-14)
+- [ ] Regenerate 7 StanBrain research files (verify with ls after upload)
+- [ ] Push verification loop correction (3-layer, permanent rule)
+- [ ] Install browser skills (playwright-cli / agent-browser)
+- [ ] Push proactive behavior correction (Rosa pattern — flag important dates/needs)
+- [ ] Set up recurring task: Monthly AI tool landscape scout (first: March 3)
+- [ ] Complete Rosa vacation research (T&C and FL Keys pricing gap analysis)
+- [ ] Push fourth-wall leak rule to default agent baseline
 
 ---
 
 ## IN PROGRESS
 
-### Twitter Infrastructure
-- [x] @StanleyBodewell: API credentials, live, tested
-- [x] @itsolz: API credentials (regenerated), live, tested
-- [x] Both accounts: Billing active
-- [x] Both accounts: Write permissions enabled
-- [x] Test posts: Successful
+### WEBSITES & BRAND (In Build - Feb 8+)
+- [ ] Set up DNS records (GoDaddy → GitHub Pages)
+- [ ] Set up email forwarding (casey@fleetbrain.ai → Casey's inbox)
+- [ ] Deploy fleetbrain.ai to GitHub Pages (site in Claude Code)
+- [ ] Deploy stanleybot.fleetbrain.ai to GitHub Pages
 
-### Content & Strategy (Drafted, Waiting Approval)
-- [x] twitter-launch-package.md (15 singles, 10 templates, 2 threads, 3 bios)
-- [x] stanleybodewell-week-1-posts.md (7 posts drafted)
-- [x] dream-100-targets.md (reply strategy locked)
-- [x] gradual-rollout-timeline.md (5-day rollout plan)
-- [x] 30-day-execution-plan.md (4 phases, decision gates)
-- [ ] Waiting: Casey content approval
+### BUSINESS DEVELOPMENT
+- [ ] Jason Rawlings follow-up / two-node demo prep
+- [ ] Apply for Google Workspace Reseller program
+- [ ] Twitter launch — both accounts (awaiting Casey go-signal)
+  - [ ] @itsolz: Professional sales brand
+  - [ ] @stanleybodewell: Experimental AI agent persona
 
-### Documentation & Planning
-- [x] SuperStan framework locked (MEMORY.md)
-- [x] week-2-outline-themes.md (themes only, data-dependent)
-- [x] integration-sequence-corrected.md (Airtable → Calendly → HubSpot → Stripe → LinkedIn)
-- [x] All files: GitHub backed up
+### JOB SEARCH (Phase 1 Active)
+- [ ] Update LinkedIn profile (research 5 top profiles, audit Casey's, gap analysis)
+- [ ] Launch job search automation (20 companies, B2B AE, Series A-C, $100k+ OTE)
+- [ ] Export LinkedIn data for relationship intelligence mapping
 
----
-
-## IN REVIEW (Waiting on Casey)
-
-### Feb 3 Decisions
-- [ ] Twitter content approval (voice check + selections)
-- [ ] Disaster recovery questions (3 items)
-- [ ] Email label whitelist (optional, when ready)
-
-### Blocked Until Approval
-- Twitter launch (depends on content approval)
-- Disaster recovery setup (depends on 3 decisions)
-- Email monitoring (depends on label list + authorization)
+### FILING & DOCUMENTATION
+- [ ] File FleetBrain logo (Mark B) to StanBrain
+- [ ] File website content briefs to StanBrain
+- [ ] Update bootstrap runbook (Lightning/Jake, phases 5+)
 
 ---
 
-## READY TO EXECUTE (No Casey Input Needed)
+## DONE (Completed - Feb 3-8)
 
-### This Week (Feb 3-9, Phase 1)
-- [x] Dream 100 reply research complete
-- [ ] Mon Feb 3: Await content approval
-- [ ] Tue Feb 4: Launch @itsolz replies only
-- [ ] Wed Feb 5: Add @stanleybodewell posts
-- [ ] Thu Feb 6: Add @itsolz first originals
-- [ ] Fri Feb 7: Full schedule live
-- [ ] Sun Feb 9: Week 1 metrics report
-
-### Security Audit (Feb 8)
-- [ ] **Credential rotation drill** (Due: Feb 8)
-  - **Scope:** Full credential rotation exercise to test process and reduce risk
-  - **Process:** 
-    1. Revoke all active API credentials (Trello, Twitter, Apollo, Airtable, Anthropic)
-    2. Regenerate new credentials in each platform dashboard
-    3. Update .env file via terminal with new values
-    4. Verify each integration still works (test API call for each)
-    5. Delete Telegram message #1002 containing exposed Trello credentials
-  - **Documentation:** Create repeatable runbook in StanBrain/strategy (full process, timing, verification steps, rollback plan)
-  - **Risk Assessment:** SuperStan has the full risk assessment; coordinate before executing
-  - **Time estimate:** 2-3 hours
-  - **Follow-up:** Schedule monthly rotation cadence going forward
-
-### Week 2 (Feb 10-16, Phase 2) - Foundation
-- [ ] Mon-Wed: Build Airtable CRM (contacts, interactions, pipeline)
-- [ ] Thu-Fri: Validate Airtable
-- [ ] Parallel: Test Gmail read-only (if Casey approves)
-- [ ] Sun Feb 16: Integration status report
-
-### Week 3 (Feb 17-23, Phase 3) - Revenue
-- [ ] Mon-Tue: Calendly → Airtable integration
-- [ ] Wed-Thu: HubSpot build + test
-- [ ] Fri: Validate both
-- [ ] Parallel: TTS audio (if bandwidth allows)
-- [ ] Sun Feb 23: Cost report + optimization
-
-### Week 4 (Feb 24-Mar 2, Phase 4) - Scale
-- [ ] Mon-Tue: Discord (only if community demand exists)
-- [ ] Wed-Fri: Optimization + cost review
-- [ ] Sun Mar 2: Month 1 review + Month 2 plan
+- ✅ GPG encrypt .env on VM (Feb 8 03:43) — Passphrase: [stored in Bitwarden]
+- ✅ Email routing verified (cslynch913@gmail.com configured as primary send account)
+- ✅ MEMORY.md trimmed to 3976 bytes (under 8000 char bootstrap limit)
+- ✅ Sessions cleared & bloat fixed (Feb 8 03:36)
+- ✅ Model corrected to claude-haiku-4-5 (Sonnet → Haiku)
+- ✅ Twitter infrastructure live (@itsolz + @stanleybodewell)
+- ✅ Content drafted (twitter-launch-package.md, stanleybodewell-week-1-posts.md)
+- ✅ Dream 100 research complete
+- ✅ Job search Airtable base (25 companies populated)
+- ✅ Apollo API tested & working
+- ✅ GitHub backup active (auto-commits daily)
+- ✅ Case study evidence search (6 case studies: #0-#6)
+- ✅ Anonymization rule locked (Rule #18)
 
 ---
 
-## COMPLETED
+## BLOCKER ITEMS (External Dependencies)
 
-- [x] Twitter API setup (@StanleyBodewell + @itsolz)
-- [x] Test posts (infrastructure verified)
-- [x] Content drafting (twitter-launch-package.md)
-- [x] Dream 100 research (reply targets identified)
-- [x] Execution planning (30-day roadmap)
-- [x] SuperStan framework (4 phases, metrics, decision gates)
-- [x] GitHub backup (all files committed)
-- [x] Local backup (tar.gz + .env encrypted locally)
-
----
-
-## METRICS & REPORTING
-
-### Weekly Report (Sundays, 5pm CST)
-- Twitter: followers, engagement rate, DM volume
-- Operations: task completion %, API costs
-- Infrastructure: uptime %, success rate
-
-### First Report Due
-- Sun Feb 9 (Week 1 wrap-up)
-- Will inform Week 2 content strategy
+| Item | Blocker | Status | Note |
+|------|---------|--------|------|
+| OpenClaw v2026.2.6 | Casey approval | Waiting | Available but not installed yet |
+| Twitter launch | Casey content approval | Waiting | Content drafted, needs voice check |
+| Job search outreach | Casey Apollo key + LinkedIn creds | Partial | Airtable ready, hiring research needs manual assist |
+| Salesforce Phase 2 | Casey Dev Edition signup | Waiting | Creates interview prep infrastructure |
+| Tailscale auth | Casey setup on phone | Waiting | Installed on Mater, needs pairing |
+| Google Workspace verification | Phone rate limit reset | Pending | Check by Feb 8 EOD |
+| Case study writeups | Telegram chat exports | Waiting | Need Ryan + Deb conversation logs |
 
 ---
 
-## DECISION GATES (Locked)
+## TRACKING & METRICS
 
-**After Week 1 (Feb 9):**
-- Continue/pivot content based on engagement data
-- Decide which content types double down on
+### Weekly Reporting (Sundays, 5pm CST)
+- Task completion rate
+- Infrastructure status
+- Cost tracking
+- Twitter metrics (when launched)
 
-**After Week 2 (Feb 16):**
-- Ready for outbound automation?
-- Airtable validated?
+### Next Report
+- Sun Feb 9 (Week 1 wrap-up from Twitter if live)
+- Sun Feb 16 (Infrastructure readiness check)
+- Sun Feb 23 (Stan Ops progress)
 
-**After Week 3 (Feb 23):**
-- Scale current funnel or add channels?
-- Revenue infrastructure working?
+---
 
-**After Week 4 (Mar 2):**
-- Maintain/expand or consolidate?
+## RULE #13 APPLICATION (Trello + KANBAN Sync)
+
+**Trello Card Names:** Clean, short, action-oriented
+- "Verify Google Workspace domain"
+- "Install Tailscale"
+- "GPG encrypt .env" ✅
+- etc.
+
+**KANBAN.md:** Full context, blockers, dependencies, notes
+- All detail lives here
+- Trello stays visual only
+- Both sync bidirectional (Trello priority changes override local decisions)
+
+---
+
+## CURRENT BOARD STATE NEEDED
+
+**Question for Casey:**
+What's the current state of your Trello StanOps board? I can:
+1. **Option A:** Read Trello directly if you give me board access (would need API setup)
+2. **Option B:** You tell me the current card structure, I ensure KANBAN.md matches, then we keep them in sync
+3. **Option C:** I create all new cards locally in KANBAN.md, you manually create/update on Trello
+
+Which works best?
 
 ---
 
 **Status Summary:**
-- Twitter: READY TO LAUNCH (waiting content approval)
-- Disaster Recovery: BLOCKED (3 decisions needed tomorrow)
-- Email: BLOCKED (label whitelist + authorization)
-- Everything else: DOCUMENTED & READY
+- **Infrastructure:** 5 items due This Week (2 done, 3 in progress)
+- **Security:** 6 items due This Week (0 done, ready to execute)
+- **Stan Ops:** 7 items due This Week (1 in progress — case studies)
+- **Websites:** 4 items in progress (no due date set)
+- **Business:** 3 items in progress (Twitter waiting approval)
+- **Job Search:** 3 items active (Phase 1)
+- **Filing:** 3 items in progress
 
----
+**Total:** 34 active items, 7 deferred, 2 blocked on external, 3 blocked on Casey action
 
-## Automatic Updates?
-
-Currently: Manual updates.
-
-**Options for tomorrow:**
-1. **Manual:** You ask "update kanban" and I do it
-2. **Weekly Auto:** Every Sunday with metrics report
-3. **Daily Auto:** Updates sprint progress (overkill?)
-4. **Hybrid:** Weekly auto + manual when needed
-
-What's your preference?
+Standing by for Trello board state or API access instruction.
