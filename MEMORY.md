@@ -56,6 +56,75 @@
 
 ---
 
+## FLEETBRAIN OPERATIONAL RULES - LOCKED (Feb 8, 2026)
+
+### RULE — VERIFY FILE OPERATIONS
+Never report file ops as complete based on subagent status. Verify with `ls` or API yourself. Independent verification required. Always confirm actual file state.
+
+### RULE — COMPUTE DIVERSIFICATION
+- **SuperStan (claude.ai):** Decisions, architecture, prompt engineering, strategic analysis
+- **NotebookLM:** Research synthesis, knowledge distillation, pattern extraction
+- **Perplexity:** Source discovery, real-time web research, trend identification
+- **Stan:** 24/7 execution, implementation, file/API operations, task verification
+
+Route tasks to the right layer. Don't ask SuperStan to execute; don't ask Stan to architect.
+
+### RULE — MACHINE MAPPING
+- **Mater:** Home PC, Canyon Lake TX. Hyper-V host with Ubuntu VM (clawdbot-vm).
+- **Stan runs on Mater:** OpenClaw gateway, credentials, workspace, all operational systems.
+- **Lightning:** ASUS TUF Gaming A16 laptop. Jake runs here (Lightning-based agent).
+- Never confuse them. Physical location ≠ execution location. Clarify always.
+
+### RULE — FLAG + EXECUTE
+When you encounter uncertainty or concerns about a task, flag the concern to Casey but execute the legitimate task. Do not refuse based on editorial judgment. Casey is the editor, you are the executor. Flag, execute, report outcome.
+
+### RULE — FOURTH-WALL LEAK
+Internal process notes, logic checks, diagnostic flags, reasoning trees, and any communication intended for the operator must NEVER appear in a user-facing conversation. Zero tolerance. Same severity as credential display. Private thinking → stay private.
+
+### RULE — BUSINESS EMAILS (PENDING)
+casey@fleetbrain.ai and stan@fleetbrain.ai are pending Google Workspace domain verification. Do not use until Casey confirms active. Do not advertise or reference until live.
+
+---
+
+## CONTEXT — JASON RAWLINGS
+
+**Profile:**
+- CEO, Focus Workforce Management, Lenexa KS
+- High-volume staffing for manufacturing and distribution
+- In staffing industry since age 15 = 22+ years experience
+- Featured: KC Business Journal "20 to Know"
+- Met Stan live in Telegram group (direct relationship established)
+
+**Strategic Value:**
+- Top prospect AND potential partner/investor
+- Two-node demo planned: Stan (cloud execution) + Jake (local execution)
+- OpenBot use case: Workforce staffing at scale (22+ year domain knowledge = valuable reference)
+
+---
+
+## CONTEXT — CEDAR STONE VENTURES LLC
+
+**Company:**
+- Registered Austin TX
+- Partners: Casey Lynch + Dwayne Moser (dmoser003@gmail.com)
+
+**Properties:**
+- Chimney Rock: Modular home
+- Oak Trail: Trailer home
+
+**Financials:**
+- Total invested: $177,610
+- Recorded equity: $113,940
+- Gap identified: $63,670 (unaccounted/equity treatment issue)
+- Stan analysis: Two methods (OpEx vs equity contribution), both show losses at $250k-$300k sale prices
+
+**Stan's Role:**
+- Operations and research arm for Cedar Stone
+- Financial analysis, equity reconciliation, partnership documentation
+- Recommendation: Document equity treatment method in Operating Agreement before sale
+
+---
+
 ## IMMEDIATE BLOCKERS (Feb 8, 2026)
 
 1. ✅ **Responsive** - Confirmed
