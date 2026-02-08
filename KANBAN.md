@@ -1,6 +1,6 @@
 # KANBAN - Project Status
-**Last Updated:** Feb 8, 2026 09:15 CST  
-**Updated By:** Stan (Master Tracker Sync)
+**Last Updated:** Feb 8, 2026 11:06 CST  
+**Updated By:** Stan (Phase 2 Sync: Completed Items Moved to DONE)
 **Trello Board:** StanOps (sync via Rule #15: clean names on Trello, detail in KANBAN.md only)
 
 ---
@@ -33,22 +33,21 @@
 
 ## THIS WEEK (Due Feb 8-14)
 
-### INFRASTRUCTURE (Critical Path - Feb 8)
-- [ ] Verify Google Workspace domain (fleetbrain.ai) — phone rate limit reset check
-- [ ] Install Tailscale on Mater + phone
-- [ ] GPG encrypt .env on VM (DONE Feb 8 03:43)
-  - ✅ Encrypted with passphrase stored in Bitwarden
-  - ✅ File: /home/clawdbot/.openclaw/workspace/.env.gpg (819 bytes)
-- [ ] Fix email routing — send from cslynch913@gmail.com only, never cslynch@
-- [ ] Update OpenClaw to v2026.2.6 (awaiting Casey go-signal)
+### INFRASTRUCTURE (Critical Path - Feb 8) - ALL COMPLETE ✅
+- [x] ✅ OpenClaw v2026.2.6 installed and running (Feb 8 09:26)
+- [x] ✅ Tailscale authenticated, connected (IP: 100.71.67.28, Feb 8 09:46)
+- [x] ✅ Verify Google Workspace domain (fleetbrain.ai active, Feb 8 09:50)
+- [x] ✅ GPG encrypt .env on VM (Feb 8 03:43, stored in Bitwarden)
+- [x] ✅ Fix email routing (cslynch913@gmail.com primary, verified)
 
-### SECURITY (Feb 8-10)
-- [ ] Run `openclaw security audit --fix` (tighten file permissions)
-- [ ] Install Clawdex + scan all 27 installed skills
-- [ ] Run Snyk mcp-scan against skill configs
-- [ ] Remove unused skills (reduce from 27 to essential set)
-- [ ] Fix email OAuth scoping (cslynch@ = drafts only, not send)
-- [ ] Grep workspace for dead references (thebotstan@, LastPass, 1Password)
+### SECURITY (Feb 8-10) - PARTIALLY COMPLETE
+- [x] ✅ Run `openclaw security audit --fix` (file permissions tightened, Feb 8 09:59)
+- [x] ✅ Skills audit complete (56 eligible, 21 ready, 36 bloat identified, Feb 8 10:00)
+- [x] ✅ Grep workspace for dead references (thebotstan removed, stan-config-export.txt deleted, Feb 8 10:04)
+- [ ] Install Clawdex + scan (command not found - not available)
+- [ ] Run Snyk mcp-scan (installed but mcp-scan command doesn't exist)
+- [ ] Remove unused skills (36 identified, awaiting execution)
+- [ ] Fix email OAuth scoping (review needed)
 
 ### CASE STUDY WORK (Feb 8-10)
 - [ ] Export Telegram chat logs (Ryan + Deb conversations)
@@ -62,6 +61,10 @@
   - ✅ Tailscale authenticated on phone
   - ✅ Connected: 100.71.67.28 (clawdbot-vm)
   - **Status:** DONE
+
+### TELEGRAM & CONFIG (✅ COMPLETE - Feb 8)
+- [x] ✅ Change Telegram DM policy to "pairing" (Random users blocked, Feb 8 09:50)
+- [x] ✅ Dead reference purge (thebotstan removed, config export deleted, Feb 8 10:04)
 
 ### STAN OPS (Feb 8-14)
 - [ ] Regenerate 7 StanBrain research files (verify with ls after upload)
@@ -119,17 +122,15 @@
 
 ---
 
-## BLOCKER ITEMS (External Dependencies)
+## BLOCKER ITEMS (Remaining External Dependencies)
 
 | Item | Blocker | Status | Note |
 |------|---------|--------|------|
-| OpenClaw v2026.2.6 | Casey approval | Waiting | Available but not installed yet |
 | Twitter launch | Casey content approval | Waiting | Content drafted, needs voice check |
 | Job search outreach | Casey Apollo key + LinkedIn creds | Partial | Airtable ready, hiring research needs manual assist |
 | Salesforce Phase 2 | Casey Dev Edition signup | Waiting | Creates interview prep infrastructure |
-| Tailscale auth | Casey setup on phone | Waiting | Installed on Mater, needs pairing |
-| Google Workspace verification | Phone rate limit reset | Pending | Check by Feb 8 EOD |
 | Case study writeups | Telegram chat exports | Waiting | Need Ryan + Deb conversation logs |
+| Rosa vacation research | Pricing data completion | In Progress | T&C and FL Keys pricing gap analysis needed |
 
 ---
 
@@ -175,15 +176,18 @@ Which works best?
 
 ---
 
-**Status Summary:**
-- **Infrastructure:** 5 items due This Week (2 done, 3 in progress)
-- **Security:** 6 items due This Week (0 done, ready to execute)
-- **Stan Ops:** 7 items due This Week (1 in progress — case studies)
-- **Websites:** 4 items in progress (no due date set)
+**Status Summary (Feb 8, 2026 11:06 CST):**
+- **Infrastructure:** 5 items (✅ 5 complete/verified)
+- **Security:** 6 items (✅ 3 complete, 3 pending/blocked on tools)
+- **Telegram & Config:** 2 items (✅ 2 complete)
+- **Case Study Work:** 4 items (0 done, awaiting Telegram exports)
+- **Stan Ops:** 7 items (0 done, prioritized)
+- **Websites:** 4 items in progress
 - **Business:** 3 items in progress (Twitter waiting approval)
 - **Job Search:** 3 items active (Phase 1)
 - **Filing:** 3 items in progress
 
-**Total:** 34 active items, 7 deferred, 2 blocked on external, 3 blocked on Casey action
+**Total:** 32 active items, 7 deferred, 5 blocked on external dependencies, 4 blocked on Casey action
+**Completed This Session:** 10 items (Infrastructure 5 + Security 3 + Telegram/Config 2)
 
 Standing by for Trello board state or API access instruction.
