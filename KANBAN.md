@@ -56,13 +56,12 @@
 - [ ] Gather screenshots + conversation transcripts
 - [ ] Apply anonymization rule to all external-facing output
 
-### TAILSCALE AUTH (Feb 8 - Blocking Step 4)
-- [ ] **Set Tailscale operator permissions on Mater VM**
-  - **Action (Casey):** Run on VM: `sudo tailscale set --operator=$USER`
-  - **Why:** Allows Stan to run `tailscale up --accept-routes` without sudo
-  - **Then:** Stan runs `tailscale up`, gets login URL
-  - **Casey:** Authenticate on phone via URL
-  - **Status:** Blocked on Casey action
+### TAILSCALE AUTH (✅ COMPLETE - Feb 8)
+- [x] **Set Tailscale operator permissions on Mater VM**
+  - ✅ Operator permissions set
+  - ✅ Tailscale authenticated on phone
+  - ✅ Connected: 100.71.67.28 (clawdbot-vm)
+  - **Status:** DONE
 
 ### STAN OPS (Feb 8-14)
 - [ ] Regenerate 7 StanBrain research files (verify with ls after upload)
