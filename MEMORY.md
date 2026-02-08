@@ -51,13 +51,13 @@
 - **Engagement coming:** Plan to help when requested.
 - **Birthday Trip (April 24-May 1):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Options researched: Cozumel, Turks & Caicos, Florida Keys.
 
-**Calendar Reminders (Annual):**
-- ⏳ Tyler's birthday: Jan 22 (pending creation, Casey as attendee)
-- ⏳ Ryan's birthday: Dec 2 (pending creation, Casey as attendee)
-- ⏳ Casey's birthday: March 10 (pending creation, Casey as attendee)
-- ⏳ Rosa's birthday: April 22 (pending creation, Casey as attendee)
-- ⏳ Diana's birthday: Dec 18 (pending creation, Casey as attendee)
-- ⏳ Joe's birthday: Dec 24 (pending creation, Casey as attendee)
+**Calendar Reminders (Annual - All Created & Verified Feb 8, 2026):**
+- ✅ Tyler's birthday: Jan 22 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
+- ✅ Ryan's birthday: Dec 2 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
+- ✅ Casey's birthday: March 10 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
+- ✅ Rosa's birthday: April 22 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
+- ✅ Diana's birthday: Dec 18 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
+- ✅ Joe's birthday: Dec 24 (RRULE:FREQ=YEARLY, cslynch@gmail.com attendee)
 
 ---
 
