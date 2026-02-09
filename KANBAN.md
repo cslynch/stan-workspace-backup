@@ -44,16 +44,17 @@
 - [x] ✅ Run `openclaw security audit --fix` (file permissions tightened, Feb 8 09:59)
 - [x] ✅ Skills audit complete (56 eligible, 21 ready, 36 bloat identified, Feb 8 10:00)
 - [x] ✅ Grep workspace for dead references (thebotstan removed, stan-config-export.txt deleted, Feb 8 10:04)
-- [ ] Install Clawdex + scan (command not found - not available)
-- [ ] Run Snyk mcp-scan (installed but mcp-scan command doesn't exist)
 - [ ] Remove unused skills (36 identified, awaiting execution)
 - [ ] Fix email OAuth scoping (review needed)
 
 ### CASE STUDY WORK (Feb 8-10)
+- [x] ✅ Upload 7 case study files to StanBrain/case-studies/ (Feb 8 19:20) — All 7 docs verified as Google Docs
+- [ ] **TASK:** Finalize case studies #2 and #3 (BLOCKED) 
+  - **BLOCKER:** Casey answers draft review questions (6 each, at bottom of files)
+  - Case Study #002: The Family Outing — DRAFT, awaiting operator review
+  - Case Study #003: The Vacation — DRAFT, awaiting operator review
 - [ ] Export Telegram chat logs (Ryan + Deb conversations)
-- [ ] Compile evidence for case studies #0, #2, #3, #4, #5, #6
-- [ ] Gather screenshots + conversation transcripts
-- [ ] Apply anonymization rule to all external-facing output
+- [ ] Gather screenshots + conversation transcripts for missing case studies
 
 ### TAILSCALE AUTH (✅ COMPLETE - Feb 8)
 - [x] **Set Tailscale operator permissions on Mater VM**
@@ -119,6 +120,7 @@
 - ✅ GitHub backup active (auto-commits daily)
 - ✅ Case study evidence search (6 case studies: #0-#6)
 - ✅ Anonymization rule locked (Rule #18)
+- ✅ Rosa Telegram allowFrom fix (Feb 8 17:47) — Added Rosa (8444214599) to pairing mode allowFrom list
 
 ---
 
@@ -160,7 +162,7 @@
 **KANBAN.md:** Full context, blockers, dependencies, notes
 - All detail lives here
 - Trello stays visual only
-- Both sync bidirectional (Trello priority changes override local decisions)
+- Trello is a display layer only. KANBAN.md is the backing store. Master tracker (SuperStan project) overrides both. Sync direction is always: master tracker → KANBAN.md → Trello. Trello never overrides KANBAN.md.
 
 ---
 

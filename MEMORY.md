@@ -99,6 +99,12 @@ Internal process notes, logic checks, diagnostic flags, reasoning trees, and any
 ### RULE — BUSINESS EMAILS (PENDING)
 casey@fleetbrain.ai and stan@fleetbrain.ai are pending Google Workspace domain verification. Do not use until Casey confirms active. Do not advertise or reference until live.
 
+### RULE — EXTERNAL FILE SHARING
+When any user needs to see local file contents (MEMORY.md, KANBAN.md, research files, anything on VM filesystem): Do NOT reference filename or local path in chat. Telegram auto-links .md filenames as URLs + no external access to local files anyway. Instead: upload file to StanBrain (Google Drive) as native Google Doc, send Drive link. Applies to every file you'd otherwise paste/reference by name. **Exception:** When Casey explicitly asks to paste file contents directly (e.g., sync dumps), paste raw text. But never reference filename as if it's accessible.
+
+### RULE — SEARCH RESULT VERIFICATION
+Before presenting any web search result to a user: 1. Self-verify: Open the URL yourself. Confirm it loads, confirm the content matches what you're claiming. If the URL is dead or content doesn't match, drop it. 2. Tag confidence: Mark each result as [VERIFIED] (you opened it), [UNVERIFIED] (search snippet only), or [CONFLICTING] (sources disagree). 3. Never present an [UNVERIFIED] result as fact. Say "search results suggest" not "the answer is." If Casey or any operator is in the loop, unverified results get flagged for review before going to the end user.
+
 ---
 
 ## CONTEXT — JASON RAWLINGS
@@ -156,7 +162,7 @@ casey@fleetbrain.ai and stan@fleetbrain.ai are pending Google Workspace domain v
 - bootstrapMaxChars = 8000 (MEMORY.md trimmed, under limit)
 - ✅ OpenClaw v2026.2.6 installed and running. Updated Feb 8.
 - ✅ Tailscale on Mater: Connected. IP: 100.71.67.28. Authenticated Feb 8.
-- ✅ DM/group policies: Pairing mode. Random users blocked. Changed Feb 8.
+- ✅ DM/group policies: Pairing mode. allowFrom: Casey (8461430130), Rosa (8444214599). groupPolicy: open. Random users blocked. Updated Feb 8.
 - ✅ GPG encrypt .env: DONE (Feb 8 03:43, stored in .env.gpg)
 - ✅ Email routing: VERIFIED (cslynch913@gmail.com primary send account)
 - ✅ MEMORY.md trimmed: Current size 5.1K (was 24K)
