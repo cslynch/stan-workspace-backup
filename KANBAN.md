@@ -102,18 +102,20 @@
 
 ---
 
-**SYNC PROTOCOL (Updated Feb 9, 2026):**
+**SYNC PROTOCOL (Updated Feb 10, 2026):**
 
-Stan is READ-ONLY on Trello. SuperStan owns all writes.
+Stan and SuperStan both have direct Trello API access and write independently.
 
 When Stan completes work:
-1. Report to Casey
-2. Casey tells SuperStan
-3. SuperStan updates master tracker + Trello
-4. Stan pulls fresh Trello state to update KANBAN.md
+1. Update KANBAN.md locally (three sections: COMPLETED TODAY, IN PROGRESS, READY FOR SUPERSTAN)
+2. At 1:55 AM daily, cron prepends timestamp and git pushes
+3. SuperStan reads git repo at morning strategy review
+4. SuperStan can write directly to Trello if needed for sync
+5. Stan pulls fresh Trello state periodically to verify alignment
 
 When Stan discovers new tasks:
 1. Report to Casey for triage
-2. SuperStan creates the card
+2. Casey decides priority
+3. SuperStan (or Casey) creates the Trello card
 
-KANBAN.md is Stan's local scratchpad. It does not flow to Trello.
+**Source of Truth:** Trello is primary. KANBAN.md is Stan's local scratchpad + upstream visibility. Daily git sync at 1:55 AM makes work visible to SuperStan without Casey relay.
