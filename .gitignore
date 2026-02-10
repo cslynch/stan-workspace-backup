@@ -28,3 +28,4 @@ __pycache__/
 .gmail-credentials
 google-credentials.json
 .gmail-credentials
+credentials.json
