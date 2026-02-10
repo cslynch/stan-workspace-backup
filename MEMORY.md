@@ -2,9 +2,9 @@
 
 ## GMAIL & CALENDAR - LOCKED
 
-**Send Email:** Stan (cslynch913@gmail.com) only. Casey's inbox: draft-only (wait for "approve and send").
+**Send Email:** Stan (stan@fleetbrain.ai) only. Casey's inbox: draft-only (wait for "approve and send").
 **Draft Rule:** Mark as "[DRAFT - Stan]", wait for explicit approval before sending from Casey's account.
-**Calendar:** Full access to cslynch913 (Stan), view-only cslynch@gmail.com (Casey). Check Casey's calendar before proposing times. Add Casey as attendee if event involves his action/decision/deadline.
+**Calendar:** Full access to stan@fleetbrain.ai (Stan), view-only cslynch@gmail.com (Casey). Check Casey's calendar before proposing times. Add Casey as attendee if event involves his action/decision/deadline.
 
 ---
 
@@ -97,7 +97,7 @@ When you encounter uncertainty or concerns about a task, flag the concern to Cas
 Internal process notes, logic checks, diagnostic flags, reasoning trees, and any communication intended for the operator must NEVER appear in a user-facing conversation. Zero tolerance. Same severity as credential display. Private thinking → stay private.
 
 ### RULE — BUSINESS EMAILS (PENDING)
-casey@fleetbrain.ai and stan@fleetbrain.ai are pending Google Workspace domain verification. Do not use until Casey confirms active. Do not advertise or reference until live.
+casey@fleetbrain.ai and stan@fleetbrain.ai are ACTIVE. Stan sends from stan@fleetbrain.ai. Casey sends from casey@fleetbrain.ai. Google Workspace verified, OAuth complete.
 
 ### RULE — EXTERNAL FILE SHARING
 When any user needs to see local file contents (MEMORY.md, KANBAN.md, research files, anything on VM filesystem): Do NOT reference filename or local path in chat. Telegram auto-links .md filenames as URLs + no external access to local files anyway. Instead: upload file to StanBrain (Google Drive) as native Google Doc, send Drive link. Applies to every file you'd otherwise paste/reference by name. **Exception:** When Casey explicitly asks to paste file contents directly (e.g., sync dumps), paste raw text. But never reference filename as if it's accessible.
@@ -151,7 +151,7 @@ Before presenting any web search result to a user: 1. Self-verify: Open the URL 
 1. ✅ **Responsive** - Confirmed
 2. **Trim MEMORY.md** - IN PROGRESS (this file)
 3. **GPG encrypt .env** - `gpg -c /home/clawdbot/.openclaw/.env` (tracker #5, overdue)
-4. **Email routing** - Check: send from cslynch913@gmail.com, not cslynch@gmail.com (tracker #6)
+4. **Email routing** - DONE - Migrated to stan@fleetbrain.ai (Feb 10)
 
 ---
 
@@ -164,5 +164,5 @@ Before presenting any web search result to a user: 1. Self-verify: Open the URL 
 - ✅ Tailscale on Mater: Connected. IP: 100.71.67.28. Authenticated Feb 8.
 - ✅ DM/group policies: Pairing mode. allowFrom: Casey (8461430130), Rosa (8444214599). groupPolicy: open. Random users blocked. Updated Feb 8.
 - ✅ GPG encrypt .env: DONE (Feb 8 03:43, stored in .env.gpg)
-- ✅ Email routing: VERIFIED (cslynch913@gmail.com primary send account)
+- ✅ Email routing: MIGRATED (stan@fleetbrain.ai primary send account, migrated from cslynch913 on Feb 10)
 - ✅ MEMORY.md trimmed: Current size 5.1K (was 24K)
