@@ -105,6 +105,9 @@ When any user needs to see local file contents (MEMORY.md, KANBAN.md, research f
 ### RULE — SEARCH RESULT VERIFICATION
 Before presenting any web search result to a user: 1. Self-verify: Open the URL yourself. Confirm it loads, confirm the content matches what you're claiming. If the URL is dead or content doesn't match, drop it. 2. Tag confidence: Mark each result as [VERIFIED] (you opened it), [UNVERIFIED] (search snippet only), or [CONFLICTING] (sources disagree). 3. Never present an [UNVERIFIED] result as fact. Say "search results suggest" not "the answer is." If Casey or any operator is in the loop, unverified results get flagged for review before going to the end user.
 
+### RULE #13 — KANBAN.md LOCAL TASK CACHE (Feb 10, 2026)
+KANBAN.md is Stan's local task scratchpad. Updates come from Casey directly. Do not sync to external boards (Trello, Asana, etc.). Do not create, move, or update cards on external boards for FleetBrain deliverables. Git sync at 1:55 AM provides upstream visibility to SuperStan without relying on external task boards. Trello is no longer part of the project management chain.
+
 ---
 
 ## CONTEXT — JASON RAWLINGS
@@ -155,14 +158,17 @@ Before presenting any web search result to a user: 1. Self-verify: Open the URL 
 
 ---
 
-## SESSION STATE - Feb 8, 2026
+## SESSION STATE - Feb 10, 2026
 
-- Running on Haiku (claude-haiku-4-5) - stay on this model
-- Sessions cleared (no group chat history carried over)
-- bootstrapMaxChars = 8000 (MEMORY.md trimmed, under limit)
-- ✅ OpenClaw v2026.2.6 installed and running. Updated Feb 8.
-- ✅ Tailscale on Mater: Connected. IP: 100.71.67.28. Authenticated Feb 8.
-- ✅ DM/group policies: Pairing mode. allowFrom: Casey (8461430130), Rosa (8444214599). groupPolicy: open. Random users blocked. Updated Feb 8.
-- ✅ GPG encrypt .env: DONE (Feb 8 03:43, stored in .env.gpg)
-- ✅ Email routing: MIGRATED (stan@fleetbrain.ai primary send account, migrated from cslynch913 on Feb 10)
-- ✅ MEMORY.md trimmed: Current size 5.1K (was 24K)
+- Running on Haiku (claude-haiku-4-5) - primary model
+- bootstrapMaxChars = 8000 (MEMORY.md under limit with headroom)
+- ✅ OpenClaw v2026.2.6 installed and running.
+- ✅ Identity migration complete: stan@fleetbrain.ai (email, Drive, calendar) LIVE as of Feb 10.
+- ✅ StanBrain Drive: New root ID 1iD80NYHTMVkVFtCapf4TmbxGMzL7QCXt (stan@fleetbrain.ai). Old cslynch913 archived.
+- ✅ Twitter: @stanleybodewell (AUTHENTICATED), @itsolz (AUTHENTICATED) - both OAuth 1.0a live.
+- ✅ KANBAN.md: Local task cache (no Trello sync). Daily git sync 1:55 AM. Updates from Casey only.
+- ✅ Git backup: Credentials.json removed from history via git-filter-repo. Clean history.
+- ✅ Cron sync: 1:55 AM timestamp prepend on KANBAN.md → 2 AM git push. Verified working.
+- ✅ Tailscale on Mater: Connected. IP: 100.71.67.28.
+- ✅ DM/group policies: Pairing mode. allowFrom: Casey (8461430130), Rosa (8444214599).
+- ✅ Trello: OUT OF PROJECT MANAGEMENT LOOP (Feb 10). Local cache only.
