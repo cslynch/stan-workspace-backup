@@ -108,6 +108,114 @@ Before presenting any web search result to a user: 1. Self-verify: Open the URL 
 ### RULE #13 — KANBAN.md LOCAL TASK CACHE (Feb 10, 2026)
 KANBAN.md is Stan's local task scratchpad. Updates come from Casey directly. Do not sync to external boards (Trello, Asana, etc.). Do not create, move, or update cards on external boards for FleetBrain deliverables. Git sync at 1:55 AM provides upstream visibility to SuperStan without relying on external task boards. Trello is no longer part of the project management chain.
 
+### SKILL: CONTACT CRM DAILY UPDATE (Feb 11, 2026)
+**Schedule:** 6:00 AM CT daily (OpenClaw cron)
+**What it does:** Pulls last 24h emails + today/tomorrow calendar from casey@fleetbrain.ai, extracts contacts, updates contacts.json with interaction history and scoring.
+
+**File References:**
+- contacts.json: 13oK-rqfG94nW3RNtcCBuuB1rESOk_rGe (in StanleyBot folder)
+- StanleyBot folder: 1_zJLQo6RGkjesTLbIxOaTPvoGXnYQnYT
+
+**Workflow:**
+1. Pull last 24h emails (inbox + sent) from casey@fleetbrain.ai
+2. Pull today's + tomorrow's calendar events from casey@fleetbrain.ai
+3. Skip automated senders: noreply@, no-reply@, notifications@, newsletters, receipts, shipping, password resets, promotional, Facebook/facebookmail.com
+4. Extract from emails: sender name, sender email, subject, one-line summary
+5. Extract from calendar: event title, attendee names/emails, date/time
+6. Download contacts.json from Drive
+7. For each person found: update existing entry OR create new entry
+8. Recalculate scoring for all entries
+9. Upload updated contacts.json back to Drive
+10. Report: "[CRM] Updated X contacts, added Y new. Top 3 by score: [names]"
+
+**Scoring Rules:**
+- +20 if last_seen within 7 days
+- +10 if last_seen within 30 days (but not 7)
+- +5 per interaction (max +30)
+- +20 if both email_sent and email_received exist
+- +15 per calendar_event
+- +5 if company is not null
+
+**Contact Schema:**
+```json
+{
+  "name": "Full Name",
+  "email": "primary@email.com",
+  "emails_seen": ["primary@email.com"],
+  "company": "Company Name or null",
+  "title": "Title if known or null",
+  "source": "email|calendar|both",
+  "first_seen": "YYYY-MM-DD",
+  "last_seen": "YYYY-MM-DD",
+  "interaction_count": 0,
+  "interactions": [
+    {
+      "date": "YYYY-MM-DD",
+      "type": "email_received|email_sent|calendar_event",
+      "subject": "Subject line or event title",
+      "summary": "One-line summary"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "score": 0
+}
+```
+
+**Rules:**
+- Never store email body text, only summaries
+- Merge contacts by email (same person = one entry)
+- Extract company from email domain (skip gmail.com, yahoo.com, hotmail.com, outlook.com, icloud.com)
+- Protect notes/tags fields (Casey-only editing)
+
+### SKILL: DAILY BRIEFING (Feb 11, 2026)
+**Schedule:** 6:15 AM CT daily (OpenClaw cron) — runs after CRM update (6:00 AM)
+**What it does:** Pulls calendar, active tasks, recent email, and contact activity. Generates structured briefing and sends to Casey via Telegram.
+
+**File References:**
+- tracker.json: 1ckVdskQtXX701dH2J1kcfWX1TYAube79
+- contacts.json: 13oK-rqfG94nW3RNtcCBuuB1rESOk_rGe
+- research-log.json: 1wamcm5qKiZQWjbevK5-ys4o9g2itbpHh
+- briefings folder: 1cd1nX3IfF-07YcRPFVJU6AM3QdScRNaM
+
+**Workflow:**
+1. Pull today's calendar events from casey@fleetbrain.ai AND cslynch@gmail.com
+2. Download tracker.json — extract P0 and P1 items only. Flag any with no update in 7+ days as STALE.
+3. Download contacts.json — pull top 3 contacts by score. If any have a meeting today, include their interaction summary.
+4. Scan last 12h of email from both accounts — flag anything requiring human action (skip newsletters, notifications, receipts, Facebook)
+5. Generate briefing in exact format (see below)
+6. Upload briefing as YYYY-MM-DD-briefing.md to briefings folder
+7. Send full briefing text via Telegram to Casey
+
+**Briefing Format (exact):**
+```
+# Daily Briefing — YYYY-MM-DD
+
+## Calendar
+[Event time blocks. If empty: "No events scheduled."]
+
+## Active Tasks (P0/P1)
+[In-progress or blocked items with status and blockers.]
+
+## Overdue / Stale
+[Items with no update in 7+ days. OMIT SECTION if none.]
+
+## Flagged Email
+[Emails requiring action, one line each. OMIT SECTION if none.]
+
+## Contact Activity
+[Top 3 contacts by score. Flag anyone with meeting today.]
+
+## Focus
+[Top 1-2 recommended focus areas based on priorities, calendar gaps, deadlines.]
+```
+
+**Rules:**
+- No sales tone. No motivational language. No "good morning."
+- Keep under 40 lines.
+- Omit empty sections entirely (don't show "none" headers).
+- If calendar is empty, say so — don't fill with suggestions.
+
 ---
 
 ## CONTEXT — JASON RAWLINGS
@@ -142,9 +250,21 @@ KANBAN.md is Stan's local task scratchpad. Updates come from Casey directly. Do 
 - Gap identified: $63,670 (unaccounted/equity treatment issue)
 - Stan analysis: Two methods (OpEx vs equity contribution), both show losses at $250k-$300k sale prices
 
+**Shared Drive Infrastructure (LIVE Feb 11, 2026)**
+- **Shared by:** cedarstonehillcountry@gmail.com → stan@fleetbrain.ai (Editor access)
+- **Root Folder ID:** 1mvMOlQoXDvhXSkSmcWEy99rCHYOrsugY
+- **Subfolders (keys):**
+  - Properties: 1SSoNPKA4iSHno8NHojeh5klNpfYCD6D-
+  - Financial: 1wenShH3b8-9CmfOdnql3DUBCzfsQVeZw
+  - Legal-LLC: 1_5bWJcEywxzqDbGW41nGgfWAE7O1yP2T
+  - Vendors: 185qARk30l8h45i5s2Yete1osqhKTvdLD
+  - Templates: 16Tf8rW9N8zO-tqDBcHejdm4_U_wyU8ez
+  - Marketing: 19TjeGoIy-2i4Ta_4jLpXwEGaWMMKzug0
+
 **Stan's Role:**
 - Operations and research arm for Cedar Stone
 - Financial analysis, equity reconciliation, partnership documentation
+- Drive access verified Feb 11, 2026: Can read all folders and documents
 - Recommendation: Document equity treatment method in Operating Agreement before sale
 
 ---
