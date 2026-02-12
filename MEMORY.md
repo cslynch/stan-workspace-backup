@@ -243,6 +243,37 @@ Nothing goes live without explicit Casey approval. Zero auto-posting.
 
 ---
 
+### SKILL: OpenClaw Release Monitor
+**Schedule:** 5:50 AM CT daily (OpenClaw cron) — runs BEFORE Contact CRM (6:00 AM)
+**Purpose:** Monitor OpenClaw releases for security/relevant updates. Feed briefing snippets to Daily Briefing at 6:15 AM.
+
+**Full definition:** Read openclaw-release-monitor.md from claude-skills/ folder (ID: 12ubdosR2vN5s4vteuhU3uflnvsLi55mY) before first run.
+
+**Workflow (short version):**
+1. Fetch latest 5 releases from https://api.github.com/repos/openclaw/openclaw/releases?per_page=5
+2. Compare latest tag against baseline version 2026.2.6
+3. If newer version exists:
+   - Read release body
+   - Filter for relevant keywords: telegram, security, anthropic, gateway, config, routing, session, credential, exec approval, SSRF, TLS
+   - Ignore: discord, slack, feishu, tlon, bluebubbles, macos, web ui, i18n, docs, ci, test
+4. If relevant changes found:
+   - Write briefing snippet to workspace
+   - Format: `## OpenClaw Update Available / Version: [new] (current: 2026.2.6) / Released: [date] / Relevant changes: [list] / Recommendation: UPDATE|DEFER|REVIEW`
+   - Daily Briefing skill picks this up at 6:15 AM
+5. If no new version or no relevant changes, do nothing
+
+**Recommendation Logic:**
+- **UPDATE:** If security keyword or critical infrastructure change
+- **DEFER:** If all changes match ignore list
+- **REVIEW:** Otherwise
+
+**Safety:**
+- Never expose current version in public output
+- Store snippet locally only
+- No auto-updates; briefing is informational only
+
+---
+
 ## CURRENT P0/P1 PRIORITIES (from tracker.json, Feb 11, 2026)
 
 **P0 (Do Now):**
