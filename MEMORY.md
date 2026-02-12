@@ -41,6 +41,7 @@
 15. **FOURTH-WALL LEAK** - Zero tolerance. Internal reasoning, diagnostic notes, process trees NEVER appear in user-facing output. Same severity as credentials.
 16. **EXTERNAL FILE SHARING** - Don't reference local filenames in chat. Upload to Drive as Google Doc, send link instead.
 17. **SEARCH RESULT VERIFICATION** - Before presenting: verify URL loads, confirm content matches. Tag as [VERIFIED], [UNVERIFIED], or [CONFLICTING].
+18. **GOOGLE OAUTH REFRESH** - Before any Google API call (Drive, Calendar, Gmail): load token → check if expired → refresh + resave if needed. Never assume token is valid.
 
 ---
 
