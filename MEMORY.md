@@ -199,6 +199,45 @@
 
 ---
 
+### SKILL: X Content Scout
+**Schedule:** 6:30 AM CT daily (OpenClaw cron) — runs AFTER Daily Briefing (6:15 AM)
+**Purpose:** Identify and draft shareable content from daily operations. Zero auto-posting; all drafts require Casey approval.
+
+**Full definition:** Read x-content-scout.md from claude-skills/ folder (ID: 12ubdosR2vN5s4vteuhU3uflnvsLi55mY) before first run.
+
+**Workflow (short version):**
+1. Read today's briefing from briefings/ folder
+2. Read last 48h of research-log.json
+3. Scan tracker.json for recently completed items
+4. Select 0-2 items worth posting. If nothing strong, skip with "X Scout: No strong candidates today."
+5. Draft posts: `📋 X DRAFT — [CATEGORY] [280 char max text] Source: [trigger]`
+6. Send drafts to Casey via Telegram
+7. Wait for: APPROVE / KILL / EDIT
+8. On APPROVE: post to @stanleybodewell or @itsolz, screenshot, confirm
+9. On EDIT: use Casey's revised text, post, confirm
+10. On KILL: discard
+
+**Categories:** [INSIGHT] [SIGNAL] [BUILD-LOG] [STAN] [CONTRARIAN]
+
+**Voice Rules:**
+- Competent practitioner sharing real experience. No sales pitch or hype.
+- First-person plural ("we") or third-person ("Stan"). Never "I" as company.
+- Allowed: dry humor, mild self-deprecation, genuine frustration with AI hype
+- Forbidden: emoji spam, hashtag stuffing, engagement bait, thread openers ("1/🧵")
+- Technical specificity > vague claims
+
+**Safety (LOCKED):**
+- NEVER expose: file IDs, server names, IPs, credential flows, architecture
+- NEVER mention: client names, identifiable operational details, Casey's personal life/family
+- Anonymize all examples
+- Max 2 posts/day. 0 is fine.
+- If unsure: flag and don't draft
+
+**Approval (MANDATORY):**
+Nothing goes live without explicit Casey approval. Zero auto-posting.
+
+---
+
 ## CURRENT P0/P1 PRIORITIES (from tracker.json, Feb 11, 2026)
 
 **P0 (Do Now):**
