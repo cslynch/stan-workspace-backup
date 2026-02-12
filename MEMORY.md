@@ -210,12 +210,17 @@
 2. Read last 48h of research-log.json
 3. Scan tracker.json for recently completed items
 4. Select 0-2 items worth posting. If nothing strong, skip with "X Scout: No strong candidates today."
-5. Draft posts: `📋 X DRAFT — [CATEGORY] [280 char max text] Source: [trigger]`
+5. Draft posts with routing: `📋 X DRAFT — @[ACCOUNT] [CATEGORY] [280 char max text] Source: [trigger]`
 6. Send drafts to Casey via Telegram
 7. Wait for: APPROVE / KILL / EDIT
-8. On APPROVE: post to @stanleybodewell or @itsolz, screenshot, confirm
+8. On APPROVE: post to assigned account, screenshot, confirm
 9. On EDIT: use Casey's revised text, post, confirm
 10. On KILL: discard
+
+**Account Routing (mandatory):**
+- **@itsolz** (Casey voice — FleetBrain practitioner): [INSIGHT] [SIGNAL] [CONTRARIAN]. Competent, direct, industry-facing.
+- **@stanleybodewell** (Stan voice — character/bot): [STAN] [BUILD-LOG]. Looser, fun, opinions.
+- Casey can override routing on any individual post.
 
 **Categories:** [INSIGHT] [SIGNAL] [BUILD-LOG] [STAN] [CONTRARIAN]
 
