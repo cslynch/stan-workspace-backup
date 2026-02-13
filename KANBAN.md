@@ -38,7 +38,7 @@
 
 ---
 
-## THIS WEEK (Trello — 18 cards)
+## THIS WEEK (Trello — 19 cards)
 
 - [ ] Approve twitter content selections (due: 2026-02-04)
 - [ ] Buy guitar strings and capo for Ry (due: 2026-02-07)
@@ -48,6 +48,7 @@
 - [ ] Finalize case studies #2 and #3 (12 review questions)
 - [ ] Fix DNS/SSL for fleetbrain.ai + stanleybot subdomain
 - [ ] Google Drive stale doc cleanup
+- [ ] Google Chat webhook: Add image attachment support (P1 — needed before demos)
 - [ ] Install browser skills (playwright/agent-browser)
 - [ ] Push proactive behavior correction (Rosa pattern)
 - [ ] Regenerate 7 StanBrain research files

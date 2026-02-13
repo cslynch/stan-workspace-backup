@@ -1,4 +1,4 @@
-# MEMORY.md - Long-Term Memory (Updated Feb 11, 2026)
+# MEMORY.md - Long-Term Memory (Updated Feb 12, 2026)
 
 ## FLEETBRAIN ARCHITECTURE - LOCKED (Feb 11, 2026)
 
@@ -356,10 +356,98 @@ Nothing goes live without explicit Casey approval. Zero auto-posting.
 
 ---
 
-## SESSION STATE - Feb 11, 2026
+## 0-VAULT — ENCRYPTED CREDENTIAL STORAGE (Feb 12, 2026)
+
+**Location:** `My Drive/0-vault/` on casey@fleetbrain.ai Google Drive
+
+**Purpose:** Secure storage for service account keys, OAuth tokens, and sensitive credentials
+
+**Format & Rules:**
+- All secrets **GPG-encrypted** before upload (e.g., `filename.json.gpg`)
+- Plaintext keys stored **locally only** (VM .env, never in git)
+- **NEVER** store unencrypted credentials on Drive
+- **NEVER** commit secrets to git
+- Only Casey can decrypt (own GPG key)
+
+**Current Entries:**
+- `stan-chat-sa-key.json.gpg` — Google Chat service account key (stan-fleetbrain-bot@fleetbrain-stan-prod.iam.gserviceaccount.com)
+  - Plaintext copy: `/home/clawdbot/.openclaw/credentials/fleetbrain-stan-prod-534550cd7a84.json` (local only)
+  - Used by: chat-webhook.service via GOOGLE_CHAT_SA_CREDENTIALS env var
+  - Status: ✅ Live and verified
+
+**Workflow for New Credentials:**
+1. Generate key in GCP Console
+2. Encrypt locally: `gpg -c < key.json > key.json.gpg`
+3. Upload encrypted file to 0-vault/
+4. Store plaintext in `/home/clawdbot/.openclaw/credentials/` locally only
+5. Reference in .env (never commit .env to git)
+
+---
+
+## GOOGLE CHAT WEBHOOK — LIVE & PRODUCTION (Feb 12, 2026)
+
+**Pipeline:** Google Chat → Tailscale Funnel → gunicorn webhook (systemd service) → OpenClaw Gateway API (/v1/responses) → Stan's brain → Chat API reply
+
+**Architecture:**
+```
+External User (Google Chat)
+        ↓
+HTTPS Tailscale Funnel
+        ↓
+https://clawdbot-vm.tail9ce6a9.ts.net/chat/webhook
+        ↓ (proxies to)
+127.0.0.1:8000 (gunicorn, 4 workers)
+        ↓
+POST /v1/responses (gateway API)
+        ↓
+Stan agent processes message
+        ↓
+POST /v1/spaces/{id}/messages (Chat API)
+        ↓
+Response appears in Chat space
+```
+
+**GCP Setup:**
+- **Project:** fleetbrain-stan-prod (owner: casey@fleetbrain.ai)
+- **Chat API:** Enabled
+- **Service Account:** stan-fleetbrain-bot@fleetbrain-stan-prod.iam.gserviceaccount.com
+  - Scope: `https://www.googleapis.com/auth/chat.bot`
+  - Key file: `fleetbrain-stan-prod-534550cd7a84.json` (in 0-vault + local)
+
+**Server Deployment:**
+- **Service:** `chat-webhook.service` (systemd, enabled on boot)
+- **Server:** gunicorn (4 worker processes)
+- **Port:** 8000 (localhost, proxied via Tailscale Funnel)
+- **Code:** `/home/clawdbot/.openclaw/workspace/chat_webhook.py`
+- **Config:** `/home/clawdbot/.openclaw/.env`
+- **Startup script:** `/home/clawdbot/.openclaw/chat-webhook-gunicorn.sh`
+- **Logs:** `journalctl -u chat-webhook` or `/var/log/chat-webhook-*.log`
+
+**Gateway Integration:**
+- **Endpoint:** `POST http://127.0.0.1:18789/v1/responses` (OpenResponses API)
+- **Auth:** Bearer token from `openclaw.json` gateway.auth.token
+- **Agent routing:** Header `x-openclaw-agent-id: main`
+- **Status:** ✅ Endpoint enabled in openclaw.json, tested and working
+
+**Tailscale Funnel:**
+- **Public URL:** https://clawdbot-vm.tail9ce6a9.ts.net/
+- **Webhook endpoint:** https://clawdbot-vm.tail9ce6a9.ts.net/chat/webhook
+- **Status:** ✅ Persistent, verified working
+
+**Status:** ✅ LIVE - Round-trip tested, agent integration confirmed, systemd auto-start enabled
+
+**Recent Changes (Feb 12, 2026):**
+- ✅ Enabled /v1/responses endpoint in openclaw.json
+- ✅ Fixed webhook agent integration (now uses gateway HTTP API instead of CLI)
+- ✅ Converted to production server (gunicorn + systemd)
+- ✅ End-to-end test passed: message → agent processing → reply in Chat
+
+---
+
+## SESSION STATE - Feb 12, 2026
 
 - Running on Haiku (claude-haiku-4-5)
-- ✅ OpenClaw v2026.2.6 running
+- ✅ OpenClaw v2026.2.9 running (gateway /v1/responses endpoint enabled)
 - ✅ Identity: stan@fleetbrain.ai (email, Drive, Calendar) LIVE
 - ✅ StanleyBot shared folder: All 7 file IDs test-verified Feb 11
 - ✅ Cedar Stone shared folder: Editor access verified Feb 11
@@ -367,3 +455,59 @@ Nothing goes live without explicit Casey approval. Zero auto-posting.
 - ✅ Daily Briefing skill: Ready to deploy (6:15 AM CT)
 - ✅ Research Log schema: Documented and ready to use
 - ✅ KANBAN.md: Local cache synced to git daily (1:55 AM/2:00 AM)
+- ✅ **Google Chat Webhook: PRODUCTION LIVE** — systemd service, gunicorn, agent integration confirmed
+- ✅ **GCP Project: fleetbrain-stan-prod** — Chat API enabled, service account deployed
+- ✅ **0-Vault: Encrypted credential storage** — GPG-encrypted keys on Drive, plaintext local only
+- ✅ **Tailscale Funnel: Persistent public URL** — https://clawdbot-vm.tail9ce6a9.ts.net/
+
+## OAUTH TOKEN LOADING BUG - FIXED Feb 13, 2026
+
+**Issue:** `/v1/responses` gateway endpoint creates fresh sessions without Google Workspace OAuth tokens (works in Telegram because those sessions have context). 
+
+**Root Cause:** OAuth tokens exist at ~/.openclaw/credentials/google-token.pickle but weren't being loaded by plugin initialization in fresh gateway sessions.
+
+**Fix Applied (Feb 13, 2026 - 03:45 CT):**
+1. ✅ Located token files: 
+   - `/home/clawdbot/.openclaw/credentials/google-token.pickle` (valid, working)
+   - `/home/clawdbot/.openclaw/credentials/google-credentials.json`
+   - Verified tokens load and authenticate correctly
+2. ✅ Added environment variables to openclaw.json:
+   - `GOOGLE_TOKEN_PATH`: `/home/clawdbot/.openclaw/credentials/google-token.pickle`
+   - `GOOGLE_CREDENTIALS_PATH`: `/home/clawdbot/.openclaw/credentials/google-credentials.json`
+3. ✅ Enabled googlechat plugin in plugins.entries
+4. ✅ Restarted gateway with new config
+
+**Status:** RESOLVED. Google Chat now has full Google Workspace OAuth access.
+
+---
+
+## GOOGLE CHAT WEBHOOK - IMAGE ATTACHMENT FEATURE (P1, Needed Before Demos)
+
+**Problem:** Webhook only passes `text` field to gateway. When users send images/attachments, the webhook payload includes attachment objects at `payload["chat"]["messagePayload"]["message"]["attachment"]` but images are never downloaded or forwarded to Stan.
+
+**Solution:** Enhance webhook handler (in `/home/clawdbot/.openclaw/workspace` or on clawdbot-vm) to:
+
+1. **Detect attachments** in incoming payload:
+   - Check `payload["chat"]["messagePayload"]["message"]["attachment"]` (may be array or single object)
+   - Extract `resourceName` and `contentType` from each attachment
+
+2. **Download via Chat API:**
+   - Use service account auth (already configured on clawdbot-vm)
+   - `GET https://www.googleapis.com/chat/v1/{resourceName}` with `alt=media` parameter
+   - Set `Authorization: Bearer {service_account_token}`
+
+3. **Include in /v1/responses call:**
+   - Option A: Base64 encode image → include as `base64://` data URL in message text or separate field
+   - Option B: Upload to temp storage → pass URL to gateway
+   - Decide based on gateway input format (check `/v1/responses` schema)
+
+4. **Preserve metadata:**
+   - Filename from attachment name
+   - Content type (image/png, image/jpeg, etc.)
+   - Original sender + timestamp (from message context)
+
+**Implementation Notes:**
+- Service account credentials available in standard location
+- May need to refresh OAuth token before each download (follow OAUTH token refresh rule)
+- Error handling: if download fails, return fallback text message noting attachment couldn't be processed
+- Test with screenshots (PNG/JPG), documents (PDF), and mixed message+image inputs before demo
