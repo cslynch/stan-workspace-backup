@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "version": 2,
+    "updated": "2026-02-12",
+    "note": "SuperStan + Stan edits. Google Chat webhook deployed (Feb 12). Task 20 DONE.",
+    "last_modified_by": "SuperStan (Business Ops \u2014 added tasks 20-23: distribution vector strategy from brand manager review)"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "task": "Define ICP + pricing + first outreach list",
+      "status": "In Progress",
+      "priority": "P0",
+      "owner": "Casey+SuperStan",
+      "notes": "ICP research done (4 warm prospects). Pricing TBD. Outreach gates on demo.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 2,
+      "task": "Personal AI interface demo",
+      "status": "In Progress",
+      "priority": "P0",
+      "owner": "Casey+SuperStan",
+      "notes": "LIVE \u2014 Google Chat is now the primary demo channel. External users can message stan@fleetbrain.ai directly. Full agent brain available. Round-trip tested. Sequence: contact vector (task 20 \u2713) \u2192 capability footage (task 21) \u2192 website demo (tasks 3-4). Google Chat removes friction \u2014 prospects can start interacting immediately without signup.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 3,
+      "task": "fleetbrain.ai website",
+      "status": "Not Started",
+      "priority": "P0",
+      "owner": "Casey/Claude Code",
+      "notes": "Fresh start. Repo: cslynch/fleetbrain-sites",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 4,
+      "task": "stanleybot.fleetbrain.ai website",
+      "status": "Not Started",
+      "priority": "P0",
+      "owner": "Casey/Claude Code",
+      "notes": "Fresh start. Repo: cslynch/stanleybot-fleetbrain-ai",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 16,
+      "task": "LinkedIn profile + FleetBrain one-liner",
+      "status": "Not Started",
+      "priority": "P0",
+      "owner": "Casey+SuperStan (Brand project)",
+      "notes": "Draft LinkedIn headline, summary, FleetBrain role description. Lock one-liner that works across LinkedIn, X bios, website hero, cold intros. Dual-purpose: consulting pipeline AND W-2 job search credibility. Gates website copy (tasks 3-4) and X profile art (task 7).",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 17,
+      "task": "soul.md \u2014 agent identity layer",
+      "status": "Done",
+      "priority": "P0",
+      "owner": "SuperStan (Brand project)",
+      "notes": "Created soul.md in StanBrain/. 6 sections: Voice, Judgment Patterns, Boundary Interpretations, Operator Profiles, Bodewell Doctrine, Deployment Notes. Audited MEMORY.md and classified all 17 Core Rules into soul sections. Stan loaded and confirmed. soul.md syncs via Drive. Next: run parallel with MEMORY.md, then strip duplicate rules from MEMORY.md once proven.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 18,
+      "task": "correction-capture.md \u2014 compounding correction pipeline skill",
+      "status": "Done",
+      "priority": "P0",
+      "owner": "SuperStan (Brand project)",
+      "notes": "Skill in claude-skills/. Event-driven, no cron. Detects operator corrections \u2192 classifies by soul.md section \u2192 appends to corrections log \u2192 confirms. Includes promotion rules (3+ occurrences \u2192 permanent rule). Stan loaded and confirmed. README updated.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 19,
+      "task": "End-of-session capture protocol \u2014 propagate to all projects",
+      "status": "In Progress",
+      "priority": "P1",
+      "owner": "Casey",
+      "notes": "Protocol written in fleetbrain-common.md (on disk). Casey needs to update the project knowledge file in each Claude project to pick up the new rules. All projects affected.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 5,
+      "task": "Stanley mascot (Ideogram)",
+      "status": "Ready",
+      "priority": "P1",
+      "owner": "Casey",
+      "notes": "Prompt ready in gaps doc",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 6,
+      "task": "StanBrain research files (7)",
+      "status": "Done",
+      "priority": "P1",
+      "owner": "Stan",
+      "notes": "Completed Feb 4. 7 files in StanBrain/research. 36.6 KB total.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 7,
+      "task": "X launch (@itsolz + @stanleybodewell)",
+      "status": "In Progress",
+      "priority": "P1",
+      "owner": "Casey+SuperStan",
+      "notes": "Handles claimed. X Scout skill active in Stan pipeline (6:30 AM CT). Profile/banner art pending. Seed posts pending. Blocked on Stan mascot (task 5) for @stanleybodewell profile.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 8,
+      "task": "Stan identity migration",
+      "status": "Done",
+      "priority": "P2",
+      "owner": "Casey+SuperStan",
+      "notes": "Completed Feb 10. OAuth swap + StanBrain transfer done.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 9,
+      "task": "Jake activation",
+      "status": "Closed",
+      "priority": "P3",
+      "owner": "Casey",
+      "notes": "Superseded by LTN-001 through LTN-005. See lightning-deployment-checklist.txt.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": "LTN-001",
+      "task": "Lightning Phase 1 \u2014 Base OS & Networking",
+      "status": "Not Started",
+      "priority": "P1",
+      "owner": "Casey",
+      "notes": "No blockers. Hyper-V, Tailscale, Git SSH, Python/Node. Can start immediately.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": "LTN-002",
+      "task": "Lightning Phase 2 \u2014 Jake VM Deployment",
+      "status": "Blocked",
+      "priority": "P1",
+      "owner": "Casey+SuperStan",
+      "notes": "Blocked on Google Workspace OAuth for jake@fleetbrain.ai. OpenClaw, baseline load, Telegram.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": "LTN-003",
+      "task": "Lightning Phase 3 \u2014 Integration & Verification",
+      "status": "Not Started",
+      "priority": "P1",
+      "owner": "Casey+SuperStan",
+      "notes": "Depends on LTN-002. Update all project docs, end-to-end test, cross-agent test. CRITICAL: Only Mater syncs D:\\StanleyBot via Google Drive for Desktop. Lightning must use API access or mirror mode \u2014 NOT two-way sync. Two sync clients on the same folder creates conflict copies.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": "LTN-004",
+      "task": "Mater VM 2 \u2014 Execution Agent",
+      "status": "Parked",
+      "priority": "P3",
+      "owner": "SuperStan+Casey",
+      "notes": "Demand-triggered. Deploy when Stan hits delegation bottleneck. No timeline.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": "LTN-005",
+      "task": "Lightning VM 2 \u2014 Execution Agent",
+      "status": "Parked",
+      "priority": "P3",
+      "owner": "SuperStan+Casey",
+      "notes": "Demand-triggered. Deploy when Jake hits delegation bottleneck. No timeline.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 20,
+      "task": "Stan contact vector expansion \u2014 SMS/web chat bridge for warm leads",
+      "status": "Done",
+      "priority": "P0",
+      "owner": "Casey+SuperStan",
+      "notes": "COMPLETE \u2014 Google Chat webhook deployed Feb 12. GCP project fleetbrain-stan-prod, service account stan-fleetbrain-bot, Tailscale Funnel live, systemd service enabled, gunicorn production server (4 workers), agent integration via /v1/responses API. Full end-to-end tested: message \u2192 agent brain \u2192 Chat API reply. Task 2 (Personal AI demo) now uses Google Chat as live demo channel.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 21,
+      "task": "Raw capability footage \u2014 Stan screen recordings for LinkedIn/X",
+      "status": "Not Started",
+      "priority": "P1",
+      "owner": "Casey",
+      "notes": "60-90 second screen recordings of Stan doing real work. Scheduling conflicts, research tasks, email drafts, briefing generation. Raw, not produced. Post to LinkedIn and X from Casey's accounts. Builds ambient credibility while doing direct outreach. Depends on X launch (task 7) for @itsolz channel.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 22,
+      "task": "Referral mechanic \u2014 client-to-peer Stan intro pathway",
+      "status": "Parked",
+      "priority": "P2",
+      "owner": "SuperStan",
+      "notes": "Every closed client should have a trivially easy way to hand Stan's contact info to a peer. Forwarded text, shareable link, etc. Not a website feature \u2014 a communication artifact. Design after first paying client. Stan closes himself; distribution through satisfied users is highest-leverage growth channel.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 23,
+      "task": "Stan-generated proof-of-work content \u2014 sanitized output publishing",
+      "status": "Parked",
+      "priority": "P2",
+      "owner": "SuperStan",
+      "notes": "Publish sanitized versions of Stan's daily briefings, meeting minutes, research output as proof of capability. Not testimonials \u2014 actual output. Requires content pipeline and anonymization pass. Secondary to direct contact vectors.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 24,
+      "task": "Cancel LastPass Premium",
+      "status": "Queued",
+      "priority": "P1",
+      "owner": "Casey",
+      "notes": "Before March 24 renewal",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 11,
+      "task": "Whiteboard Analyze (On-Demand)",
+      "status": "Queued",
+      "priority": "P3",
+      "owner": "Stan",
+      "notes": "Dev tree. Image\u2192parse\u2192StanBrain search\u2192synthesize. No prep.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 12,
+      "task": "Whiteboard Analyze (Pre-Staged)",
+      "status": "Queued",
+      "priority": "P3",
+      "owner": "Stan",
+      "notes": "Dev tree. Pre-load topic context, then image\u2192parse\u2192synthesize.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 13,
+      "task": "Agent Teams \u2014 Claude Code evaluation on Mater",
+      "status": "Not Started",
+      "priority": "P2",
+      "owner": "Casey+SuperStan",
+      "notes": "Enable experimental agent teams in Claude Code settings.json. Test on a real multi-file task (skill definition + test + tracker update). Measure token cost vs. sequential. Evaluate file collision risk on tracker.json. Requires latest Claude Code version.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 14,
+      "task": "Agent Teams \u2014 Stan/Jake lateral communication design",
+      "status": "Blocked",
+      "priority": "P2",
+      "owner": "SuperStan",
+      "notes": "Blocked on LTN-003 (Jake integration). Design shared task list format for Stan\u2194Jake peer messaging. Define which tasks route laterally vs. through Casey. Map Bodewell Doctrine constraints to team coordination model. Determine tracker.json locking strategy.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 15,
+      "task": "Agent Teams \u2014 client deployment pattern (StanleyBot product)",
+      "status": "Parked",
+      "priority": "P3",
+      "owner": "SuperStan",
+      "notes": "Design team-per-client template: lead agent + specialist + QA. Define correction inheritance model (how client teams get base behavioral corrections). Demand-triggered \u2014 gates on first paying client engagement. Informs stanleybot.fleetbrain.ai positioning.",
+      "updated": "2026-02-11"
+    },
+    {
+      "id": 25,
+      "task": "Workspace Marketplace submission for Stan Chat app",
+      "status": "Not Started",
+      "priority": "P1",
+      "owner": "Casey+Stan",
+      "notes": "Submit stan-fleetbrain-bot Chat app to Google Workspace Marketplace. Enables external discovery and one-click install. Currently using direct URL sharing. Marketplace increases credibility + reduces friction. Requires app logo, description, privacy policy link. Timeline: 1-2 weeks review.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 26,
+      "task": "Google Chat Spaces demo flow \u2014 per-prospect dedicated channels",
+      "status": "Not Started",
+      "priority": "P1",
+      "owner": "Stan",
+      "notes": "Until Marketplace is live, create Spaces for each prospect by hand. Space name = prospect name, invite via Spaces link. Each prospect gets isolated channel for ongoing conversation thread. Maintains conversation history. Process: Casey identifies prospect \u2192 Stan creates Space \u2192 shares link in outreach \u2192 prospect joins \u2192 full agent brain available. Automate once Marketplace live or volume increases.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 27,
+      "task": "Harden webhook security \u2014 sandboxing + validation + rate limiting",
+      "status": "Not Started",
+      "priority": "P2",
+      "owner": "Stan",
+      "notes": "Re-enable systemd sandboxing (ProtectSystem, ProtectHome, PrivateTmp). Add Google Chat signature validation (HMAC). Implement rate limiting (10 msgs/min per external user). Add request logging to audit trail. DDoS protection review. Currently at baseline security level.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 28,
+      "task": "Add 0-vault entry for stan-fleetbrain-bot service account key",
+      "status": "Not Started",
+      "priority": "P2",
+      "owner": "Casey",
+      "notes": "GPG encrypt stan-fleetbrain-bot service account JSON key. Upload to My Drive/0-vault/ as stan-chat-sa-key.json.gpg. Delete plaintext from local .env. Reference encrypted file in setup docs. Ensures credential backup + follows secure storage protocol.",
+      "updated": "2026-02-12"
+    },
+    {
+      "id": 29,
+      "task": "Google Chat session persistence",
+      "status": "Done",
+      "priority": "P1",
+      "owner": "Stan",
+      "notes": "COMPLETE \u2014 Uses OpenResponses `user` field for automatic session persistence. Creates stable user ID from space_id:user_email. Gateway derives stable session key from `user` string, maintaining conversation history per space+user combo. Implementation: chat_webhook.py extracts space_id + passes `user` field in /v1/responses POST. Tested and confirmed working \u2014 follow-up messages from same user in same space see prior context. No file storage needed. Unblocks demo quality.",
+      "updated": "2026-02-12"
+    }
+  ]
+}

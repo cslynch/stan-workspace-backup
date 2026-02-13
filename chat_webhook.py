@@ -153,7 +153,8 @@ def format_log_message(chat_msg: ChatMessage) -> str:
 def send_message_to_agent(
     user_email: str,
     message_text: str,
-    timeout_seconds: int = 90
+    space_id: str = "",
+    timeout_seconds: int = 120
 ) -> Optional[str]:
     """
     Send message to OpenClaw agent via HTTP API and get response
@@ -161,13 +162,24 @@ def send_message_to_agent(
     Calls the OpenClaw gateway's /v1/responses endpoint (OpenResponses API)
     which routes the message to the main agent session.
     
+    Uses the `user` field to maintain stable session per Google Chat space+user.
+    Gateway derives session key from `user` string, preserving conversation history.
+    
     Args:
-        user_email: Sender email (for context in logs)
+        user_email: Sender email (for context + session routing)
         message_text: Message text to process
-        timeout_seconds: Max time to wait for response
+        space_id: Google Chat space ID (e.g., "spaces/gCFXMSAAAAE") for session isolation
+        timeout_seconds: Max time to wait for response (default 120s for longer agent processing)
     
     Returns:
         Agent response text, or None if failed/timeout
+    
+    Note:
+        This is called from a daemon=False background thread to survive gunicorn worker recycling.
+        The thread will complete even if the parent request handler has already returned 200 OK.
+        
+        Session persistence: The `user` field is "{space_id}:{user_email}". Gateway maintains
+        conversation history per user, so each message sees prior context from the same space+user combo.
     """
     try:
         import requests as req_lib
@@ -194,10 +206,16 @@ When the user asks about calendar events, Gmail, or Google Workspace resources:
 - Provide calendar events, email info, or workspace access from Casey's accounts
 - Use workspace directory at /home/clawdbot/.openclaw/workspace to access the tokens"""
         
+        # Create stable user identifier for session persistence
+        # Format: spaces/{space_id}:{user_email}
+        # Gateway derives stable session key from this, maintaining conversation history per space+user
+        stable_user_id = f"{space_id}:{user_email}"
+        
         request_body = {
             "model": "openclaw",
             "instructions": system_instruction,
-            "input": full_message
+            "input": full_message,
+            "user": stable_user_id  # Session persistence: gateway maintains history for this user
         }
         
         # Request headers
@@ -391,7 +409,8 @@ def chat_webhook():
                     agent_response = send_message_to_agent(
                         chat_msg.user_email,
                         chat_msg.text,
-                        timeout_seconds=90
+                        space_id=chat_msg.space_id,  # For session persistence per space+user
+                        timeout_seconds=120  # Increased from 90s to allow longer agent processing
                     )
                     
                     # Use agent response, or fallback
@@ -423,9 +442,12 @@ def chat_webhook():
                         pass
             
             # Run async processing in background
+            # daemon=False ensures thread survives gunicorn worker recycling
             import threading
-            thread = threading.Thread(target=process_and_reply, daemon=True)
+            thread = threading.Thread(target=process_and_reply, daemon=False)
+            thread.daemon = False  # Explicit: do NOT die when main thread exits
             thread.start()
+            logger.info("Background processing thread started (daemon=False)")
             
             # Return 200 immediately with empty body (webhook acknowledgment)
             return jsonify({}), 200
