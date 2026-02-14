@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "version": 1,
+    "updated": "2026-02-13",
+    "note": "Job application tracker. Updated by Stan (Job Scout skill) and SuperStan. Source of truth for all job search activity.",
+    "last_modified_by": "SuperStan (Brand project \u2014 initialized schema)"
+  },
+  "watchlist": [
+    "Anthropic",
+    "OpenAI",
+    "Cohere",
+    "Mistral",
+    "LangChain",
+    "LlamaIndex",
+    "CrewAI",
+    "AutoGen",
+    "Scale AI",
+    "Weights & Biases",
+    "Databricks",
+    "Snowflake",
+    "Salesforce",
+    "ServiceNow",
+    "HubSpot",
+    "Palantir",
+    "C3.ai",
+    "DataRobot"
+  ],
+  "applications": [
+    {
+      "id": "APP-5004",
+      "company": "Dataiku",
+      "role": "Sales Engineer, West",
+      "location": "Remote (West)",
+      "comp": "$180K-$200K",
+      "link": "https://www.glassdoor.com/Jobs/Dataiku-Jobs-E1037713.htm",
+      "source": "Glassdoor",
+      "fit_score": "HIGH",
+      "fit_notes": "AI platform, technical sales, consultative, enterprise, high comp",
+      "contact_match": "None in network",
+      "status": "Surfaced",
+      "dates": {
+        "surfaced": "2026-02-13",
+        "applied": null,
+        "response": null
+      },
+      "notes": "Sell Dataiku universal AI platform to enterprises. Technical + sales.",
+      "next_action": "Casey review"
+    },
+    {
+      "id": "APP-5001",
+      "company": "Dataiku",
+      "role": "Remote Enterprise Account Executive (KSA)",
+      "location": "Remote (KSA region)",
+      "comp": "$180K-$200K",
+      "link": "https://remoteok.com/remote-jobs/remote-enterprise-account-executive-ksa-dataiku-1130184",
+      "source": "RemoteOK",
+      "fit_score": "HIGH",
+      "fit_notes": "AI platform, enterprise sales, consultative, universal AI",
+      "contact_match": "None in network",
+      "status": "Surfaced",
+      "dates": {
+        "surfaced": "2026-02-13",
+        "applied": null,
+        "response": null
+      },
+      "notes": "Universal AI Platform. Manage enterprise accounts, drive sales cycles, build C-level relationships.",
+      "next_action": "Casey review"
+    },
+    {
+      "id": "APP-5002",
+      "company": "Snyk",
+      "role": "Enterprise Account Executive",
+      "location": "Remote (NJ/NY preferred)",
+      "comp": "$140K-$158K + bonus",
+      "link": "https://builtin.com/jobs/remote/sales/account-executive/artificial-intelligence",
+      "source": "Built In",
+      "fit_score": "HIGH",
+      "fit_notes": "enterprise sales, C-level relationships, security + AI, complex deals",
+      "contact_match": "None in network",
+      "status": "Surfaced",
+      "dates": {
+        "surfaced": "2026-02-13",
+        "applied": null,
+        "response": null
+      },
+      "notes": "AI-native developer security platform. Own end-to-end enterprise sales cycle.",
+      "next_action": "Casey review"
+    },
+    {
+      "id": "APP-5003",
+      "company": "Miro",
+      "role": "Account Executive (Mid-Market)",
+      "location": "Remote/Hybrid",
+      "comp": "$120K-$160K (est.)",
+      "link": "https://startup.jobs/company/miro",
+      "source": "Startup.jobs",
+      "fit_score": "HIGH",
+      "fit_notes": "enterprise sales, account expansion, relationship mgmt",
+      "contact_match": "None in network",
+      "status": "Surfaced",
+      "dates": {
+        "surfaced": "2026-02-13",
+        "applied": null,
+        "response": null
+      },
+      "notes": "Collaborative platform. Enterprise account growth, manage relationships.",
+      "next_action": "Casey review"
+    },
+    {
+      "id": "APP-5005",
+      "company": "You.com",
+      "role": "Enterprise Account Executive",
+      "location": "Remote (US)",
+      "comp": "$140K-$180K (est.)",
+      "link": "https://www.remoterocketship.com/us/company/you-com/jobs/enterprise-account-executive-united-states-remote/",
+      "source": "RemoteRocketship",
+      "fit_score": "HIGH",
+      "fit_notes": "AI company, advanced tech, enterprise sales",
+      "contact_match": "None in network",
+      "status": "Surfaced",
+      "dates": {
+        "surfaced": "2026-02-13",
+        "applied": null,
+        "response": null
+      },
+      "notes": "Advanced AI search powered by GPT-4. Enterprise sales, customer relationships.",
+      "next_action": "Casey review"
+    }
+  ]
+}

@@ -100,6 +100,16 @@
 
 ## SKILLS PIPELINE - AUTOMATED (Feb 11, 2026)
 
+**Morning Pipeline (CT, daily):**
+- 5:50 AM — OpenClaw Release Monitor
+- 6:00 AM — Contact CRM Daily Update
+- 6:15 AM — Daily Briefing
+- 6:30 AM — X Content Scout
+- 6:45 AM — Job Scout (NEW)
+- 7:00 AM — Research Harvester (rescheduled from 6:45 AM)
+
+---
+
 ### SKILL: Contact CRM Daily Update
 **Schedule:** 6:00 AM CT daily (OpenClaw cron)
 **Purpose:** Maintains contacts.json with Casey's email and calendar interactions.
@@ -241,6 +251,107 @@
 
 **Approval (MANDATORY):**
 Nothing goes live without explicit Casey approval. Zero auto-posting.
+
+---
+
+### SKILL: Job Scout
+**Schedule:** 6:45 AM CT daily (OpenClaw cron) — runs AFTER X Content Scout (6:30 AM)
+**Purpose:** Surface 3-5 relevant job opportunities daily. Targets enterprise AI sales, AI transformation, and solutions engineering roles.
+
+**Workflow (short version):**
+1. Read applications.json (StanleyBot root) → get already-surfaced roles (dedup), watchlist companies, active applications
+2. Read contacts.json → cross-reference company names for connection matches
+3. Web search across 2-3 sources (rotate daily): LinkedIn Jobs, Built In, Wellfound, company career pages, Indeed/Glassdoor
+4. Search titles: AI Sales Executive, Enterprise Account Executive (AI/ML), AI Transformation Sales, Solutions Consultant/Engineer, Director of Sales AI, Strategic Account Executive, VP Sales (startups)
+5. Filter: Remote/Hybrid (US/TX), Series A+, AI/ML/automation/enterprise SaaS, $150K+ OTE. Exclude: SDR/BDR, pure marketing, SMB-only, 50%+ travel.
+6. Score fit: HIGH (3+ fit signals, 0 anti-signals), MEDIUM (1-2 signals or minor anti), LOW (stretch)
+7. Fit signals: enterprise sales cycles, technical selling, AI agents/ops, recent funding, C-suite buyers, contact match in contacts.json
+8. Select top 3-5 leads. Prioritize HIGH, include ≥1 MEDIUM if <3 HIGH.
+9. Format per lead: `🎯 JOB LEAD [FIT: HIGH/MEDIUM/LOW] / Role: [Title] / Company: [Name] — [stage] / Location: [Remote/Hybrid/City] | Comp: [range or Not listed] / Link: [URL] / Fit: [1-2 sentences] / Contact: [name or None] / Flag: [anti-signals or None]`
+10. Send via Telegram with pipeline summary (X active, Y awaiting response, Z interviewing)
+11. Append all surfaced leads to applications.json with status "Surfaced"
+12. If no leads: "Job Scout: No strong matches today. [X] results scanned, none cleared filter."
+
+**Company Watchlist (in applications.json):** 18 companies tracked (Anthropic, OpenAI, Cohere, Mistral, Scale AI, Databricks, etc.)
+
+**Approval Flow:**
+- Casey sees leads in Telegram
+- Per lead: APPLY (Stan drafts materials), TRACK (add to watchlist), SKIP
+- APPLY → status "Applying", drafts cover letter/outreach
+- TRACK → status "Watching"
+- SKIP → status "Skipped"
+
+**Safety:**
+- Never apply on Casey's behalf. Casey applies or explicitly instructs.
+- Never send outreach without approval.
+- Never expose FleetBrain architecture in application materials.
+- Flag if target company could be FleetBrain client (conflict of interest).
+
+**Embedded Skill:** Application Tracker (application-tracker.md) — maintains applications.json, dedup, follow-up flagging, weekly summaries.
+
+---
+
+### SKILL: Application Tracker
+**Schedule:** Embedded in Job Scout (6:45 AM CT), no separate cron
+**Purpose:** Maintain applications.json as single source of truth for Casey's job search. Track: surfaced → applied → interviewing → offer/rejected/withdrawn.
+
+**Data File:** applications.json (D:\StanleyBot\applications.json, synced to Drive)
+
+**Status Values:**
+- Surfaced: Found, awaiting Casey decision
+- Watching: Marked for later, periodic check
+- Applying: Drafting materials
+- Applied: Application submitted
+- Response: Heard back
+- Interview: Active interview process
+- Offer: Offer received
+- Rejected: Declined
+- Withdrawn: Casey pulled out
+- Skipped: Casey said no at surface
+
+**Execution (Stan, daily):**
+1. After Job Scout surfaces leads, append to applications.json with status "Surfaced"
+2. Scan for follow-up triggers:
+   - Applied > 7 days, no response → flag in Telegram
+   - Interview within 48h → generate prep briefing
+   - Watching > 14 days → re-check if role still open
+3. Include pipeline summary in Telegram: `📊 Pipeline: [X] active, [Y] awaiting response, [Z] interviewing / ⚠️ Follow-up: [company — role, applied X days ago]`
+4. Weekly (Sundays): append to daily briefing with summary of new leads, applications, responses, interviews, stale entries
+
+**Rules:**
+- Never modify status without Casey instruction (except Surfaced auto on scout)
+- Never delete entries. Rejected/Skipped stay for history.
+- Dedup by company + role title
+- Prep briefings saved to materials.prep_briefing field
+- Cover letters, outreach drafts require Casey approval before use
+
+---
+
+### SKILL: Research Harvester
+**Schedule:** 7:00 AM CT daily (OpenClaw cron) — runs AFTER Job Scout (6:45 AM)
+**Purpose:** Harvest Perplexity deep research output from Drive and index into research-log.json for persistent retrieval.
+
+**Workflow (short version):**
+1. Scan StanleyBot Drive folder for Google Docs with prefix: `perplexity-research-*`
+2. For each doc found:
+   - Read content
+   - Generate slug from title (lowercase, hyphens, no special chars)
+   - Write markdown to `D:\StanleyBot\research\[slug].md`
+   - Append to `research-log.json` with: `original_doc_id`, `slug`, `title`, `created_at`, `content_hash`
+   - Dedup check: skip if `original_doc_id` already in log
+   - Trash original Google Doc (only after both markdown and log entry succeed)
+3. Send Telegram summary if docs processed: `Research Harvester: X docs indexed. Slugs: [list]`
+4. If no new docs found, send nothing (silent skip)
+
+**Naming Convention (PERMANENT):**
+All Perplexity deep research output saved to Drive MUST use prefix: `perplexity-research-*`
+Example: `perplexity-research-ai-agent-pricing-models-2026`
+Docs without this prefix are ignored.
+
+**Safety:**
+- Never delete a Doc unless BOTH markdown and log entry succeeded
+- Content hash prevents re-processing same content
+- research-log.json is append-only and authoritative
 
 ---
 

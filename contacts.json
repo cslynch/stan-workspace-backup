@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "version": 1,
+    "updated": "2026-02-12T06:01:56.553048",
+    "total_contacts": 5,
+    "last_full_scan": "2026-02-11",
+    "last_daily_update": "2026-02-12T06:01:56.553052",
+    "accounts_scanned": [
+      "casey@fleetbrain.ai",
+      "cslynch@gmail.com"
+    ],
+    "last_updated": "2026-02-13T14:02:05.258445",
+    "last_update_added": 0,
+    "last_update_updated": 2,
+    "top_3": [
+      "trina@mychildadvocate.com",
+      "crosengreen@josephhollander.com",
+      "dmoser003@gmail.com"
+    ]
+  },
+  "contacts": [
+    {
+      "name": "Trina Nudson",
+      "email": "trina@mychildadvocate.com",
+      "emails_seen": [
+        "trina@mychildadvocate.com"
+      ],
+      "company": "My Child Advocate",
+      "title": "Attorney at Law",
+      "source": "email",
+      "first_seen": "2026-02-05",
+      "last_seen": "2026-02-08",
+      "interaction_count": 5,
+      "interactions": [
+        {
+          "date": "2026-02-05",
+          "type": "email_received",
+          "subject": "Checking in on this weekend",
+          "summary": "Trina checking in on weekend visit plans and logistics"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "Casey provided detailed plan for KC visit and game attendance"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "Update on visit progress \u2014 game and dinner plans"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "Post-game update on visit"
+        },
+        {
+          "date": "2026-02-08",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "Follow-up on action items \u2014 tax docs, legal outline, meeting scheduling"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "score": 50
+    },
+    {
+      "name": "Christine P. Rosengreen",
+      "email": "crosengreen@josephhollander.com",
+      "emails_seen": [
+        "crosengreen@josephhollander.com"
+      ],
+      "company": "Joseph Hollander & Craft",
+      "title": null,
+      "source": "email",
+      "first_seen": "2026-02-05",
+      "last_seen": "2026-02-08",
+      "interaction_count": 3,
+      "interactions": [
+        {
+          "date": "2026-02-05",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "CC'd on KC visit plan and family legal discussion"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "CC'd on visit updates"
+        },
+        {
+          "date": "2026-02-08",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "CC'd on follow-up with action items"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "score": 40
+    },
+    {
+      "name": "Dwayne Moser",
+      "email": "dmoser003@gmail.com",
+      "emails_seen": [
+        "dmoser003@gmail.com"
+      ],
+      "company": null,
+      "title": null,
+      "source": "both",
+      "first_seen": "2026-02-09",
+      "last_seen": "2026-02-10",
+      "interaction_count": 3,
+      "interactions": [
+        {
+          "date": "2026-02-09",
+          "type": "email_sent",
+          "subject": "111 Valley View - Investment Analysis (On My Way)",
+          "summary": "Stan-generated real estate investment analysis for Canyon Lake property sent to Dwayne ahead of walkthrough"
+        },
+        {
+          "date": "2026-02-10",
+          "type": "email_received",
+          "subject": "Fwd: 135 Jeanette Circle EstateIQ weekly snapshot",
+          "summary": "Dwayne forwarded Canyon Lake market report showing recent sold and listed properties"
+        },
+        {
+          "date": "2026-02-10",
+          "type": "calendar_event",
+          "subject": "View Bill Hunter's House",
+          "summary": "Property viewing with Dwayne at Bill Hunter's House"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "score": 35
+    },
+    {
+      "name": "Autumn Collins",
+      "email": "autumn@mychildadvocate.com",
+      "emails_seen": [
+        "autumn@mychildadvocate.com"
+      ],
+      "company": "My Child Advocate",
+      "title": null,
+      "source": "email",
+      "first_seen": "2026-02-06",
+      "last_seen": "2026-02-08",
+      "interaction_count": 2,
+      "interactions": [
+        {
+          "date": "2026-02-06",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "CC'd on visit updates"
+        },
+        {
+          "date": "2026-02-08",
+          "type": "email_sent",
+          "subject": "Re: Checking in on this weekend",
+          "summary": "CC'd on follow-up with action items"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "score": 35
+    },
+    {
+      "name": "Jessica Skoglund",
+      "email": "jskoglundonw@olatheschools.org",
+      "emails_seen": [
+        "jskoglundonw@olatheschools.org"
+      ],
+      "company": "Olathe Public Schools",
+      "title": "Teacher - Honors English 10",
+      "source": "email",
+      "first_seen": "2026-02-10",
+      "last_seen": "2026-02-10",
+      "interaction_count": 1,
+      "interactions": [
+        {
+          "date": "2026-02-10",
+          "type": "email_received",
+          "subject": "Progress Report for Ryan Lynch",
+          "summary": "Midterm progress report \u2014 overall B grade, proficient in writing, foundational in reading and vocab/grammar"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "score": 30
+    },
+    {
+      "email": "casey@fleetbrain.ai",
+      "first_interaction": "2026-02-13T13:40:05.903678",
+      "last_interaction": "2026-02-13T14:02:05.258408",
+      "interaction_count": 2,
+      "score": 3.3,
+      "tags": []
+    },
+    {
+      "email": "stan@fleetbrain.ai",
+      "first_interaction": "2026-02-13T13:40:05.903704",
+      "last_interaction": "2026-02-13T14:02:05.258396",
+      "interaction_count": 2,
+      "score": 3.3,
+      "tags": []
+    }
+  ]
+}
