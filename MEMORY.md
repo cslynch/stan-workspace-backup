@@ -60,6 +60,10 @@
 - **Engagement coming:** Plan to help when requested.
 - **Birthday Trip (April 24-May 1):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Options: Cozumel, Turks & Caicos, Florida Keys.
 
+**Recent Gestures:**
+- **Feb 17, 2026:** Flowers sent to Rosa's new office at AWC (pregnancy outreach volunteer group). Pastel arrangement from Oakleaf Florist (~$125). Card message: "I'm so proud of the mission you serve at AWC. 'Every child is a blessing' (Psalm 127:3)."
+- **Next up:** Swarovski jewelry + plan a date
+
 **Annual Calendar Reminders (RRULE:FREQ=YEARLY):**
 - ✅ Tyler's birthday: Jan 22
 - ✅ Ryan's birthday: Dec 2
