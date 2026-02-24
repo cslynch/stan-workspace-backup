@@ -1,17 +1,35 @@
 ## OpenClaw Update Available
-Version: 2026.2.12 (current: 2026.2.6)
-Released: 2026-02-13 02:18 UTC
-Relevant changes:
-- Telegram: blockquote rendering as native `<blockquote>` tags
-- Gateway/Config: SSRF hardening for URL-based input handling with explicit deny policy + hostname allowlists
-- Security: hook session-routing hardening (`hooks.defaultSessionKey`, `hooks.allowRequestSessionKey`, prefix allowlists)
-- Security: webhook + device token verification with constant-time comparison + auth-failure throttling
-- Security: browser control HTTP routes now require authentication; auto-generate auth token on install
-- Sessions: harden transcript path resolution; reject unsafe session IDs/file paths
-- Gateway: drain active turns before restart (prevents message loss); auto-generate auth token to prevent restart loops
-- Config: avoid redacting `maxTokens`-like fields during snapshot redaction
-- Cron: multiple reliability fixes (scheduling, timer re-arming, duplicate-fire prevention, isolation)
-- Security: remove bundled soul-evil hook; fix Nostr profile API remote config tampering
 
-Recommendation: UPDATE
-Justification: Multiple critical security fixes (SSRF hardening, auth improvements, credential handling) + infrastructure reliability (gateway/session/cron improvements) directly impact your Telegram + gateway operations.
+**Version:** 2026.2.22 (current: 2026.2.6)  
+**Released:** February 23, 2026 @ 04:09 UTC  
+**Recommendation:** UPDATE
+
+### Critical Security Fixes
+- Credential redaction in CLI config output (prevents terminal history leakage)
+- Exec approval: Absolute path pinning (blocks binary-shadowing bypass)
+- Elevated auth: Sender-only identity matching (closes recipient-token bypass)
+- Shell wrapper hardening: HOME/ZDOTDIR/SHELLOPTS blocked; env whitelist enforced
+- Slack token security: CSPRNG tokens, shape validation, user-identity requirements
+- Memory/SSRF: 8k input cap + consistent policy enforcement across batch paths
+
+### Gateway & Infrastructure
+- Auth: Unified credential precedence; shared-token priority restored for remote gateways
+- Pairing: Loopback scope-upgrade auto-approval; operator.admin privilege parity
+- Restart stability: Fixed edge cases; gateway-port reachability for stale-lock detection
+- Cron: Parallel execution support; timeout guards for manual + startup runs
+- Delivery: Text-only announces route via direct delivery for explicit thread targets
+
+### Telegram Enhancements
+- Media: User-facing failure replies (instead of silent drop)
+- Webhook: Monitor lifecycle fixes; webhook cleanup before long-poll
+- Polling: Network retry logic; update-offset watermark persistence
+- WSL2 + DNS: IPv6 auto-select disabled; memoized detection; ipv4first default
+- Replies: Target-scoped dedupe; normalized file:// paths; forwarded-origin preservation
+
+### Config + Session Management
+- Built-in channel auto-enable via channels.&lt;id&gt;.enabled
+- Session routing preservation; label persistence across resets
+- Slack threading: Parent-session context beyond first turn
+- Token pattern redaction in sessions_history output
+
+**Action:** Review release notes at https://github.com/openclaw/openclaw/releases/tag/v2026.2.22, then schedule update during maintenance window.
