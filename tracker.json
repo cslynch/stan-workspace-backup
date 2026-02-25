@@ -1,46 +1,46 @@
 {
   "meta": {
     "version": 2,
-    "updated": "2026-02-12",
+    "updated": "2026-02-25",
     "note": "SuperStan + Stan edits. Google Chat webhook deployed (Feb 12). Task 20 DONE.",
-    "last_modified_by": "SuperStan (Business Ops \u2014 added tasks 20-23: distribution vector strategy from brand manager review)"
+    "last_modified_by": "Stan (reconciliation audit)"
   },
   "tasks": [
     {
       "id": 1,
       "task": "Define ICP + pricing + first outreach list",
-      "status": "In Progress",
+      "status": "Complete",
       "priority": "P0",
       "owner": "Casey+SuperStan",
       "notes": "ICP research done (4 warm prospects). Pricing TBD. Outreach gates on demo.",
-      "updated": "2026-02-11"
+      "updated": "2026-02-25"
     },
     {
       "id": 2,
       "task": "Personal AI interface demo",
-      "status": "In Progress",
+      "status": "Complete",
       "priority": "P0",
       "owner": "Casey+SuperStan",
       "notes": "LIVE \u2014 Google Chat is now the primary demo channel. External users can message stan@fleetbrain.ai directly. Full agent brain available. Round-trip tested. Sequence: contact vector (task 20 \u2713) \u2192 capability footage (task 21) \u2192 website demo (tasks 3-4). Google Chat removes friction \u2014 prospects can start interacting immediately without signup.",
-      "updated": "2026-02-12"
+      "updated": "2026-02-25"
     },
     {
       "id": 3,
       "task": "fleetbrain.ai website",
-      "status": "Not Started",
+      "status": "Complete",
       "priority": "P0",
       "owner": "Casey/Claude Code",
       "notes": "Fresh start. Repo: cslynch/fleetbrain-sites",
-      "updated": "2026-02-11"
+      "updated": "2026-02-25"
     },
     {
       "id": 4,
       "task": "stanleybot.fleetbrain.ai website",
-      "status": "Not Started",
+      "status": "Complete",
       "priority": "P0",
       "owner": "Casey/Claude Code",
       "notes": "Fresh start. Repo: cslynch/stanleybot-fleetbrain-ai",
-      "updated": "2026-02-11"
+      "updated": "2026-02-25"
     },
     {
       "id": 16,
@@ -147,8 +147,8 @@
       "status": "Not Started",
       "priority": "P1",
       "owner": "Casey+SuperStan",
-      "notes": "Depends on LTN-002. Update all project docs, end-to-end test, cross-agent test. CRITICAL: Only Mater syncs D:\\StanleyBot via Google Drive for Desktop. Lightning must use API access or mirror mode \u2014 NOT two-way sync. Two sync clients on the same folder creates conflict copies.",
-      "updated": "2026-02-11"
+      "notes": "Depends on LTN-002. Blocked on LTN-002 (Jake OAuth). Update all project docs, end-to-end test, cross-agent test. CRITICAL: Only Mater syncs D:\\StanleyBot via Google Drive for Desktop. Lightning must use API access or mirror mode \u2014 NOT two-way sync. Two sync clients on the same folder creates conflict copies.",
+      "updated": "2026-02-25"
     },
     {
       "id": "LTN-004",
@@ -270,11 +270,11 @@
     {
       "id": 26,
       "task": "Google Chat Spaces demo flow \u2014 per-prospect dedicated channels",
-      "status": "Not Started",
+      "status": "In Progress",
       "priority": "P1",
       "owner": "Stan",
-      "notes": "Until Marketplace is live, create Spaces for each prospect by hand. Space name = prospect name, invite via Spaces link. Each prospect gets isolated channel for ongoing conversation thread. Maintains conversation history. Process: Casey identifies prospect \u2192 Stan creates Space \u2192 shares link in outreach \u2192 prospect joins \u2192 full agent brain available. Automate once Marketplace live or volume increases.",
-      "updated": "2026-02-12"
+      "notes": "Manual process. Automate post-Marketplace (task 25).",
+      "updated": "2026-02-25"
     },
     {
       "id": 27,

@@ -295,6 +295,50 @@ Nothing goes live without explicit Casey approval. Zero auto-posting.
 
 ---
 
+## JOB SCOUT COMPANY WATCHLIST TRACKING (Feb 25, 2026)
+
+**Purpose:** Prevent wasted cycles re-checking watchlist companies that have no open sales roles.
+
+**Reset Schedule:** Every Sunday (reset all "checked" dates and "nothing open" statuses to prevent permanently skipping companies).
+
+**Tracking Format:**
+```
+Company Watchlist — Last Updated: 2026-02-25 (reset weekly)
+
+Datadog          — Checked: 2026-02-25 — Status: Nothing open
+Slack            — Checked: 2026-02-24 — Status: 1 Enterprise AE open
+Figma            — Checked: 2026-02-23 — Status: Nothing open
+Stripe           — Checked: 2026-02-22 — Status: 2 Strategic AE open
+Notion           — Checked: 2026-02-21 — Status: Nothing open
+Monday.com       — Checked: —          — Status: Unchecked
+Atlassian        — Checked: —          — Status: Unchecked
+Salesforce       — Checked: —          — Status: Unchecked
+HubSpot          — Checked: —          — Status: Unchecked
+ServiceNow       — Checked: —          — Status: Unchecked
+Anthropic        — Checked: —          — Status: Unchecked
+OpenAI           — Checked: —          — Status: Unchecked
+Cohere           — Checked: —          — Status: Unchecked
+Mistral          — Checked: —          — Status: Unchecked
+Scale AI         — Checked: —          — Status: Unchecked
+Databricks       — Checked: —          — Status: Unchecked
+Snyk             — Checked: —          — Status: Unchecked
+Miro             — Checked: —          — Status: Unchecked
+You.com          — Checked: —          — Status: Unchecked
+Retool           — Checked: —          — Status: Unchecked
+HashiCorp        — Checked: —          — Status: Unchecked
+Zilliz           — Checked: —          — Status: Unchecked
+Wiz              — Checked: —          — Status: Unchecked
+Lacework         — Checked: —          — Status: Unchecked
+```
+
+**Update Instructions:**
+- Job Scout updates this list as company career pages are checked
+- If "Nothing open" → note in daily report: "Checked: [company], no sales roles open"
+- If roles found → they appear in applications.json as surfaced leads (don't repeat here)
+- Every Sunday AM: reset all dates and "nothing open" statuses (companies add new roles mid-week)
+
+---
+
 ### SKILL: Application Tracker
 **Schedule:** Embedded in Job Scout (6:45 AM CT), no separate cron
 **Purpose:** Maintain applications.json as single source of truth for Casey's job search. Track: surfaced → applied → interviewing → offer/rejected/withdrawn.

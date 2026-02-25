@@ -23,7 +23,7 @@ from googleapiclient.discovery import build
 # Configuration
 RESEARCH_DIR = WORKSPACE / "research"
 SEARCH_LOG_PATH = RESEARCH_DIR / "search-log.jsonl"
-APPLICATIONS_JSON_ID = "1_zJLQo6RGkjesTLbIxOaTPvoGXnYQnYT"  # StanleyBot folder
+APPLICATIONS_JSON_ID = "1qpoBSTniH1dtfrJXqYJsfGHxXjTMUd1-"  # applications.json file ID
 CONTACTS_JSON_ID = "1ekDLrqw1f6jMGR8T_VdTLl5BW7QW8f2h"  # contacts.json ID
 
 # Ensure research directory exists
@@ -68,30 +68,17 @@ def enforce_rate_limit():
     time.sleep(2.0)
 
 def get_applications_data():
-    """Read applications.json from Drive"""
+    """Read applications.json from Drive by direct file ID"""
     try:
         creds = get_credentials()
         drive_service = build('drive', 'v3', credentials=creds)
         
-        # Find applications.json in StanleyBot folder
-        results = drive_service.files().list(
-            q=f"name='applications.json' and parents='{APPLICATIONS_JSON_ID}' and trashed=false",
-            spaces='drive',
-            pageSize=1,
-            fields='files(id, name)'
-        ).execute()
-        
-        files = results.get('files', [])
-        if not files:
-            print("[Warning] applications.json not found in Drive")
-            return {"surfaced": [], "watchlist": []}
-        
-        file_id = files[0]['id']
-        file_content = drive_service.files().get_media(fileId=file_id).execute()
+        # Fetch applications.json by direct file ID (avoid filename fragility)
+        file_content = drive_service.files().get_media(fileId=APPLICATIONS_JSON_ID).execute()
         return json.loads(file_content)
     except Exception as e:
-        print(f"[Warning] Could not read applications.json: {e}")
-        return {"surfaced": [], "watchlist": []}
+        print(f"[Warning] Could not read applications.json (ID: {APPLICATIONS_JSON_ID}): {e}")
+        return {"applications": [], "watchlist": []}
 
 def get_contacts_data():
     """Read contacts.json from Drive"""
