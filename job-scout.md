@@ -45,6 +45,21 @@ Casey decides which to pursue — Stan tracks applications on approval.
 - **Comp:** $150K+ OTE minimum. Flag $120K-$150K as "tight" but not auto-exclude.
 - **Exclude:** Pure SDR/BDR. Pure marketing. Non-enterprise (SMB-only sales). Roles requiring 50%+ travel.
 
+### Posting Date Validation (REQUIRED — prevents stale listings)
+**When scraping career pages, check for:**
+- **"Deadline to Apply"** field (Ashby career sites show this explicitly)
+- **"Posted on"** dates older than 60 days (treat as stale unless company explicitly re-posted)
+- **"Closed"** or **"Expired"** indicators on the job card
+- **LinkedIn "Posted X days ago"** — if > 90 days, verify it's still actively hiring
+
+**Action when stale posting detected:**
+- Mark as **STALE** in output (do not include in US-RELEVANT count)
+- Flag separately in daily report with expiration date so Casey can see it but knows not to apply
+- Remove from consideration for application recommendations
+- Log in tracking file so we don't surface the same expired role twice
+
+**Example stale scenario:** Synthflow Sr AE listing (Dec 20 2024 deadline) appeared open on Ashby but was already expired by Feb 26. This filter catches it and prevents wasted application effort.
+
 ### Fit Signals (boost ranking)
 - Job description mentions: enterprise sales cycles, consultative selling, technical sales, solution architecture, regulated industries, AI agents, AI ops
 - Company has raised recent funding or is scaling sales team
@@ -58,6 +73,8 @@ Casey decides which to pursue — Stan tracks applications on approval.
 - Bay Area / NYC hybrid-only with no remote option
 
 ## Output Format (per lead in daily YYYY-MM-DD-job-scout.md)
+
+### Active Postings (Recommend Applying)
 ```markdown
 ## [FIT: HIGH/MEDIUM/LOW] — [Company] – [Role Title]
 
@@ -75,7 +92,22 @@ Casey decides which to pursue — Stan tracks applications on approval.
 ---
 ```
 
-**Status:** Default to NEW. Casey or SuperStan updates to APPROVED/SKIP/HOLD as needed.
+### Stale Postings (Do Not Apply)
+```markdown
+## [STALE — EXPIRED] — [Company] – [Role Title]
+
+- **Deadline:** [Expired date or "Posted [X] days ago"]
+- **Location:** [Remote/Hybrid/City]
+- **Link:** [URL]
+
+**Reason:** Posting deadline passed / older than 60 days / marked closed. Do not apply.
+
+---
+```
+
+**Status:** 
+- Active postings: Default to NEW. Casey or SuperStan updates to APPROVED/SKIP/HOLD as needed.
+- Stale postings: Status "STALE" (for reference only, no action required).
 
 ## Search Strategy — Source Hierarchy
 
@@ -128,15 +160,16 @@ Casey can add/remove from watchlist at any time. Deprioritize pure research/ML l
 2. Read applications.json to get: already-surfaced roles (dedup), watchlist companies, active applications
 3. Read contacts.json to cross-reference company names
 4. Execute web searches across 2-3 sources (rotate sources daily to cover all weekly)
-5. Filter results against criteria (enterprise sales roles only, Texas/remote, $150K+ OTE, B2B SaaS/AI/automation)
-6. Score fit: HIGH (3+ fit signals, 0 anti-signals), MEDIUM (1-2 fit signals or minor anti-signals), LOW (interesting but stretch)
-7. Select top 3-5 leads. Prioritize HIGH fit. Include at least 1 MEDIUM if fewer than 3 HIGH.
-8. Format output as YYYY-MM-DD-job-scout.md file (see format above)
-9. **Dual output:**
-   - Write file to Drive (job-scout/ folder, ID: 1_r4ykfESPOwiF6I1d3SfCYkjbReAfVEj)
-   - Send summary to Telegram with lead links
-10. Append all surfaced leads to applications.json with status "NEW"
-11. If no leads meet criteria: "Job Scout: No strong matches today. [X] results scanned, none cleared the filter."
+5. **Validate posting dates:** Check for deadline, posted date, or closed/expired indicators. Mark stale postings (>60 days old, expired deadline, or closed indicator) as STALE and exclude from US-RELEVANT count.
+6. Filter results against criteria (enterprise sales roles only, Texas/remote, $150K+ OTE, B2B SaaS/AI/automation, active postings only)
+7. Score fit: HIGH (3+ fit signals, 0 anti-signals), MEDIUM (1-2 fit signals or minor anti-signals), LOW (interesting but stretch)
+8. Select top 3-5 leads. Prioritize HIGH fit. Include at least 1 MEDIUM if fewer than 3 HIGH. Do not include STALE postings in final count.
+9. Format output as YYYY-MM-DD-job-scout.md file (see format above)
+10. **Dual output:**
+    - Write file to Drive (job-scout/ folder, ID: 1_r4ykfESPOwiF6I1d3SfCYkjbReAfVEj)
+    - Send summary to Telegram with lead links
+11. Append all surfaced leads to applications.json with status "NEW" (active postings only; note stale postings separately with status "STALE")
+12. If no leads meet criteria: "Job Scout: No strong matches today. [X] results scanned, [Y] stale/expired, none cleared the filter."
 
 ## Execution — SuperStan
 Can run on-demand when Casey says "find me roles at [company]" or "search for [specific title]."
@@ -211,4 +244,4 @@ Chain: CRM (6:00) → Briefing (6:15) → X Scout (6:30) → Job Scout (6:45)
 **Output:** Telegram (summary) + Drive (full daily file)
 
 ## Status
-UPDATED Feb 25, 2026 — Source hierarchy upgraded (LinkedIn primary, career pages, Secondary: Built In/Wellfound/YC, Deprioritize aggregators). Company tracking system added. Ready for cron execution with dual output (Telegram + Drive).
+UPDATED Feb 26, 2026 — Posting date validation filter added (checks deadline, posted date, closed/expired indicators). Stale postings (>60 days, expired deadline) marked as STALE and excluded from recommendation count. Prevents wasted applications on expired listings. Ready for cron execution with dual output (Telegram + Drive).
