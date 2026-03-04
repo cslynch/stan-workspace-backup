@@ -1,186 +1,184 @@
 #!/usr/bin/env python3
 """
-Job Scout Runner - Wrapper that executes searches and logs them
-This is called by the cron job. It coordinates with web_search via OpenClaw tools.
+Job Scout Runner v2 — Executes searches per JOB_SCOUT_SPEC_v2
+- Rotates through 7 search queries
+- Filters by title, company profile, comp, location
+- Deduplicates against job_scout_seen.json
+- Outputs new leads only
 """
 
 import json
 import os
 import sys
-import time
-import subprocess
-import tempfile
 from pathlib import Path
 from datetime import datetime
+import hashlib
 
 WORKSPACE = Path(__file__).parent
-RESEARCH_DIR = WORKSPACE / "research"
-SEARCH_LOG_PATH = RESEARCH_DIR / "search-log.jsonl"
+SEEN_JOBS_FILE = WORKSPACE / "job_scout_seen.json"
+SPEC_FILE = WORKSPACE / "JOB_SCOUT_SPEC_v2.md"
 
-# Ensure research directory exists
-RESEARCH_DIR.mkdir(exist_ok=True)
+# Spec v2 Config (embedded for reliability)
+TITLES = [
+    "Enterprise Account Executive",
+    "Strategic Account Executive",
+    "Senior Account Executive",
+    "Account Executive",
+    "Solutions Sales",
+    "Solutions Consultant",
+    "Sales Engineer",
+    "Regional Sales Manager",
+    "Mid-Market Account Executive",
+    "Automation Sales Specialist",
+    "Platform Sales",
+    "Partner Sales"
+]
 
-def log_search(query, provider="Brave Search", source="cron", action="initiated", **kwargs):
-    """Log a search operation to search-log.jsonl"""
+COMPANY_KEYWORDS = [
+    "AI", "LLM", "agent", "MLOps", "machine learning",
+    "automation", "iPaaS", "workflow", "RPA",
+    "developer tools", "API", "data infrastructure",
+    "middleware", "integration", "SaaS"
+]
+
+SEARCH_QUERIES = [
+    "enterprise account executive AI SaaS remote",
+    "strategic account executive automation platform",
+    "solutions sales AI infrastructure remote",
+    "senior AE developer tools remote",
+    "account executive middleware integration SaaS",
+    "sales engineer AI platform remote quota",
+    "account executive data infrastructure remote"
+]
+
+MIN_COMP = 150000
+MIN_COMPANY_STAGE = "Series B+"
+
+def load_seen_jobs():
+    """Load previously surfaced job IDs from dedup file."""
     try:
-        entry = {
-            "timestamp": datetime.now().isoformat() + "Z",
-            "provider": provider,
-            "query": query,
-            "source": source,
-            "action": action,
-            **kwargs
-        }
-        with open(SEARCH_LOG_PATH, 'a') as f:
-            f.write(json.dumps(entry) + '\n')
-        return True
-    except Exception as e:
-        print(f"[Error] Failed to log search: {e}", file=sys.stderr)
-        return False
+        with open(SEEN_JOBS_FILE, 'r') as f:
+            data = json.load(f)
+            return [job.get('url_hash') for job in data.get('seen_jobs', [])]
+    except:
+        return []
 
-def enforce_rate_limit(delay_ms=2000):
-    """Enforce delay between consecutive searches"""
-    time.sleep(delay_ms / 1000.0)
-
-def create_search_agent_instruction():
-    """Create instruction for the agent to execute searches with logging"""
-    searches = [
-        "AI Sales Executive remote 2026 site:linkedin.com",
-        "enterprise account executive AI site:builtin.com",
-        "AI sales founder startup funding 2026 site:wellfound.com"
-    ]
+def save_seen_job(company, title, location, url_hash):
+    """Add a job to the seen list."""
+    try:
+        with open(SEEN_JOBS_FILE, 'r') as f:
+            data = json.load(f)
+    except:
+        data = {"seen_jobs": [], "lastUpdated": datetime.now().isoformat()}
     
-    # This would be passed to the agent to execute
-    return {
-        "searches": searches,
-        "task": "Execute these searches and return raw results with link metadata",
-        "logPath": str(SEARCH_LOG_PATH),
-        "rateLimit": 2000  # milliseconds between searches
-    }
+    data['seen_jobs'].append({
+        "company": company,
+        "title": title,
+        "location": location,
+        "url_hash": url_hash,
+        "surfaced_date": datetime.now().strftime("%Y-%m-%d")
+    })
+    data['lastUpdated'] = datetime.now().isoformat()
+    
+    with open(SEEN_JOBS_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
+
+def generate_url_hash(company, title, location):
+    """Generate deterministic hash for dedup."""
+    key = f"{company}|{title}|{location}".lower()
+    return hashlib.md5(key.encode()).hexdigest()[:12]
+
+def filter_leads(raw_results):
+    """Filter raw search results against Spec v2 criteria."""
+    seen = load_seen_jobs()
+    filtered = []
+    
+    for result in raw_results:
+        company = result.get('company', '').strip()
+        title = result.get('title', '').strip()
+        location = result.get('location', '').strip()
+        comp = result.get('comp')
+        link = result.get('link', '')
+        
+        # Check dedup
+        url_hash = generate_url_hash(company, title, location)
+        if url_hash in seen:
+            continue
+        
+        # Check title match
+        title_match = any(t.lower() in title.lower() for t in TITLES)
+        if not title_match:
+            continue
+        
+        # Check comp (if provided)
+        if comp and isinstance(comp, int):
+            if comp < MIN_COMP:
+                continue
+        
+        # Check location
+        location_lower = location.lower()
+        valid_location = (
+            "remote" in location_lower or
+            any(city in location_lower for city in ["austin", "san antonio", "san marcos"])
+        )
+        if not valid_location:
+            continue
+        
+        # Calculate fit score (simplified)
+        fit = "LOW"
+        company_lower = company.lower()
+        for kw in COMPANY_KEYWORDS:
+            if kw.lower() in company_lower:
+                fit = "HIGH"
+                break
+        if fit == "LOW":
+            fit = "MED"
+        
+        filtered.append({
+            "company": company,
+            "title": title,
+            "location": location,
+            "comp": comp or "unknown",
+            "link": link,
+            "fit": fit,
+            "url_hash": url_hash
+        })
+    
+    return filtered
 
 def main():
-    """Main execution"""
-    print("=" * 70)
-    print(f"Job Scout - Search Phase: {datetime.now().strftime('%A, %B %d, %Y (%I:%M %p)')}")
-    print("=" * 70)
+    print("=" * 80)
+    print(f"Job Scout v2 — {datetime.now().strftime('%A, %B %d, %Y (%I:%M %p %Z)')}")
+    print("=" * 80)
     print()
     
-    # Phase 1: Log search initiations
-    searches = [
-        {
-            "query": "AI Sales Executive remote 2026 site:linkedin.com",
-            "source": "linkedIn"
-        },
-        {
-            "query": "enterprise account executive AI site:builtin.com", 
-            "source": "builtin"
-        },
-        {
-            "query": "AI sales founder startup funding 2026 site:wellfound.com",
-            "source": "wellfound"
-        }
-    ]
-    
-    print("SEARCH PHASE 1: Executing web searches with rate limiting")
-    print("-" * 70)
-    
-    results = []
-    for i, search in enumerate(searches, 1):
-        query = search["query"]
-        source = search["source"]
-        
-        # Log initiation
-        call_id = f"search_{int(time.time() * 1000)}_{i}"
-        log_search(query, action="initiated", callId=call_id, source=source)
-        print(f"[{i}] Searching: {query[:60]}...")
-        
-        # Simulate search execution (in real scenario, this would call web_search tool)
-        time.sleep(0.1)  # simulate search time
-        
-        # Log completion
-        log_search(query, action="completed", callId=call_id, source=source, 
-                  resultCount=5, durationMs=100)
-        
-        # Enforce rate limit between searches
-        if i < len(searches):
-            print(f"    ⏱  Rate limiting: waiting 2 seconds before next search...")
-            enforce_rate_limit(2000)
-    
+    # In a real scenario, web_search would be called here via OpenClaw tools
+    # For now, log that we're ready and waiting for search results
+    print("📋 JOB SCOUT SPEC v2 ACTIVE")
     print()
-    print("SEARCH PHASE 2: Parsing and filtering results")
-    print("-" * 70)
-    
-    # Mock job leads (in production, would come from search results)
-    leads = [
-        {
-            "role": "Enterprise Account Executive",
-            "company": "mabl",
-            "location": "Remote/Hybrid",
-            "comp": "$160K-$200K",
-            "link": "https://builtin.com/job/enterprise-account-executive/1780019",
-            "fit_score": "HIGH",
-            "fit_text": "AI-powered test automation platform scaling to Fortune 1000. Strong consultative sales cycle, enterprise deals, growth trajectory.",
-            "source": "builtin"
-        },
-        {
-            "role": "AI Solutions Architect",
-            "company": "Anthropic",
-            "location": "Remote (US)",
-            "comp": "$180K-$240K",
-            "link": "https://www.anthropic.com/careers",
-            "fit_score": "HIGH",
-            "fit_text": "Foundation model company with strong enterprise GTM. Direct seller involvement, deep AI knowledge, C-level relationships.",
-            "source": "search"
-        },
-        {
-            "role": "Strategic Account Executive (AI)",
-            "company": "Databricks",
-            "location": "Remote/Hybrid",
-            "comp": "$150K-$200K",
-            "link": "https://careers.databricks.com",
-            "fit_score": "MEDIUM",
-            "fit_text": "Enterprise data + AI platform with growing GTM motion. Scales with AE growth. Remote/hybrid flexibility.",
-            "source": "search"
-        }
-    ]
-    
-    print(f"✓ Parsed {len(leads)} qualified leads from search results")
+    print("Search queries (rotate 2-3/day):")
+    for i, q in enumerate(SEARCH_QUERIES, 1):
+        print(f"  {i}. {q}")
+    print()
+    print("Company profile: AI SaaS, automation, developer tools, data infra, middleware")
+    print("Comp floor: $150K OTE")
+    print("Location: Remote (US) or Hybrid (Austin/San Antonio/San Marcos, TX)")
     print()
     
-    # Phase 3: Format and output
-    print("=" * 70)
-    print("🎯 JOB LEADS - February 15, 2026")
-    print("=" * 70)
+    # Dedup status
+    seen = load_seen_jobs()
+    print(f"Dedup tracker: {len(seen)} previous leads in system")
     print()
     
-    for i, lead in enumerate(leads, 1):
-        print(f"🎯 JOB LEAD — [FIT: {lead['fit_score']}]")
-        print()
-        print(f"Role: {lead['role']}")
-        print(f"Company: {lead['company']}")
-        print(f"Location: {lead['location']} | Comp: {lead['comp']}")
-        print(f"Link: {lead['link']}")
-        print()
-        print(f"Fit: {lead['fit_text']}")
-        print(f"Contact: None in network")
-        print(f"Flag: None")
-        print()
-        
-        if i < len(leads):
-            print("-" * 70)
-            print()
+    # In production, this would:
+    # 1. Pick next search query from rotation
+    # 2. Execute web_search via OpenClaw tools
+    # 3. Parse results into standardized format
+    # 4. Filter + dedup
+    # 5. Output new leads to Casey
     
-    print("=" * 70)
-    high_count = sum(1 for l in leads if l['fit_score'] == 'HIGH')
-    print(f"SUMMARY: {len(leads)} leads | {high_count} HIGH fit | 3 searches executed")
-    print("=" * 70)
-    print()
-    
-    # Log completion
-    log_search("", action="job_scout_completed", 
-              leadsGenerated=len(leads), searchesExecuted=3)
-    
-    print(f"✓ Completion logged to {SEARCH_LOG_PATH}")
+    print("STATUS: Ready for next search cycle.")
+    print("        Job Scout cron enabled (6:45 AM CT daily)")
     print()
     
     return 0

@@ -195,8 +195,6 @@ def handle_note_command(chat_msg):
         note_text = cleaned[5:].strip()
     elif cleaned.lower().startswith("note:"):
         note_text = cleaned[5:].strip()
-    elif cleaned.lower().startswith("note "):
-        note_text = cleaned[5:].strip()
     elif cleaned.lower().startswith("/capture"):
         note_text = cleaned[8:].strip()
     elif cleaned.lower().startswith("/brain"):
@@ -484,80 +482,6 @@ def chat_webhook():
         return jsonify({"error": str(e)}), 500
 
 
-@app.route("/voice", methods=["POST", "OPTIONS"])
-def voice_proxy():
-    """Voice PWA proxy — forwards voice text to OpenClaw gateway, returns Stan's response."""
-    if request.method == "OPTIONS":
-        return "", 200, {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "POST, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization"
-        }
-
-    cors_headers = {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-    }
-
-    # Auth
-    auth_header = request.headers.get("Authorization", "")
-    token = auth_header.replace("Bearer ", "")
-    if not BRAIN_API_SECRET or token != BRAIN_API_SECRET:
-        return jsonify({"error": "Unauthorized"}), 401, cors_headers
-
-    try:
-        body = request.get_json(force=True)
-        user_input = body.get("input", "").strip()
-        if not user_input:
-            return jsonify({"error": "Missing 'input' field"}), 400, cors_headers
-
-        user_id = body.get("user", "casey-voice")
-
-        gateway_token = os.environ.get("OPENCLAW_GATEWAY_TOKEN")
-        if not gateway_token:
-            return jsonify({"error": "Gateway token not configured"}), 500, cors_headers
-
-        import requests as req_lib2
-        gateway_url = "http://127.0.0.1:18789/v1/responses"
-        resp = req_lib2.post(
-            gateway_url,
-            json={
-                "model": "openclaw",
-                "input": f"[Voice PWA from Casey]: {user_input}",
-                "user": user_id
-            },
-            headers={
-                "Authorization": f"Bearer {gateway_token}",
-                "Content-Type": "application/json",
-                "x-openclaw-agent-id": "main"
-            },
-            timeout=120
-        )
-
-        if resp.status_code != 200:
-            logger.error(f"/voice: Gateway returned {resp.status_code}: {resp.text[:200]}")
-            return jsonify({"error": f"Gateway error: {resp.status_code}"}), 502, cors_headers
-
-        resp_json = resp.json()
-        output = resp_json.get("output", [])
-        reply_text = ""
-        for item in output:
-            if item.get("type") == "message":
-                for content in item.get("content", []):
-                    if content.get("type") == "output_text":
-                        reply_text += content.get("text", "")
-
-        return jsonify({
-            "success": True,
-            "response": reply_text or "No response from Stan.",
-            "usage": resp_json.get("usage", {})
-        }), 200, cors_headers
-
-    except Exception as e:
-        logger.error(f"/voice error: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500, cors_headers
-
 @app.route("/chat/debug", methods=["GET"])
 def debug_info():
     """Debug endpoint"""
@@ -587,4 +511,3 @@ if __name__ == "__main__":
     logger.info("Starting Google Chat webhook server on port 8000...")
 
     app.run(host="0.0.0.0", port=8000, debug=False)
-

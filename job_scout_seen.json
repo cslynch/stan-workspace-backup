@@ -1,0 +1,6 @@
+{
+  "description": "Job scout deduplication tracking. Records all job leads surfaced to prevent recycling.",
+  "lastUpdated": "2026-03-03T12:03:00Z",
+  "status": "RESET - awaiting new search criteria",
+  "seen_jobs": []
+}

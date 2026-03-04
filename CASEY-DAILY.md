@@ -1,11 +1,19 @@
 # CASEY-DAILY - Tasks & Schedule
 
-**Last Updated:** Feb 3, 2026 17:15 CST  
+**Last Updated:** Mar 3, 2026 (Updated)
 **Source:** KANBAN.md + Google Tasks (sync bidirectional)
 
 ---
 
-## TODAY (Feb 3, 2026)
+## THIS SATURDAY
+
+- [ ] Book brunch at Maddie's
+- [ ] Book hotel
+- [ ] Book dinner at Edge
+
+---
+
+## TODAY (Mar 3, 2026)
 
 - [x] VR coordination call with Ry (Sandbox VR Friday Feb 6, 10:30-11:30am)
 - [ ] Approve twitter-launch-package.md tone/voice
