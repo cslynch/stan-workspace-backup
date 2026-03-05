@@ -47,5 +47,23 @@
     "slug": "ai-consulting-business-models-2026",
     "processed_at": "2026-02-17T07:01:23.002872",
     "char_count": 3082
+  },
+  {
+    "timestamp": "2026-03-04T10:19:26.558816",
+    "source_doc": "perplexity-research-zapier-enterprise-sales",
+    "content_length": 4377,
+    "status": "processed"
+  },
+  {
+    "timestamp": "2026-03-04T10:19:26.558825",
+    "source_doc": "perplexity-research-zapier-ai-strategy",
+    "content_length": 3789,
+    "status": "processed"
+  },
+  {
+    "timestamp": "2026-03-04T10:19:26.558827",
+    "source_doc": "perplexity-research-zapier-culture-values",
+    "content_length": 5204,
+    "status": "processed"
   }
 ]
