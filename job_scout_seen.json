@@ -57,6 +57,36 @@
       "added": "2026-03-05T06:45:00Z",
       "source": "job-scout",
       "link": "https://www.glassdoor.com/job-listing/strategic-account-executive-celigo-JV_KO0,27_KE28,34.htm"
+    },
+    {
+      "company": "Databricks",
+      "title": "Account Executive",
+      "location": "Remote (US)",
+      "industry": "Data Infrastructure/Cloud/AI",
+      "comp": "$272k-$374k OTE",
+      "added": "2026-03-07T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/company/databricks/jobs/"
+    },
+    {
+      "company": "Quavo",
+      "title": "Strategic Account Executive",
+      "location": "Remote (US)",
+      "industry": "Automation/SaaS/AI",
+      "comp": "Not listed",
+      "added": "2026-03-07T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/company/quavo/jobs/strategic-account-executive-united-states-remote/"
+    },
+    {
+      "company": "Northspyre",
+      "title": "Strategic Account Executive",
+      "location": "Remote (US)",
+      "industry": "Real Estate Tech/Automation/SaaS",
+      "comp": "Not listed",
+      "added": "2026-03-07T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://jobera.com/remote-job/strategic-account-executive-northspyre-remote-united-states/"
     }
   ]
 }
