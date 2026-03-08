@@ -640,6 +640,43 @@ Response appears in Chat space
 
 ---
 
+## SUNDAY METRICS CHECKPOINT - March 8, 2026
+
+**Weekly Review Completed:** 2026-03-08 17:00 CST
+
+**Project State (as of tracker.json Mar 3):**
+- Total tasks: 40
+- Done: 17 (42.5% complete)
+- In Progress: 7 (no stalling)
+- Blocked: 2 (Jake OAuth, LTN-003)
+- Parked: 7 (demand-triggered, healthy)
+- Not Started: 7 (P1 items need prioritization)
+
+**P0 Status:** 9/10 complete. Job search Week 1 live (applied: Hebbia, Forethought, Deepgram).
+
+**Key Decision Gates (Casey Input Required This Week):**
+1. **Zapier AE Application** (Task #35) — Deadline 3/31. OTE $240K–$300K. Time commitment: 3+ weeks. Decision: Go or defer?
+2. **Marketplace Submission** (Task #25) — P1 lynchpin for Spaces automation (Task #26). Decision: Q1 or Q2?
+3. **Jake OAuth Activation** (Task #1037) — Unblock Lightning Phase 2. Action: Activate this week.
+4. **Lightning Phase 1 Intent** (Task #1036) — Marked "Not Started." Clarify: started or queued?
+
+**Blockers Requiring SuperStan:**
+- LTN-003 specification (blocks Agent Teams protocol design)
+
+**Stale P1 Items (Awaiting Prioritization):**
+- Capability demo videos (Task #21)
+- Stan browser profile fix (Task #34)
+- Webhook hardening (Task #27)
+- Contact research (Apollo + LinkedIn) (Task #1)
+- Service account key vault (Task #28)
+
+**Reports Generated:**
+- `metrics/2026-03-08-sunday-metrics.md` (40-item full analysis)
+- `briefings/2026-03-08-sunday-metrics-summary.md` (executive summary for Casey)
+- Updated KANBAN.md with blockers and decision gates
+
+---
+
 ## GOOGLE CHAT WEBHOOK - IMAGE ATTACHMENT FEATURE (P1, Needed Before Demos)
 
 **Problem:** Webhook only passes `text` field to gateway. When users send images/attachments, the webhook payload includes attachment objects at `payload["chat"]["messagePayload"]["message"]["attachment"]` but images are never downloaded or forwarded to Stan.
