@@ -1,13 +1,62 @@
---- Last sync: 2026-02-10 11:50 CST ---
+--- Last sync: 2026-03-08 17:00 CST ---
 # KANBAN - Project Status
-**Last Updated:** 2026-02-10 11:50 CST
+**Last Updated:** 2026-03-08 17:00 CST (Sunday Metrics Review)
 **Updated By:** Stan
 **Trello Board:** StanOps
 **Source of Truth:** Master tracker (SuperStan) → Trello (SuperStan direct write) → KANBAN.md (Stan local cache, daily sync at 1:55 AM)
+**Snapshot Source:** tracker.json (2026-03-03)
 
 ---
 
-## COMPLETED TODAY (Feb 10)
+## 📊 QUICK STATUS (Mar 8, 5:00 PM)
+
+**Total Tasks:** 40 | **Done:** 17 | **In Progress:** 7 | **Blocked:** 2 | **Not Started:** 7 | **Parked:** 7
+
+**Key Actions This Week:**
+1. ✅ Unblock Jake OAuth (Task #1037)
+2. ✅ Decide on Zapier application (Task #35 — deadline 3/31)
+3. ✅ Decide on Marketplace submission (Task #25 — lynchpin for Spaces automation)
+4. ✅ Complete job search Tier 2 sweep (Task #33)
+
+**Detailed Metrics Report:** `/home/clawdbot/.openclaw/workspace/metrics/2026-03-08-sunday-metrics.md`
+
+---
+
+## 🔴 ACTIVE BLOCKERS (Mar 8)
+
+1. **Jake VM OAuth Activation** (Task #1037 — Lightning Phase 2)
+   - **Blocker:** Google Workspace OAuth for jake@fleetbrain.ai not yet set up
+   - **Impact:** Blocks secondary execution agent deployment
+   - **Owner:** Casey + SuperStan
+   - **Action:** Unblock OAuth activation this week
+
+2. **LTN-003 Specification** (Task #14 — Agent Teams Communication)
+   - **Blocker:** Design dependency for multi-agent protocol
+   - **Impact:** Blocks Task #1038 (Lightning Phase 3)
+   - **Owner:** SuperStan
+   - **Action:** Complete LTN-003 specification
+
+---
+
+## 🎯 P0 CRITICAL ITEMS STATUS (10 items)
+
+**Completed (9):** ICP research, Personal AI demo, fleetbrain.ai, stanleybot.ai, soul.md, Google Chat webhook, Resume v3, LinkedIn post, Job search command center, LinkedIn profile
+
+**In Progress (1):** Job search Week 1 (applied to Hebbia, Forethought, Deepgram; Tier 2 pending)
+
+---
+
+## 📋 HIGH PRIORITY NOT STARTED (5 P1 items)
+
+- [ ] Capability demo artifacts — 60–90 second Stan proof-of-work recordings (P1)
+- [ ] Workspace Marketplace submission — Required for Spaces automation (P1)
+- [ ] Fix Stan browser profile — attachOnly config blocking scraping (P1)
+- [ ] Stan contact research — Apollo + LinkedIn hiring manager enrichment (P1)
+- [ ] Harden webhook security — Sandboxing, validation, rate limiting (P2)
+
+---
+
+## COMPLETED TODAY (Mar 8 — Weekly Metrics Review)
 
 - [x] Valentine's dinner: full research → 18 Oaks reservation confirmed + calendar event added
 - [x] JW Marriott amenities research (spa, lounge, pre-dinner options)
@@ -30,11 +79,37 @@
 
 ---
 
+## DECISION GATES — WEEK OF MAR 8
+
+**Gate 1: Zapier Application** (Task #35)
+- **Deadline:** 3/31/2026 (23 days)
+- **Question:** Go or no-go? OTE $240K–$300K. 3+ weeks of work needed.
+- **Assigned to:** Casey
+- **Action:** Decide and commit THIS WEEK.
+
+**Gate 2: Marketplace Submission** (Task #25)
+- **Question:** Priority for Google Workspace submission, or defer to Phase 2?
+- **Impact:** Blocks Spaces automation (Task #26)
+- **Assigned to:** Casey + SuperStan
+- **Action:** Decide by end of week.
+
+**Gate 3: Lightning Phase 1 Status** (Task #1036)
+- **Question:** Base OS setup actually started, or still queued?
+- **Status:** Marked "Not Started" in tracker. Needs confirmation.
+- **Assigned to:** Casey
+- **Action:** Clarify intent.
+
+**Gate 4: Proof-of-Work Videos** (Task #21)
+- **Question:** Critical sales asset (record now), or defer to Phase 2 pitch?
+- **Status:** *Not Started* since Mar 3.
+- **Assigned to:** Casey
+- **Action:** Prioritize or explicitly defer.
+
 ## IN PROGRESS
 
-- [ ] .env.gpg audit (passphrase waiting)
-- [ ] Calendar event full inventory with recurrence rules (Phase 3.1 deliverable)
-- [ ] Real estate property research (market comps, rehab estimates, cap rate analysis)
+- [x] Job search Week 1 (3 applications sent; Tier 2 ready)
+- [ ] Google Chat Spaces manual flow (Task #26) — blocked on Marketplace submission
+- [ ] Zapier Enterprise AE application (Task #35) — aggressive timeline
 
 ---
 
