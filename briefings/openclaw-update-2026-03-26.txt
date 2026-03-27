@@ -1,0 +1,13 @@
+## OpenClaw Update Available
+
+Version: 2026.3.24 (current: 2026.2.6)
+Released: March 25, 2026
+
+Relevant changes:
+- Security: Close mediaUrl/fileUrl alias bypass for media-root restrictions (#54034)
+- Gateway: Add /v1/models and /v1/embeddings endpoints, improve restart sentinel with session wake and Telegram topic preservation
+- Gateway: Sequential channel startup with isolated per-channel failure handling (#54215)
+- Telegram: Recover forum topic routing when metadata omitted, fix native command execution with SecretRef handling
+- Session routing: Agent tools now show what's actually available right now, improved gateway routing
+
+Recommendation: UPDATE

@@ -1,10 +1,10 @@
 {
-  "last_query_index": 4,
-  "last_run": "2026-03-10T06:45:00Z",
-  "queries_run": 3,
-  "queries_skipped": 1,
+  "last_query_index": 0,
+  "last_run": "2026-03-26T06:45:00Z",
+  "queries_run": 1,
+  "queries_skipped": 2,
   "queries_rate_limited": 2,
   "total_leads_found": 0,
   "new_leads_added": 0,
-  "notes": "Query 2 (solutions sales AI infrastructure): Returned aggregators (Indeed, Glassdoor, Built In, ZipRecruiter) with no extractable job details. Query 3 (senior AE developer tools): Returned Senior Software Engineer positions (wrong job type). Query 4 (account executive middleware integration): Skipped - rate limited (429) after 60s cooldown. Persistent issue: web_search returns job board landing pages rather than specific job postings. Cannot extract company+title+location+comp+link for filtering. Consider alternative search strategy or job board API integration."
+  "notes": "Query 5 (sales engineer AI platform remote quota): Completed - returned aggregators and Remote Rocketship job listings. Digit7 AI Sales Engineer & Uniphore Senior Sales Engineer identified as potential matches (Sales Engineer, AI platform, remote), but Cloudflare blocks web_fetch on job detail pages. Query 6 & 0: Rate limited (429) immediately. Persistent blocker: web_search finds jobs but job board sites (Remote Rocketship, Indeed, etc.) are either aggregators without extractable details or blocked by Cloudflare. Need: Direct job board API integration (LinkedIn, Greenhouse, Workable) or alternative search strategy."
 }
