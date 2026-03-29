@@ -1,34 +1,17 @@
 ## OpenClaw Update Available
 
-**Version:** 2026.2.26 (current: 2026.2.6)
+**Version:** 2026.3.24 (current: 2026.2.6)
+**Released:** March 25, 2026
+**Recommendation:** UPDATE
 
-**Released:** Feb 27, 2026
+### Relevant Changes
 
-**Relevant Changes:**
+- **Security:** Close mediaUrl/fileUrl alias bypass so outbound tool/message actions cannot escape media-root restrictions (#54034)
+- **Gateway/OpenAI compatibility:** Add `/v1/models` and `/v1/embeddings`; forward model overrides through `/v1/chat/completions` and `/v1/responses` for broader client and RAG compatibility
+- **Gateway/restart sentinel:** Wake interrupted agent session via heartbeat after restart; retry outbound delivery once on transient failure; preserve thread/topic routing through wake path (#53940)
+- **Gateway/channels:** Keep channel startup sequential while isolating per-channel boot failures (#54215)
+- **Telegram fixes:** Forum topic recovery (#53699), native command routing, outbound error handling (preserve 403 membership/block/kick details), photo dimension preflight + fallback to document sends (#52545)
 
-**🔒 Security Fixes:**
-- Node exec approvals hardening (structured argv, versioned bindings, forwarding validation)
-- Plugin channel HTTP auth (normalized paths, traversal prevention, fail-closed handling)
-- Gateway node pairing anti-spoofing (platform/deviceFamily metadata pinning)
-- Sandbox/workspace boundary hardening (symlink validation, escape prevention)
-- Config includes hardening (verified-open, hardlink rejection, size guardrails)
-- SSRF-guarded media fetch paths
+### Rationale
 
-**💬 Telegram Improvements:**
-- DM allowlist runtime inheritance enforcement
-- sendChatAction 401 backoff + typing suppression
-- Webhook startup & ephemeral binding
-- Inline buttons in groups
-- Streaming preview finalization
-
-**⚙️ Gateway & Config:**
-- Agents routing CLI (bind/unbind account-scoped routes)
-- Gateway TLS probe for LAN binds
-- Gateway auth mode CLI parity
-- Startup bind visibility warning
-- Doctor allowlist safety checks + auto-fix
-- Auth profile alias normalization
-
-**Recommendation:** **UPDATE**
-
-*Multiple security fixes + critical infrastructure improvements. This is a substantial release (20 patch versions from 2026.2.6). Plan upgrade at next maintenance window.*
+Security fix (#54034) + critical gateway infrastructure improvements warrant immediate update.
