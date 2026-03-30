@@ -1,10 +1,10 @@
 {
-  "last_query_index": 5,
-  "last_run": "2026-03-28T06:45:00Z",
-  "queries_run": 2,
+  "last_query_index": 1,
+  "last_run": "2026-03-29T06:45:00Z",
+  "queries_run": 3,
   "queries_skipped": 0,
-  "queries_rate_limited": 1,
-  "total_leads_found": 2,
-  "new_leads_added": 0,
-  "notes": "Query 4-5: Ran 'account executive middleware integration SaaS' and 'sales engineer AI platform remote'. Query 5 hit rate limit (429), retried as 'sales engineer AI platform remote hiring'. Found Digit7 (AI Sales Engineer, $115-135k/year - below 150K OTE floor) and Uniphore (Senior Sales Engineer, $95.8-126.7k - below floor). No new leads added. Web search results primarily aggregator pages; direct company postings scarce for middleware/integration AE space. Next index: 6 (account executive data infrastructure remote)."
+  "queries_rate_limited": 2,
+  "total_leads_found": 10,
+  "new_leads_added": 7,
+  "notes": "Ran queries 6, 0, 1 (wrapped rotation). Query 6: 'account executive data infrastructure remote' yielded 4 new leads (DigitalOcean, DataBlend, Catio, Kentik). Query 0: 'enterprise account executive AI SaaS remote' hit 429 rate limit, retried after 60s, succeeded with 3 new leads (Bigtincan, Vimachem, Archlet). Query 1: 'strategic account executive automation platform' hit 429, retried after 60s, succeeded but all candidates failed location filter (ConductorOne North Central, Observe.AI Northwest Territory). No leads below 150K OTE threshold. Next index: 2 (solutions sales AI infrastructure remote)."
 }

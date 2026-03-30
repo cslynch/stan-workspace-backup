@@ -1,10 +1,27 @@
---- Last sync: 2026-03-08 17:00 CST ---
+--- Last sync: 2026-03-29 17:00 CST ---
 # KANBAN - Project Status
-**Last Updated:** 2026-03-08 17:00 CST (Sunday Metrics Review)
+**Last Updated:** 2026-03-29 17:00 CST (Sunday Metrics Review)
 **Updated By:** Stan
 **Trello Board:** StanOps
 **Source of Truth:** Master tracker (SuperStan) → Trello (SuperStan direct write) → KANBAN.md (Stan local cache, daily sync at 1:55 AM)
-**Snapshot Source:** tracker.json (2026-03-03)
+**Snapshot Source:** tracker.json (2026-03-03, stale — needs refresh)
+
+---
+
+## 📊 SUNDAY METRICS UPDATE — March 29, 2026
+
+✅ **Completed this session:**
+- Generated 2026-03-29-sunday-metrics.md (comprehensive status report)
+- Documented 3-week data gap (tracker.json stale since Mar 3)
+- Flagged critical decision gates:
+  - **🚨 Zapier deadline: 3/31 (2 days away!)**
+  - Lightning Phase 1 status unclear
+  - Marketplace submission decision pending
+  - Proof-of-work videos priority check
+
+**Key Finding:** Data refresh needed from SuperStan + Casey status update on 4 critical decisions.
+
+**Report Location:** `/home/clawdbot/.openclaw/workspace/metrics/2026-03-29-sunday-metrics.md`
 
 ---
 

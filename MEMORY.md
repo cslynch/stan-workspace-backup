@@ -640,6 +640,31 @@ Response appears in Chat space
 
 ---
 
+## SUNDAY METRICS CHECKPOINT - March 29, 2026
+
+**Status:** 3-week data gap. Tracker snapshot (Mar 3) is 26 days old. Minimal daily logs since Feb 25.
+
+**Critical Decision Gates (All Due This Week):**
+1. **🚨 Zapier Application** (Task #35) — Deadline **3/31/2026 (2 DAYS!)** — OTE $240K–$300K — Status unknown, needs immediate clarity
+2. **Lightning Phase 1** (Task #1036) — Target end-of-March — Status "Not Started" (needs clarification if setup began)
+3. **Jake OAuth** (Task #1037) — Blocked on Google Workspace OAuth setup — Timeline needed
+4. **Marketplace Submission** (Task #25) — Priority Q1 vs Q2? Blocks Spaces automation
+
+**Blockers:** 
+- LTN-003 specification (SuperStan) — blocks Lightning Phase 3
+- Jake OAuth setup — blocks secondary agent deployment
+
+**Recommendations:**
+- Fresh tracker.json snapshot needed from SuperStan
+- Casey status update on Zapier, Lightning Phase 1, OAuth, Marketplace priority
+- 3-week velocity assessment pending data refresh
+
+**Reports Generated:**
+- `/home/clawdbot/.openclaw/workspace/metrics/2026-03-29-sunday-metrics.md`
+- `/home/clawdbot/.openclaw/workspace/metrics/2026-03-29-decision-gates-summary.md`
+
+---
+
 ## SUNDAY METRICS CHECKPOINT - March 8, 2026
 
 **Weekly Review Completed:** 2026-03-08 17:00 CST
