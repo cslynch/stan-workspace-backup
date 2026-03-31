@@ -1,35 +1,46 @@
 ## OpenClaw Update Available
 
-**Version:** 2026.2.22 (current: 2026.2.6)  
-**Released:** February 23, 2026 @ 04:09 UTC  
-**Recommendation:** UPDATE
+Version: 2026.3.28 (current: 2026.2.6)
+Released: March 29, 2026
 
-### Critical Security Fixes
-- Credential redaction in CLI config output (prevents terminal history leakage)
-- Exec approval: Absolute path pinning (blocks binary-shadowing bypass)
-- Elevated auth: Sender-only identity matching (closes recipient-token bypass)
-- Shell wrapper hardening: HOME/ZDOTDIR/SHELLOPTS blocked; env whitelist enforced
-- Slack token security: CSPRNG tokens, shape validation, user-identity requirements
-- Memory/SSRF: 8k input cap + consistent policy enforcement across batch paths
+### Relevant Changes
 
-### Gateway & Infrastructure
-- Auth: Unified credential precedence; shared-token priority restored for remote gateways
-- Pairing: Loopback scope-upgrade auto-approval; operator.admin privilege parity
-- Restart stability: Fixed edge cases; gateway-port reachability for stale-lock detection
-- Cron: Parallel execution support; timeout guards for manual + startup runs
-- Delivery: Text-only announces route via direct delivery for explicit thread targets
+**Security:**
+- Extended web search key audit to recognize Gemini, Grok/xAI, Kimi, Moonshot, and OpenRouter credentials (#56540)
+- Security/sandbox media dispatch: closed `mediaUrl`/`fileUrl` alias bypass preventing tool/message actions from escaping media-root restrictions (#54034)
 
-### Telegram Enhancements
-- Media: User-facing failure replies (instead of silent drop)
-- Webhook: Monitor lifecycle fixes; webhook cleanup before long-poll
-- Polling: Network retry logic; update-offset watermark persistence
-- WSL2 + DNS: IPv6 auto-select disabled; memoized detection; ipv4first default
-- Replies: Target-scoped dedupe; normalized file:// paths; forwarded-origin preservation
+**Telegram (Core Channel):**
+- Telegram/splitting: replaced proportional text estimate with verified HTML-length search for word-boundary splits (#56595)
+- Telegram/delivery: skip whitespace-only and hook-blanked text replies to prevent GrammyError 400 crashes (#56620)
+- Telegram/send: validate `replyToMessageId` at all four API sinks with shared normalizer (#56587)
+- Telegram/pairing: ignore self-authored DM updates and render codes as Telegram-only code blocks (#54530, #52784)
+- Telegram/photos: preflight dimension/aspect-ratio rules with fallback to document sends (#52545)
+- Telegram/forum topics: recover `#General` topic `1` routing when metadata omitted (#53699)
+- Telegram/native commands: run slash-command execution against resolved runtime snapshot (#53179)
 
-### Config + Session Management
-- Built-in channel auto-enable via channels.&lt;id&gt;.enabled
-- Session routing preservation; label persistence across resets
-- Slack threading: Parent-session context beyond first turn
-- Token pattern redaction in sessions_history output
+**Gateway & Infrastructure:**
+- Gateway/OpenAI compatibility: added `/v1/models`, `/v1/embeddings`, and explicit model override forwarding (#v2026.3.28)
+- Gateway/restart sentinel: wake interrupted sessions via heartbeat with proper thread/topic routing (#53940)
+- Gateway/channels: keep channel startup sequential while isolating per-channel failures (#54215)
+- Gateway/plugins: reuse session workspace for `/tools/invoke` tool lists (#56101)
 
-**Action:** Review release notes at https://github.com/openclaw/openclaw/releases/tag/v2026.2.22, then schedule update during maintenance window.
+**Config & Runtime:**
+- Config/Doctor: drop automatic migrations older than two months; legacy keys now fail validation (#v2026.3.28)
+- Config/web fetch: allow documented `tools.web.fetch.maxResponseBytes` setting in schema validation (#53401)
+- Plugins/hooks: added async `requireApproval` to `before_tool_call` hooks for exec approval overlay, Telegram buttons, Discord interactions (#55339)
+
+**Credentials & Session Management:**
+- Agents/Anthropic: recover unhandled provider stop reasons as structured assistant errors (#56639)
+- Agents/status: use provider-aware context window lookup for fresh Anthropic 4.6 model overrides (#54796)
+- Embedded runs/secrets: stop unresolved `SecretRef` config from crashing embedded agent runs (#45838)
+
+**Other Relevant Changes:**
+- Slack/tool actions: added explicit `upload-file` action with file upload transport (#v2026.3.28)
+- Message actions/files: unified file-first sends with `upload-file` support for Teams, Google Chat, BlueBubbles (#v2026.3.28)
+- Agents/sandbox: honor `tools.sandbox.tools.alsoAllow` for explicit sandbox re-allows (#54492)
+
+---
+
+### Recommendation: **UPDATE**
+
+**Rationale:** Security fixes (web search audit, media-root bypass closure), critical Telegram reliability fixes (splitting, delivery, forum routing), gateway infrastructure improvements, and session/credential handling enhancements. These are production-quality fixes with broad relevance to channel stability and security posture.
