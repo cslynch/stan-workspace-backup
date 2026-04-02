@@ -1,10 +1,10 @@
 {
-  "last_query_index": 6,
-  "last_run": "2026-03-31T06:45:00Z",
-  "queries_run": 2,
+  "last_query_index": 2,
+  "last_run": "2026-04-01T06:45:00Z",
+  "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 1,
-  "total_leads_found": 4,
-  "new_leads_added": 2,
-  "notes": "Ran queries 4, 5, 6 (indices 4-6). Query 4 ('account executive middleware integration SaaS') succeeded (general SaaS aggregator results, limited specificity). Query 5 ('sales engineer AI platform remote quota') hit 429 rate limit, not retried. Query 6 ('account executive data infrastructure remote') succeeded with strong candidates (Upbound, vCluster). Extracted 2 new leads: Upbound Commercial AE (cloud infrastructure platform), vCluster Enterprise AE (K8s/cloud dev tools). Both remote, fit industry criteria."
+  "total_leads_found": 6,
+  "new_leads_added": 3,
+  "notes": "Ran queries 0, 1, 2 (indices 0-2). Query 0 ('enterprise account executive AI SaaS remote') returned aggregator results - all matches already in seen list (Bigtincan, Forethought, Cambio, Vimachem, H1). Query 1 ('strategic account executive automation platform') found ConductorOne (identity/automation SAE), Observe.AI (AI SAE), Workato (integration platform AAE). Query 2 ('solutions sales AI infrastructure remote') hit 429 rate limit after 60s wait - returned mostly tool comparison and aggregator pages, no new specific job postings. Deduped against seen list. Extracted 3 new leads: ConductorOne SAE (remote, identity automation), Observe.AI SAE - AI Agents (remote, AI platform), Workato AAE (integration automation platform)."
 }
