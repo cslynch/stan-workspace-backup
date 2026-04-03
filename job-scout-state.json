@@ -1,10 +1,10 @@
 {
-  "last_query_index": 2,
-  "last_run": "2026-04-01T06:45:00Z",
+  "last_query_index": 5,
+  "last_run": "2026-04-02T06:45:00Z",
   "queries_run": 3,
-  "queries_skipped": 0,
-  "queries_rate_limited": 1,
+  "queries_skipped": 1,
+  "queries_rate_limited": 2,
   "total_leads_found": 6,
-  "new_leads_added": 3,
-  "notes": "Ran queries 0, 1, 2 (indices 0-2). Query 0 ('enterprise account executive AI SaaS remote') returned aggregator results - all matches already in seen list (Bigtincan, Forethought, Cambio, Vimachem, H1). Query 1 ('strategic account executive automation platform') found ConductorOne (identity/automation SAE), Observe.AI (AI SAE), Workato (integration platform AAE). Query 2 ('solutions sales AI infrastructure remote') hit 429 rate limit after 60s wait - returned mostly tool comparison and aggregator pages, no new specific job postings. Deduped against seen list. Extracted 3 new leads: ConductorOne SAE (remote, identity automation), Observe.AI SAE - AI Agents (remote, AI platform), Workato AAE (integration automation platform)."
+  "new_leads_added": 0,
+  "notes": "Ran queries 3, 4, 5 (indices 3-5). Query 3 ('senior AE developer tools remote') returned 10 results - all engineering/developer positions (Senior Engineering Manager, Front End Developer, Fullstack Engineer, Software Engineer). No matching AE/sales titles. Query 4 ('account executive middleware integration SaaS') returned 10 results - mostly SaaS integration guides and technical articles. Found 1 SAE mention at Salesforce for MuleSoft/Informatica but remote Saudi Arabia (filtered out for wrong location). Query 5 ('sales engineer AI platform remote quota') rate limited (429) after initial 60s wait. Zero new leads from this batch. Dedup count: 0 (no new candidates met title/location/comp filters)."
 }
