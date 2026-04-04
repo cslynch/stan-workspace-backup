@@ -1,5 +1,3 @@
-# perplexity-research-zapier-ai-strategy
-
 # Zapier AI Strategy Research
 
 ## Search Query: Zapier AI features 2025 2026 roadmap
@@ -92,9 +90,3 @@ Sources:
 - Competitive positioning: Ease + ecosystem + built-in AI agents (NOT code flexibility)
 - 2025 was "year of intelligent automation"; 2026 is "evolution of AI"
 - Enterprise motion requires AI fluency (product readiness + sales messaging)
-
-
-
----
-Imported: 2026-03-05T07:00:16.284843
-Source Doc ID: 1IX63vMOl56JZ_hI2_MBSBqyOnuxgJ5N-_WXEHAGnFfc
