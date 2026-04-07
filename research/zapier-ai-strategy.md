@@ -1,3 +1,13 @@
+# perplexity-research-zapier-ai-strategy
+
+**Source:** [Google Doc](https://docs.google.com/document/d/1IX63vMOl56JZ_hI2_MBSBqyOnuxgJ5N-_WXEHAGnFfc/edit?usp=drivesdk)
+
+**Original Doc ID:** 1IX63vMOl56JZ_hI2_MBSBqyOnuxgJ5N-_WXEHAGnFfc
+
+**Processed:** 2026-04-06T07:00:33.951683
+
+---
+
 # Zapier AI Strategy Research
 
 ## Search Query: Zapier AI features 2025 2026 roadmap

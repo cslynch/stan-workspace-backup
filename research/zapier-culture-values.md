@@ -1,3 +1,13 @@
+# perplexity-research-zapier-culture-values
+
+**Source:** [Google Doc](https://docs.google.com/document/d/158Lxpmjkhx0aQUmqye8FXXOjf2GQVCrFXcRO1ZGQPm4/edit?usp=drivesdk)
+
+**Original Doc ID:** 158Lxpmjkhx0aQUmqye8FXXOjf2GQVCrFXcRO1ZGQPm4
+
+**Processed:** 2026-04-06T07:00:17.703198
+
+---
+
 # Zapier Culture, Values & Hiring Research
 
 ## Search Query: Zapier remote work culture values

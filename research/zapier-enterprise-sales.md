@@ -1,3 +1,13 @@
+# perplexity-research-zapier-enterprise-sales
+
+**Source:** [Google Doc](https://docs.google.com/document/d/1dzQuVfjjQK6gyk-Dl1Pp4RX5Wtc6a9lYicIIWGUP-EE/edit?usp=drivesdk)
+
+**Original Doc ID:** 1dzQuVfjjQK6gyk-Dl1Pp4RX5Wtc6a9lYicIIWGUP-EE
+
+**Processed:** 2026-04-06T07:00:19.056188
+
+---
+
 # Zapier Enterprise Sales Motion Research
 
 ## Search Query: Zapier enterprise sales motion AE role
