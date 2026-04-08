@@ -1,11 +1,11 @@
 {
-  "last_query_index": 1,
-  "last_run": "2026-04-06T06:45:00Z",
-  "queries_run": 2,
-  "queries_skipped": 1,
-  "queries_rate_limited": 1,
+  "last_query_index": 4,
+  "last_run": "2026-04-07T06:45:00Z",
+  "queries_run": 3,
+  "queries_skipped": 0,
+  "queries_rate_limited": 2,
   "total_leads_found": 0,
   "new_leads_added": 0,
   "dedup_matches": 0,
-  "notes": "Ran queries 0 (enterprise account executive AI SaaS remote) and 1 (strategic account executive automation platform). Query 2 (solutions sales AI infrastructure remote) hit 429 rate limit after 60s retry and was skipped. Query 0 returned aggregator pages (Glassdoor, Indeed, ZipRecruiter, BuiltIn) and previously seen roles (Cambio, H1, Forethought, Databricks, Vimachem). Query 1 returned ZoomInfo profiles, aggregators, and previously seen role (Observe.AI). Automation Anywhere (Seattle), Arius Recruit (London), and Salesforce India roles failed location filters. Zero new leads met filter criteria (Remote US or hybrid Austin/San Antonio/San Marcos TX with 150K+ OTE floor). Next index: 2 (solutions sales AI infrastructure remote - pending rate limit recovery)."
+  "notes": "Ran query 2 (solutions sales AI infrastructure remote) - returned mostly job aggregators (builtin, indeed, simplyhired, glassdoor, ziprecruiter) with no specific AE job postings. Queries 3 (senior AE developer tools remote job) and 4 (account executive middleware integration SaaS) both hit 429 rate limits immediately. After 60s retry, query 3 was re-run but returned developer engineering jobs (mismatched) rather than AE sales roles. Query 4 was not retried due to ongoing rate limit. Zero new leads met filter criteria. Next run should retry from index 5 after rate limit recovery window (suggest 2+ hour wait)."
 }
