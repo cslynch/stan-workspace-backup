@@ -1,11 +1,11 @@
 {
-  "last_query_index": 4,
-  "last_run": "2026-04-07T06:45:00Z",
-  "queries_run": 3,
-  "queries_skipped": 0,
+  "last_query_index": 0,
+  "last_run": "2026-04-08T06:45:00Z",
+  "queries_run": 2,
+  "queries_skipped": 1,
   "queries_rate_limited": 2,
-  "total_leads_found": 0,
-  "new_leads_added": 0,
+  "total_leads_found": 2,
+  "new_leads_added": 2,
   "dedup_matches": 0,
-  "notes": "Ran query 2 (solutions sales AI infrastructure remote) - returned mostly job aggregators (builtin, indeed, simplyhired, glassdoor, ziprecruiter) with no specific AE job postings. Queries 3 (senior AE developer tools remote job) and 4 (account executive middleware integration SaaS) both hit 429 rate limits immediately. After 60s retry, query 3 was re-run but returned developer engineering jobs (mismatched) rather than AE sales roles. Query 4 was not retried due to ongoing rate limit. Zero new leads met filter criteria. Next run should retry from index 5 after rate limit recovery window (suggest 2+ hour wait)."
+  "notes": "Query 5 (sales engineer AI platform remote quota): returned aggregator results (SimplyHired, Built In, ZipRecruiter, RemoteRocketship) - no direct postings extracted. Query 6 (account executive data infrastructure remote): returned 2 new candidates - Acceldata (EAE, remote, data infrastructure) and OpenObserve (AE, remote, data/observability). Query 0 (enterprise AE AI SaaS) hit 429 on retry, skipped after 60s wait. Next run start index: 1"
 }

@@ -1,42 +1,17 @@
 ## OpenClaw Update Available
+Version: 2026.4.8 (current: 2026.2.6)
+Released: April 8, 2026 @ 5:59 AM UTC
 
-**Version:** 2026.2.15 (current: 2026.2.6)
-**Released:** February 16, 2026, 4:43 AM UTC
-**Days behind:** 10 days
+Relevant changes:
+- Telegram/setup: gateway sidecar loading fix for secret contracts during startup
+- Bundled channels: shared secret contract loading across packaged top-level sidecars
+- Network/fetch guard: DNS pinning and env-proxy mode handling for SSRF-guarded fetches
+- Slack: HTTP(S) proxy settings honored for Socket Mode WebSocket connections (#62878)
+- Slack: SecretRef-backed bot token resolution for action reads (#62097)
+- Gateway/config: exec approval paths (safeBins, strictInlineEval) blocked from model-facing config writes (#62001)
+- Host exec/env sanitization: dangerous credential/config/repo env overrides blocked (#59119, #62002, #62291)
+- Browser/SSRF: private-network blocking for main-frame document redirect hops (#62355)
+- Gateway/auth: shared-token and password WebSocket sessions invalidated on secret rotation (#62350)
+- Media/base64: byte limits enforced before decoding for Teams, Signal, QQ Bot payloads (#62007)
 
-### Relevant Changes
-
-**Security (Critical):**
-- Replace deprecated SHA-1 sandbox config hashing with SHA-256 for deterministic sandbox cache and recreation checks
-- Redact Telegram bot tokens from error messages and stack traces (prevent secret leakage to logs)
-- Block dangerous sandbox Docker config (bind mounts, host networking, unconfined seccomp/apparmor) to prevent container escape
-- Redact sensitive session/path details from `status` responses for non-admin clients
-- Sanitize workspace paths before embedding into LLM prompts (prevent instruction injection)
-- Cap downloaded response body size before HTML parsing (prevent memory exhaustion)
-
-**Gateway & Credential Management:**
-- Dedicated webhook auth token support (`cron.webhookToken`) for outbound cron webhook posts
-- Improved `status` response security with session/path redaction
-- Reject malformed `agent:` session keys to prevent accidental cross-session routing
-- Harden `chat.send` inbound message handling (reject null bytes, normalize Unicode to NFC)
-- Preserve operator scope for Control UI bypass modes when device identity unavailable
-
-**Telegram Fixes:**
-- Omit `message_thread_id` for DM sends (fix 400 errors on forum topics)
-- Replace inbound `<media:audio>` placeholder with voice transcript
-- Retry media `getFile` calls with backoff, graceful fallback on transient failures
-- Finalize streaming preview replies in-place (prevent duplicate outputs)
-- Disable block streaming when `streamMode` is `off`
-- Add poll sending via `openclaw message poll`
-
-**Configuration & Routing:**
-- Per-channel ack reaction overrides for platform-specific emoji formats
-- Nested sub-agents (sub-sub-agents) with configurable depth
-- Improved group chat context injection (every turn, not just first)
-- Proper announce chain routing for nested subagent runs
-
-### Recommendation
-
-**UPDATE** — Multiple security fixes (SHA-256 hashing, token redaction, Docker escape prevention) and critical gateway/session hardening warrant immediate adoption. Telegram improvements provide stability for your primary channel.
-
-**Risk Level:** Low (security & stability focused, no breaking changes noted)
+Recommendation: UPDATE
