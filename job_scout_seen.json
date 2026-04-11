@@ -317,6 +317,39 @@
       "added": "2026-04-09T06:45:00Z",
       "source": "job-scout",
       "link": "https://builtin.com/jobs/remote/sales/artificial-intelligence"
+    },
+    {
+      "company": "Uniphore",
+      "title": "Senior Sales Engineer, AI Platform",
+      "location": "Remote (US)",
+      "industry": "AI / SaaS / Automation",
+      "comp": "Not listed",
+      "added": "2026-04-10T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/us/company/uniphore-3/jobs/senior-sales-engineer-ai-platform-united-states-remote/",
+      "fit_score": 8.5
+    },
+    {
+      "company": "Overview AI",
+      "title": "Vision Sales Engineer",
+      "location": "Remote (US)",
+      "industry": "AI / Computer Vision / SaaS",
+      "comp": "$250K OTE",
+      "added": "2026-04-10T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/company/overview-ai-ai/jobs/vision-sales-engineer-united-states-remote/",
+      "fit_score": 9.0
+    },
+    {
+      "company": "Digit7",
+      "title": "AI Sales Engineer",
+      "location": "Remote (US)",
+      "industry": "AI / Security / Automation",
+      "comp": "Not listed",
+      "added": "2026-04-10T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/company/digit7-ai/jobs/ai-sales-engineer-service-providers-united-states-remote/",
+      "fit_score": 8.0
     }
   ]
 }
