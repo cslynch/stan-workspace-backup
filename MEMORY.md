@@ -45,20 +45,21 @@
 
 ---
 
-## CASEY & ROSA - FAMILY & CRITICAL DATES
+## CASEY & ROSA - FAMILY & CRITICAL DATES (Updated Apr 12, 2026)
 
 **Birthdays (with birth years):**
 - Casey Lynch: March 10, 1977
-- Rosa: April 22, 1987
+- Rosa: April 22, 1987 **[12 DAYS AWAY]**
 - Diana (Rosa's mom): December 18, 1961
 - Joe (Rosa's son): December 24, 2006
 - Tyler (Casey's son): January 22, 2007 **[MINOR - in-home]**
 - Ryan (Casey's daughter): December 2, 2009 **[MINOR - in-home]**
 
 **Critical Dates:**
-- **Valentine's Day 2026:** Feb 14 (2 DAYS AWAY!) — Reservation: 18 Oaks steakhouse, Fri Feb 13, 7:30 PM, JW Marriott San Antonio Hill Country Resort & Spa. Pre-dinner: spa infinity pool or cocktail lounge. LOCKED.
+- **Valentine's Day 2026:** ✅ DONE (Feb 13-14) — Reservation: 18 Oaks steakhouse, 7:30 PM, JW Marriott San Antonio Hill Country Resort & Spa.
+- **Rosa's Birthday:** April 22, 2026 (10 days away)
+- **Birthday Trip (April 24-May 1, 2026):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Planning doc: birthday-trip-april-2026.md. **BOOKING DECISION NEEDED ASAP (12-19 days away).**
 - **Engagement coming:** Plan to help when requested.
-- **Birthday Trip (April 24-May 1):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Options: Cozumel, Turks & Caicos, Florida Keys.
 
 **Recent Gestures:**
 - **Feb 17, 2026:** Flowers sent to Rosa's new office at AWC (pregnancy outreach volunteer group). Pastel arrangement from Oakleaf Florist (~$125). Card message: "I'm so proud of the mission you serve at AWC. 'Every child is a blessing' (Psalm 127:3)."
@@ -71,6 +72,28 @@
 - ✅ Rosa's birthday: April 22
 - ✅ Diana's birthday: Dec 18
 - ✅ Joe's birthday: Dec 24
+
+---
+
+## SUNDAY METRICS & OPERATIONS (Updated Apr 12, 2026)
+
+**Weekly Report:** KANBAN-WEEKLY-2026-04-12.md (generated Sun 5:00 PM CDT)
+
+**Critical Alerts:**
+1. **DEADLINE PASSED:** Task 35 (Zapier Enterprise AE) — deadline was 3/31/2026 (12 days ago). Verify Ashby status. OTE $240K–$300K. If closed, mark lost opportunity.
+2. **DATA STALE:** Tracker.json last updated 2026-03-03 (40 days). Cannot trust status of 23+ tasks. Resume weekly sync.
+3. **OAUTH BLOCKER:** Task LTN-002 (Lightning Phase 2) blocked on Google Workspace OAuth for jake@fleetbrain.ai since Feb 11. Verify if provisioned or still pending.
+
+**Quick Wins (This Week):**
+- Task 7: X Launch — blocked on mascot image. Task 5 (mascot) is "Ready". ACTION: Generate via Ideogram + apply to @stanleybodewell profile. 3–4 hours.
+- Task 25: Marketplace submission — blocked on logo + description. 1 week to complete.
+- Task 21: Demo artifacts — no blocker. Coordinate with Stan for 3–4 work clips. 2–3 hours.
+- Task 34: Browser profile fix (attachOnly). <1 hour.
+
+**Ownership:**
+- Casey: Mascot image, Marketplace assets, browser fix
+- SuperStan: Verify OAuth status, unblock Lightning chain
+- Stan: Demo artifact capture
 
 ---
 
