@@ -1,13 +1,16 @@
 ## OpenClaw Update Available
-Version: 2026.4.11 (current: 2026.2.6)
-Released: April 12, 2026
+Version: 2026.4.12 (current: 2026.2.6)
+Released: April 13, 2026
 
 Relevant changes:
-- **SECURITY**: Gateway credential hardening — blank example `.env.example`, fail startup with placeholder secrets (#64586)
-- Gateway: WebSocket keepalive fix for slow clients, plugin schema validation, cron config isolation
-- Telegram: Approval button routing (prevent callback deadlock), topic-scoped sessions, direct DM filtering
-- Sessions: Cron subagent config persistence, transcript path fixes, orphaned turn recovery
-- Config: AsyncCompletion zod schema fix
+- **Security (7 fixes):** SSRF policy enforcement on browser snapshot/screenshot, config redaction, approval allowlist checks, shell injection hardening, busybox removal
+- **Telegram:** Forum topic name surfacing, credential leasing, heartbeat topic isolation, gateway callback routing
+- **Gateway:** New `commands.list` RPC, startup/runtime lifecycle separation, auth hardening (redacted example credentials), session routing fixes, WebSocket keepalive, cron persistence
+- **Anthropic:** Agent replay with signing, thinking-only recovery, tool call retry improvements
+- **Exec Policy:** New `openclaw exec-policy` CLI for config synchronization and approval management
+- **Config/Auth:** Placeholder token validation, credential redaction, auth config improvements
+- **Sessions:** Cron isolation, transcript routing, heartbeat routing
 
-Recommendation: UPDATE
-Reasoning: Security hardening + critical gateway/session stability fixes for your Telegram-heavy setup.
+Recommendation: **UPDATE**
+
+Rationale: Multiple security fixes (SSRF, auth, injection), critical gateway infrastructure improvements, and Telegram credential/routing enhancements warrant immediate update.
