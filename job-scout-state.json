@@ -1,11 +1,11 @@
 {
-  "last_query_index": 2,
-  "last_run": "2026-04-14T06:45:00Z",
+  "last_query_index": 5,
+  "last_run": "2026-04-23T06:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 1,
   "total_leads_found": 36,
-  "qualified_leads_added": 1,
+  "qualified_leads_added": 0,
   "dedup_matches": 0,
-  "notes": "2026-04-14: Queries 0-2 run. Query 0 (enterprise account executive AI SaaS remote) returned aggregate pages + Ketch mention. Query 1 (strategic account executive automation platform) hit rate limit 429, recovered after 60s wait. Query 2 (solutions sales AI infrastructure) returned aggregate pages + Handshake mention (filtered out - doesn't match target industries). Found 1 new qualified lead: Ketch (Enterprise Account Executive, Remote, AI/Privacy fit). Web search results mostly aggregate pages rather than direct postings - limited granular detail for comp/verification. Next run start index: 3."
+  "notes": "2026-04-23: Queries 3-5 run. Query 3 (senior AE developer tools remote) returned aggregate pages + mentions of Antithesis, Yelp (both already in seen). Query 4 (account executive middleware integration) hit rate limit 429, recovered after 60s wait, returned mostly aggregate pages + Salesforce mention (location: Saudi Arabia, filtered out). Query 5 (sales engineer AI platform) returned aggregate pages + mentions of SecureAuth, Horizon3.ai (not in seen but no verified 150K+ comp). Web search results predominantly aggregate job boards (Indeed, ZipRecruiter, Glassdoor, Built In) without granular company/comp/location details. No new qualified leads meeting all criteria (title match + remote US/TX location + 150K+ OTE floor) found. Next run start index: 6."
 }
