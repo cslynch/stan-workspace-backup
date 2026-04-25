@@ -1,11 +1,11 @@
 {
-  "last_query_index": 5,
-  "last_run": "2026-04-23T06:45:00Z",
+  "last_query_index": 1,
+  "last_run": "2026-04-24T06:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 1,
-  "total_leads_found": 36,
-  "qualified_leads_added": 0,
+  "total_leads_found": 37,
+  "qualified_leads_added": 1,
   "dedup_matches": 0,
-  "notes": "2026-04-23: Queries 3-5 run. Query 3 (senior AE developer tools remote) returned aggregate pages + mentions of Antithesis, Yelp (both already in seen). Query 4 (account executive middleware integration) hit rate limit 429, recovered after 60s wait, returned mostly aggregate pages + Salesforce mention (location: Saudi Arabia, filtered out). Query 5 (sales engineer AI platform) returned aggregate pages + mentions of SecureAuth, Horizon3.ai (not in seen but no verified 150K+ comp). Web search results predominantly aggregate job boards (Indeed, ZipRecruiter, Glassdoor, Built In) without granular company/comp/location details. No new qualified leads meeting all criteria (title match + remote US/TX location + 150K+ OTE floor) found. Next run start index: 6."
+  "notes": "2026-04-24: Queries 6, 0, 1 run (rotation). Query 6 (account executive data infrastructure remote) returned aggregate pages + Dataminr (NE location, not US remote), DigitalOcean, Acceldata (both already in seen). Query 0 (enterprise account executive AI SaaS remote) hit 429 rate limit on first attempt, recovered and returned aggregate pages + Stampli (NEW - Austin hybrid, ERP integration SaaS), Cambio (already seen), Forethought/Databricks/H1 (already seen). Query 1 (strategic account executive automation platform) returned mentions of Tennr (no location), Okta (no location detail), GitLab/Observe.AI (already seen). Found 1 new qualified lead: Stampli. Next run start index: 2."
 }
