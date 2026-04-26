@@ -1,11 +1,11 @@
 {
-  "last_query_index": 1,
-  "last_run": "2026-04-24T06:45:00Z",
+  "last_query_index": 5,
+  "last_run": "2026-04-25T06:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 1,
-  "total_leads_found": 37,
+  "total_leads_found": 42,
   "qualified_leads_added": 1,
   "dedup_matches": 0,
-  "notes": "2026-04-24: Queries 6, 0, 1 run (rotation). Query 6 (account executive data infrastructure remote) returned aggregate pages + Dataminr (NE location, not US remote), DigitalOcean, Acceldata (both already in seen). Query 0 (enterprise account executive AI SaaS remote) hit 429 rate limit on first attempt, recovered and returned aggregate pages + Stampli (NEW - Austin hybrid, ERP integration SaaS), Cambio (already seen), Forethought/Databricks/H1 (already seen). Query 1 (strategic account executive automation platform) returned mentions of Tennr (no location), Okta (no location detail), GitLab/Observe.AI (already seen). Found 1 new qualified lead: Stampli. Next run start index: 2."
+  "notes": "2026-04-25: Queries 2, 3, 4 run (rotation). Query 2 (solutions sales AI infrastructure remote) returned general articles + Airwallex, Jasper (already seen), no new qualified. Query 3 (senior AE developer tools remote) hit 429 rate limit on first attempt, recovered with retry 'senior AE developer tools remote jobs' but returned mostly dev engineering results (no sales roles). Query 4 (account executive middleware integration SaaS) returned general articles + Built In results mentioning Figma (NEW - Strategic Account Executive, $400K median OTE, remote, developer tools/design platform). Figma added to seen as new qualified lead. Next run start index: 5."
 }
