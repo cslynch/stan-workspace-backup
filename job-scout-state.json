@@ -1,11 +1,11 @@
 {
-  "last_query_index": 5,
-  "last_run": "2026-04-25T06:45:00Z",
+  "last_query_index": 0,
+  "last_run": "2026-04-26T06:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 1,
-  "total_leads_found": 42,
-  "qualified_leads_added": 1,
+  "total_leads_found": 28,
+  "qualified_leads_added": 3,
   "dedup_matches": 0,
-  "notes": "2026-04-25: Queries 2, 3, 4 run (rotation). Query 2 (solutions sales AI infrastructure remote) returned general articles + Airwallex, Jasper (already seen), no new qualified. Query 3 (senior AE developer tools remote) hit 429 rate limit on first attempt, recovered with retry 'senior AE developer tools remote jobs' but returned mostly dev engineering results (no sales roles). Query 4 (account executive middleware integration SaaS) returned general articles + Built In results mentioning Figma (NEW - Strategic Account Executive, $400K median OTE, remote, developer tools/design platform). Figma added to seen as new qualified lead. Next run start index: 5."
+  "notes": "2026-04-26: Queries 5, 6, 0 run (rotation wrap). Query 5 (sales engineer AI platform remote quota) returned general job boards + Zoom Revenue Accelerator Sales Specialist role (title doesn't match filter - 'Sales Specialist' not in approved titles). Query 6 (account executive data infrastructure remote) returned VAST Data Account Executive (NEW - remote/Chicago work-from-home, data infrastructure/AI), DDN Account Executive (NEW - remote, HPC/AI infrastructure), DigitalOcean (already seen), Acceldata (already seen), Dataminr (regional, not pure remote US). Query 0 (enterprise account executive AI SaaS remote) returned Level AI Enterprise Account Executive (NEW - remote, AI/SaaS), plus many already-seen companies (Stampli, H1, Forethought, Databricks). Three new qualified leads added: Level AI, VAST Data, DDN. Next run start index: 1."
 }

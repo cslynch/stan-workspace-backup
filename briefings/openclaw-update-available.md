@@ -1,16 +1,15 @@
 ## OpenClaw Update Available
-Version: 2026.4.9 (current: 2026.2.6)
-Released: April 9, 2026 at 02:25 UTC
+Version: 2026.4.24 (current: 2026.2.6)
+Released: April 25, 2026
 
 Relevant changes:
-
-- **Browser/Security**: SSRF quarantine hardening—re-run blocked-destination safety checks after interaction-driven main-frame navigations so browser interactions cannot bypass SSRF quarantine when landing on forbidden URLs. (#63226)
-- **Security/dotenv**: Block runtime-control env vars and browser-control override from untrusted workspace `.env` files; reject unsafe URL-style browser control specifiers before lazy loading. (#62660, #62663)
-- **Gateway/node exec events**: Mark remote node `exec.started`, `exec.finished`, `exec.denied` summaries as untrusted and sanitize node-provided command/output/reason text before enqueueing—prevents remote node output from injecting trusted `System:` content. (#62659)
-- **Security/dependency audit**: Force `basic-ftp` to `5.2.1` for CRLF command-injection fix; bump Hono and `@hono/node-server`.
-- **Sessions/routing**: Preserve established external routes on inter-session announce traffic—`sessions_send` follow-ups no longer steal delivery from Telegram or other external channels. (#58013)
-- **Config/credential handling**: Resolve reply-run SecretRefs before preflight helpers touch config; persist explicit auth-profile upserts directly without stale external credential state.
+- **Telegram**: Agent response fallback suppression (#70623), polling offset persistence, channel config schema metadata, model display names in picker
+- **Gateway Security**: Realtime WebSocket endpoint with auth gating (#70938), node pairing auto-approve CIDR option (disabled by default), tool invoke bridge for plugin-backed catalog tools
+- **Session Management**: Oversized sessions.json rotation backup, recovery of main-agent turns interrupted by gateway restart (#70555)
+- **Browser Security**: Require `operator.admin` for `browser.request` gateway method, SSRF policy propagation to sandbox bridges, proxy environment variable isolation
+- **Exec Approvals**: Allow bare command-name allowlist patterns to match PATH-resolved binaries (#71315)
+- **Gateway Config**: Skip false full restarts when `${VAR}` env refs are unchanged on disk (#71208)
 
 Recommendation: **UPDATE**
 
-Multiple security fixes including SSRF hardening, dotenv controls, and gateway node event sanitization address infrastructure integrity.
+Security improvements include auth gating on new realtime endpoints, tightened browser control authorization, and SSRF policy enforcement. Session recovery and Telegram reliability are stable. No breaking changes impacting Telegram or core credential flow.
