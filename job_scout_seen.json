@@ -438,6 +438,28 @@
       "source": "job-scout",
       "link": "https://careers-ddn.icims.com/jobs/5746/account-executive/job",
       "fit_score": 8.0
+    },
+    {
+      "company": "Automation Anywhere",
+      "title": "Account Executive",
+      "location": "United States Remote",
+      "industry": "RPA / Automation Platform",
+      "comp": "Not listed",
+      "added": "2026-04-27T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.remoterocketship.com/us/company/automationanywhere/jobs/sales-account-executive-united-states-remote/",
+      "fit_score": 8.5
+    },
+    {
+      "company": "Supermetrics",
+      "title": "Senior Account Executive",
+      "location": "US Remote (Eastern/Central timezones)",
+      "industry": "Analytics / Developer Tools",
+      "comp": "Not listed",
+      "added": "2026-04-27T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://job-boards.greenhouse.io/supermetricsoy/jobs/4847693101",
+      "fit_score": 8.0
     }
   ]
 }

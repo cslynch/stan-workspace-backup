@@ -1,7 +1,3 @@
-# perplexity-research-zapier-enterprise-sales
-
-*Source: Google Doc 1dzQuVfjjQK6gyk-Dl1Pp4RX5Wtc6a9lYicIIWGUP-EE*
-
 # Zapier Enterprise Sales Motion Research
 
 ## Search Query: Zapier enterprise sales motion AE role
