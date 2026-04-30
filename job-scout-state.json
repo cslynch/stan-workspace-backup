@@ -1,11 +1,11 @@
 {
-  "last_query_index": 6,
-  "last_run": "2026-04-28T06:45:00Z",
+  "last_query_index": 2,
+  "last_run": "2026-04-29T06:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
-  "queries_rate_limited": 1,
-  "total_leads_found": 0,
-  "qualified_leads_added": 0,
-  "dedup_matches": 44,
-  "notes": "2026-04-28: Queries 4, 5, 6 run. Query 4 (account executive middleware integration SaaS): returned job board aggregator pages (ZipRecruiter, Indeed, Glassdoor, Built In), no extractable specific postings. Query 5 (sales engineer AI platform remote quota): hit rate limit (429), waited 60s, retried successfully. Returned AI sales aggregator pages, no new specific jobs. Query 6 (account executive data infrastructure remote): returned job board aggregators and DDN (already in seen.json). All searches returned mostly index pages rather than individual job postings. 0 new qualified leads. Rotation complete - next run will restart at index 0. Comprehensive job scout seen.json now has 44 deduplicated leads."
+  "queries_rate_limited": 0,
+  "total_leads_found": 2,
+  "qualified_leads_added": 2,
+  "dedup_matches": 0,
+  "notes": "2026-04-29: Rotation restart at index 0. Queries 0, 1, 2 run. Query 0 (enterprise account executive AI SaaS remote): found Ever.Ag EAE role. Query 1 (strategic account executive automation platform): found Unframe AI Strategic AE role (Series A, $50M funded, LLM-focused). Query 2 (solutions sales AI infrastructure remote US): returned aggregators, no new specific postings. Both new leads met all criteria: title match, remote US, fit industries (AI/SaaS). 2 new qualified leads added. Comprehensive job scout seen.json now has 46 deduplicated leads."
 }

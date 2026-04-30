@@ -460,6 +460,28 @@
       "source": "job-scout",
       "link": "https://job-boards.greenhouse.io/supermetricsoy/jobs/4847693101",
       "fit_score": 8.0
+    },
+    {
+      "company": "Ever.Ag",
+      "title": "Enterprise Account Executive",
+      "location": "Remote (USA)",
+      "industry": "AgTech / AI & ML / SaaS",
+      "comp": "Not listed",
+      "added": "2026-04-29T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://remotive.com/remote/jobs/sales-business/enterprise-account-executive-ai-ml-4492462",
+      "fit_score": 8.0
+    },
+    {
+      "company": "Unframe AI",
+      "title": "Strategic Account Executive",
+      "location": "Chicago, IL (Remote)",
+      "industry": "AI / LLM / Enterprise SaaS",
+      "comp": "Not listed (aggressive uncapped commission)",
+      "added": "2026-04-29T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://builtin.com/job/strategic-account-executive-chicago-remote/9057042",
+      "fit_score": 8.5
     }
   ]
 }
