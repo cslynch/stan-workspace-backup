@@ -1,3 +1,7 @@
+# perplexity-research-zapier-enterprise-sales
+
+_Processed on 2026-05-02T07:00:58.557519_
+
 # Zapier Enterprise Sales Motion Research
 
 ## Search Query: Zapier enterprise sales motion AE role
@@ -122,4 +126,3 @@ Sources:
 - Enterprise tier has 99.9% SLA + advanced governance (SSO, SCIM, audit)
 - Sales-assist role is strategic: help-first, not sell-first
 - Compensation model: base + bonus, NOT quota (aligns with customer success mindset)
-

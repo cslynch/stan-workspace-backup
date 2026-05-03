@@ -1,3 +1,7 @@
+# perplexity-research-zapier-culture-values
+
+_Processed on 2026-05-02T07:00:58.392636_
+
 # Zapier Culture, Values & Hiring Research
 
 ## Search Query: Zapier remote work culture values
@@ -104,4 +108,3 @@ Sources:
 - Leadership values structured thinking (can you systematize + teach?)
 - Compensation model proves culture (80/20 base/bonus, not pure quota)
 - Interview likely tests: methodology mastery, stakeholder skills, AI understanding, cultural fit
-
