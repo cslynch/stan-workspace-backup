@@ -45,11 +45,11 @@
 
 ---
 
-## CASEY & ROSA - FAMILY & CRITICAL DATES (Updated Apr 12, 2026)
+## CASEY & ROSA - FAMILY & CRITICAL DATES (Updated May 3, 2026)
 
 **Birthdays (with birth years):**
 - Casey Lynch: March 10, 1977
-- Rosa: April 22, 1987 **[12 DAYS AWAY]**
+- Rosa: April 22, 1987 **[CELEBRATED - April 22, 2026]**
 - Diana (Rosa's mom): December 18, 1961
 - Joe (Rosa's son): December 24, 2006
 - Tyler (Casey's son): January 22, 2007 **[MINOR - in-home]**
@@ -57,8 +57,8 @@
 
 **Critical Dates:**
 - **Valentine's Day 2026:** ✅ DONE (Feb 13-14) — Reservation: 18 Oaks steakhouse, 7:30 PM, JW Marriott San Antonio Hill Country Resort & Spa.
-- **Rosa's Birthday:** April 22, 2026 (10 days away)
-- **Birthday Trip (April 24-May 1, 2026):** Celebrate both Casey & Rosa's birthdays. Clear water, soft sand, snorkeling. Planning doc: birthday-trip-april-2026.md. **BOOKING DECISION NEEDED ASAP (12-19 days away).**
+- **Rosa's Birthday:** ✅ DONE (April 22, 2026)
+- **Birthday Trip (April 24-May 1, 2026):** ✅ DATES PASSED — Status unknown. Awaiting feedback from Casey.
 - **Engagement coming:** Plan to help when requested.
 
 **Recent Gestures:**
@@ -75,9 +75,9 @@
 
 ---
 
-## SUNDAY METRICS & OPERATIONS (Updated Apr 12, 2026)
+## SUNDAY METRICS & OPERATIONS (Updated May 3, 2026)
 
-**Weekly Report:** KANBAN-WEEKLY-2026-04-12.md (generated Sun 5:00 PM CDT)
+**Weekly Report:** KANBAN-WEEKLY-2026-05-03.md (generated Sun 5:00 PM CDT)
 
 **Critical Alerts:**
 1. **DEADLINE PASSED:** Task 35 (Zapier Enterprise AE) — deadline was 3/31/2026 (12 days ago). Verify Ashby status. OTE $240K–$300K. If closed, mark lost opportunity.
