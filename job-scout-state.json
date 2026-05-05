@@ -1,12 +1,12 @@
 {
-  "last_query_index": 6,
-  "last_run": "2026-05-03T06:45:00Z",
+  "last_query_index": 2,
+  "last_run": "2026-05-04T06:45:00Z",
   "queries_run": 2,
-  "queries_skipped": 0,
+  "queries_skipped": 1,
   "queries_rate_limited": 1,
-  "queries_retried": 1,
-  "total_leads_found": 0,
+  "queries_retried": 0,
+  "total_leads_found": 2,
   "qualified_leads_added": 0,
   "dedup_matches": 0,
-  "notes": "2026-05-03: Queries 5, 6. Query 5 (sales engineer AI platform remote quota): 10 results all job board aggregator pages (Indeed, Built In, Glassdoor, ZipRecruiter, SimplyHired) - no specific job postings. Query 6 (account executive data infrastructure remote): Hit rate limit (429), retried after 60s wait. 10 results returned: mostly job board index pages and articles (Built In, Wellfound, Forbes, DailyRemote) - no specific extractable postings. Trend continues: market saturation with aggregator results. 0 new qualified leads. Next query index: 0 (cycling back to beginning)."
+  "notes": "2026-05-04: Queries 0, 1, 2 attempted. Query 0 (enterprise account executive AI SaaS remote): 10 results all job board aggregator pages. Query 1 (strategic account executive automation platform): Hit rate limit (429), skipped retry. Query 2 (solutions sales AI infrastructure remote): 10 results, found Lavendo (Solutions Architect pre-sales) and Revenue Guard AI (Head of Sales) - neither match required AE/Sales titles. 0 new qualified leads. Pattern continues: aggregator results dominating. Next query index: 3."
 }
