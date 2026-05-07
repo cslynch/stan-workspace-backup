@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-06T14:11:19.215Z",
+  "entries": {
+    "memory:memory/2026-02-25.md:87:115": {
+      "key": "memory:memory/2026-02-25.md:87:115",
+      "path": "memory/2026-02-25.md",
+      "startLine": 87,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "6 total leads across all sources and runs today. 2 TRACKING for ongoing review, 4 SKIPPED (decision made). Ready for new leads from tomorrow's automated run. --- ## Files Modified (Summary) **Local:** - job-scout.md (source hierarchy, company tracking rules, weekly reset schedule) - applications.json (5 initial leads appended, then dispositions updated, final state: 2 TRACKING, 4 SKIPPED, 1 new TRACKING) - MEMORY.md (Job Scout Company Watchlist Tracking table added) - tracker.json (4 task completions, 2 updates to notes) **Drive:** - Created x-drafts/ folder (ID: 1FFj2Zv8u6J3LsmTWU5Cn9hxiRHvnKXQf) - Created job-scout/ folder (ID: 1_r4ykfESPOwiF6I1d3SfCYkjbReAfVEj) - Created 2026-02-25-jo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:24:20.690Z",
+      "lastRecalledAt": "2026-05-06T11:24:20.690Z",
+      "queryHashes": [
+        "800cdd3b2c3f"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "job-scout.md",
+        "applications.json",
+        "memory.md",
+        "tracker.json",
+        "x-drafts",
+        "job-scout",
+        "2026-02-25-jo",
+        "total"
+      ]
+    },
+    "memory:memory/2026-02-03.md:23:54": {
+      "key": "memory:memory/2026-02-03.md:23:54",
+      "path": "memory/2026-02-03.md",
+      "startLine": 23,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- ✅ Both accounts configured & credentials in .env - ⏳ Voice/tone approval: Awaiting Casey review before Feb 4 launch - Schedule: Dual rollout @itsolz (professional) + @stanleybodewell (experimental), Feb 4-7 **Salesforce Phase 2 (BLOCKED):** - ⏳ Casey needs to sign up for Salesforce Developer Edition (free, takes 10 min) - When ready: Install MCP Salesforce (tsmztech), Stan becomes SFDC tutor - Interview prep + demo org setup ready to execute once account created **Jason Rawlings Demo (BRIEFING COMPLETE, AWAITING HIS ARRIVAL):** - ✅ Architecture brief locked (Stan execution + SuperStan strategy + Casey escalation) - ✅ Business model locked (Consultant + Agent, $500-3k/month, 10-15 agents",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "voice/tone",
+        "4-7",
+        "500-3k/month",
+        "10-15",
+        "both",
+        "accounts",
+        "configured",
+        "credentials"
+      ]
+    },
+    "memory:memory/2026-05-06.md:70:96": {
+      "key": "memory:memory/2026-05-06.md:70:96",
+      "path": "memory/2026-05-06.md",
+      "startLine": 70,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "3. **Cedar Stone undefined.** Unknown product, market, go-to-market. Absent from strategy. 4. **Weekly review ritual lapsed.** Sunday 5:00 PM CT sync (tracker.json → KANBAN.md) fell off. Causes blind roadmap. 5. **Lightning still blocked.** Hardware ready. OAuth unresolved for 83 days. 6. **Stan personal brand dormant.** @stanleybodewell Twitter inactive. X Launch blocked on mascot image. 7. **No vertical-specific proof of concept.** ICP is broad. No single-vertical case study (e.g., locksmith shops). --- ## STRATEGIC RECOMMENDATIONS ### FleetBrain Revenue Streams **Stream 1: Service Business AI Agent SaaS (StanleyBot)** - ICP: Locksmith, HVAC, staffing, plumbing shops. Low digital matur",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "go-to-market",
+        "tracker.json",
+        "kanban.md",
+        "vertical-specific",
+        "single-vertical",
+        "e.g",
+        "cedar",
+        "stone"
+      ]
+    },
+    "memory:memory/2026-02-02.md:58:108": {
+      "key": "memory:memory/2026-02-02.md:58:108",
+      "path": "memory/2026-02-02.md",
+      "startLine": 58,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "- **Impact:** Backup system + recovery procedures ### 3. Email Configuration (Optional, for Week 2) - Gmail label whitelist (which labels can Stan monitor?) - Explicit authorization for email access - **Impact:** Email monitoring capability (not critical for launch) --- ## Timeline Confirmed **Feb 3 (Tomorrow):** - Content approval - Disaster recovery decisions - Spiral-in mode (focus day) **Feb 4-7 (Launch Week Prep):** - Lock posting schedule - Final tests - Warm up infrastructure **Feb 7-9 (Week 1 - Content Validation Phase):** - Tue 4: @itsolz replies only (10/day) - Wed 5: Add @stanleybodewell (2 posts) - Thu 6: @itsolz first originals (2 singles) - Fri 7: Full schedule live - Sun",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "backup",
+        "spiral-in",
+        "4-7",
+        "7-9",
+        "10/day",
+        "impact",
+        "recovery",
+        "procedures"
+      ]
+    },
+    "memory:memory/2026-05-06.md:188:215": {
+      "key": "memory:memory/2026-05-06.md:188:215",
+      "path": "memory/2026-05-06.md",
+      "startLine": 188,
+      "endLine": 215,
+      "source": "memory",
+      "snippet": "- **Fix:** Reinstate weekly Casey + SuperStan sync. 30 min checkpoint, Sunday evening. Pull tracker.json → update KANBAN.md. **Blocker 2: OAuth Token Expiry Risk** - **stan@fleetbrain.ai token:** Last verified Feb 11, 2026 (83+ days ago) - **casey@fleetbrain.ai token:** Same age - **Risk:** Next Google API call will fail if token expired - **Fix:** Before ANY Google API call, run token refresh logic (check expiry → refresh + resave) **Blocker 3: Infrastructure Stall (Lightning OAuth)** - **Task LTN-002:** Jake agent deployment blocked since Feb 11, 2026 - **Blocker:** Google Workspace OAuth for jake@fleetbrain.ai not provisioned - **Duration:** 83+ days unresolved - **Impact:** Cannot test",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "tracker.json",
+        "kanban.md",
+        "fleetbrain.ai",
+        "ltn-002",
+        "fix",
+        "reinstate",
+        "weekly",
+        "casey"
+      ]
+    },
+    "memory:memory/2026-05-06.md:113:148": {
+      "key": "memory:memory/2026-05-06.md:113:148",
+      "path": "memory/2026-05-06.md",
+      "startLine": 113,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "1. Reinstate Sunday 5:00 PM CT sync (Casey + SuperStan, tracker.json review, 30 min) 2. Verify/close Zapier AE (Task 35, $240K–$300K OTE) 3. Resolve Lightning OAuth blocker (escalate to SuperStan if still pending) 4. Sync tracker.json to KANBAN.md (40 days stale) **P1:** 5. Define Cedar Stone role + revenue model 6. Activate FleetBrain sales pipeline (adapt Job Scout to service business prospecting) 7. Deploy StanleyBot demo (public Telegram instance for prospects) 8. Pick first vertical POC (recommend: locksmith shops) --- ## Questions for SuperStan 1. Cedar Stone: Intended role in ecosystem? 2. FleetBrain ICP: Narrow to one vertical (locksmith) or multi-vertical simultaneously? 3. Stanl",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "1551c2228d78",
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "tracker.json",
+        "verify/close",
+        "kanban.md",
+        "multi-vertical",
+        "reinstate",
+        "sunday",
+        "sync",
+        "casey"
+      ]
+    },
+    "memory:memory/2026-05-06.md:166:193": {
+      "key": "memory:memory/2026-05-06.md:166:193",
+      "path": "memory/2026-05-06.md",
+      "startLine": 166,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "2. **6:00 AM CT** — Contact CRM Daily Update (email + calendar interactions) 3. **6:15 AM CT** — Daily Briefing (structured briefing for Casey) 4. **6:30 AM CT** — X Content Scout (social content ideas, 0-2 items) 5. **6:45 AM CT** — Job Scout (3-5 enterprise AI sales roles daily) 6. **7:00 AM CT** — Research Harvester (Perplexity indexing to research-log.json) **Verification Needed:** Run `openclaw cron list` to confirm all 6 are active + last execution timestamp. ### SOURCE-OF-TRUTH HIERARCHY (LOCKED) 1. **tracker.json** (Google Drive) — Master task tracker (P0/P1/P2, blockers, deadlines) 2. **contacts.json** (Google Drive) — Contact CRM with scoring system 3. **research-log.json** (Goog",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "0-2",
+        "3-5",
+        "research-log.json",
+        "source-of-truth",
+        "tracker.json",
+        "p0/p1/p2",
+        "contacts.json",
+        "contact"
+      ]
+    },
+    "memory:memory/2026-02-03.md:125:162": {
+      "key": "memory:memory/2026-02-03.md:125:162",
+      "path": "memory/2026-02-03.md",
+      "startLine": 125,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "- ⚠️ Offered to calculate but didn't use exec/code (CORRECTED: Rule #1 now in place) - ✅ Followed Casey's \"stand by\" instruction during Jeff's thinking time - ✅ Didn't volunteer deliverables; responded to explicit asks **Outcome:** - Jeff making smarter decision based on real data (not guesses) - Stan demonstrated concrete research value in 10 minutes vs. 2-hour Google search - This interaction serves as baseline Case Study #1 for all future client engagements **Operational Rules Locked (Feb 3, 2026):** - Rule #1: Math → exec/code first, clean tables (no mental math) - Rule #2: Vendor research → \"[vendor] reviews\" + \"[vendor] scam\" search BEFORE recommendation - Rule #3: Research first → a",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T14:11:16.187Z",
+      "queryHashes": [
+        "1551c2228d78",
+        "f837ee33a8dc"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "exec/code",
+        "2-hour",
+        "offered",
+        "calculate",
+        "but",
+        "didn't",
+        "use",
+        "exec"
+      ]
+    },
+    "memory:memory/2026-05-06.md:211:233": {
+      "key": "memory:memory/2026-05-06.md:211:233",
+      "path": "memory/2026-05-06.md",
+      "startLine": 211,
+      "endLine": 233,
+      "source": "memory",
+      "snippet": "- Agent architecture (SuperStan → Casey → Stan) stable + locked - Daily automation pipeline running (6 skills, 5:50 AM–7:00 AM CT) - Contact CRM system operational (daily email + calendar sync) - Job Scout infrastructure working (3-5 leads/day, company watchlist, pipeline tracking) - Research log functioning (append-only, dedup working) - Email/Calendar read access functional (requires token refresh before use) ### AUDIT RECOMMENDATIONS **Immediate (This Week):** 1. Verify tracker.json on Drive modification time (compare local vs Drive timestamp) 2. Run `openclaw cron list` to confirm all 6 skills active + last execution time 3. Implement token refresh before next Google API call (load → c",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "3-5",
+        "leads/day",
+        "append-only",
+        "email/calendar",
+        "tracker.json",
+        "architecture",
+        "superstan",
+        "casey"
+      ]
+    },
+    "memory:memory/2026-02-25.md:1:31": {
+      "key": "memory:memory/2026-02-25.md:1:31",
+      "path": "memory/2026-02-25.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-02-25 — Daily Operations Log ## Morning Operations **Time:** 2026-02-25, 06:15–16:00 CT ### 1. TRACKER RECONCILIATION (LOCKED) - **Task 1** (ICP + pricing + outreach) → Complete ✓ - **Task 2** (Personal AI demo) → Complete ✓ - **Task 3** (fleetbrain.ai website) → Complete ✓ - **Task 4** (stanleybot.fleetbrain.ai website) → Complete ✓ - **Task 26** (Google Chat Spaces) → In Progress (manual process, automate post-Marketplace) - **LTN-003** → Added blocking note: \"Blocked on LTN-002 (Jake OAuth)\" - Metadata updated: last_modified_by \"Stan (reconciliation audit)\" ### 2. X CONTENT PIPELINE RESET - **Action:** Cleared stale draft posts from 6:30 AM scout run (2 posts never reviewed → d",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "1551c2228d78",
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "fleetbrain.ai",
+        "stanleybot.fleetbrain.ai",
+        "post-marketplace",
+        "ltn-003",
+        "ltn-002",
+        "last-modified-by",
+        "operations",
+        "log"
+      ]
+    },
+    "memory:memory/2026-05-06.md:40:61": {
+      "key": "memory:memory/2026-05-06.md:40:61",
+      "path": "memory/2026-05-06.md",
+      "startLine": 40,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "- Key upgrades: Google Meet Twilio voice bridge, streaming reasoning visibility in Discord/Slack, faster Control UI, improved plugin ecosystem. - Voice call support (realtime Gemini bridge) now available if needed for FleetBrain client integrations. - Plugin dependency handling more robust. - **06:20** Casey requests comprehensive status report on: 1. What's configured and working well 2. What's running but stale 3. What could be doing better 4. Strategic ideas for FleetBrain + Cedar Stone (revenue/GTM) 5. Output formatted for Opus submission (request feedback + strategic ideas) --- ## COMPREHENSIVE STATUS REPORT FOR OPUS ### What's Working Well ✅ - **Agent architecture:**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "queryHashes": [
+        "1551c2228d78"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "discord/slack",
+        "revenue/gtm",
+        "key",
+        "upgrades",
+        "google",
+        "meet",
+        "twilio",
+        "voice"
+      ]
+    },
+    "memory:memory/2026-02-03.md:103:131": {
+      "key": "memory:memory/2026-02-03.md:103:131",
+      "path": "memory/2026-02-03.md",
+      "startLine": 103,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "- Calculated unit economics: $20/tool in full set vs. $40-50 in starter packs 2. **ROI Analysis** - Break-even on starter pack: 6 jobs @ $100/call - Break-even on full set: 26 jobs @ $100/call - Risk calculation: $1,200 total if business fails (vs. $3,100 with full set) 3. **Decision Framework** - Helped Jeff weigh upfront full investment vs. MVP starter approach - Showed how incremental tool purchases cost more per unit long-term - Jeff concluded: Start with 20-piece starter pack ($599-800), test market, expand later 4. **Vendor Analysis (Real-Time Browser Research)** - UHS Hardware: $866.78 (34% sale, authorized dealer, premium case, lead time) - LockPickable:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:16.187Z",
+      "lastRecalledAt": "2026-05-06T14:11:16.187Z",
+      "queryHashes": [
+        "f837ee33a8dc"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "20/tool",
+        "40-50",
+        "break-even",
+        "100/call",
+        "long-term",
+        "20-piece",
+        "599-800",
+        "real-time"
+      ]
+    },
+    "memory:memory/2026-02-03.md:78:111": {
+      "key": "memory:memory/2026-02-03.md:78:111",
+      "path": "memory/2026-02-03.md",
+      "startLine": 78,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "1. Demonstrate job search capabilities to Jason (if he arrives) 2. Phase 2 execution (Salesforce tutoring) 3. Phase 3 content (Twitter/LinkedIn brand building) ## Critical Reminders - ⚠️ MEMORY.md Gmail status shows \"LIVE\" but tokens NOT YET generated — need correction next session - Casey will ask about engagement planning at some point (have idea ready) - Rosa's preferences: romantic experiences, no alcohol requirement, thoughtful planning - Keep job hunting as primary mission until Casey is hired - FleetBrain demo to Jason is secondary but high-value once infrastructure complete ## JEFF FRIES LOCKSMITH CASE STUDY - Feb 3, 2026 (DEMO #1) **Situation:** - Jeff Fries owns condo-garage in",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:16.187Z",
+      "lastRecalledAt": "2026-05-06T14:11:16.187Z",
+      "queryHashes": [
+        "f837ee33a8dc"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "twitter/linkedin",
+        "memory.md",
+        "high-value",
+        "condo-garage",
+        "demonstrate",
+        "job",
+        "capabilities",
+        "jason"
+      ]
+    },
+    "memory:memory/2026-02-03.md:155:192": {
+      "key": "memory:memory/2026-02-03.md:155:192",
+      "path": "memory/2026-02-03.md",
+      "startLine": 155,
+      "endLine": 192,
+      "source": "memory",
+      "snippet": "- Plan: Take Ry and friends to Sandbox VR (Leawood, KS) in the morning - Constraint: Ry has work at 2pm - Asked: Can it work timing-wise? How many friends? **What Stan Did:** 1. Researched Sandbox VR Leawood (hours, location, format, cost ~$50/person) 2. Calculated drive times (20-25 min Olathe ↔ Leawood) 3. Proposed 10:30-11:30am session (done by noon, home by 12:30 with buffer) 4. Noted 1-2 friends is optimal (3-4 total with Casey + Ry) 5. Phrased for direct use with a 16-year-old (casual, not stuffy) **Why This Matters:** - Casey sent Stan's response *verbatim* to Ry via text (no editing needed) - Seamless enough for real-world coordination with a third party (teenager) - Natural langua",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:16.187Z",
+      "lastRecalledAt": "2026-05-06T14:11:16.187Z",
+      "queryHashes": [
+        "f837ee33a8dc"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "timing-wise",
+        "50/person",
+        "20-25",
+        "30-11",
+        "1-2",
+        "3-4",
+        "16-year-old",
+        "real-world"
+      ]
+    },
+    "memory:memory/2026-02-12.md:1:35": {
+      "key": "memory:memory/2026-02-12.md:1:35",
+      "path": "memory/2026-02-12.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# Daily Notes — Feb 12, 2026 ## Google Chat Deployment — COMPLETE (Session Start: 21:30 CST) ### Mission Deploy Google Chat as a primary contact vector for FleetBrain Stan. Internal (fleetbrain.ai domain) users can message stan@fleetbrain.ai directly and route to agent brain with full capabilities. External access requires Task 25 (Marketplace) or Task 26 (manual Spaces per prospect). ### What We Built **GCP + Service Account** - Created `fleetbrain-stan-prod` GCP project - Enabled Google Chat API v1 - Created service account `stan-fleetbrain-bot` with Chat scopes - Overrode org security policies to allow key creation (Casey override) - Key stored in 0-Vault (encrypted GPG) + plaintext i",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:16.187Z",
+      "lastRecalledAt": "2026-05-06T14:11:16.187Z",
+      "queryHashes": [
+        "f837ee33a8dc"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "fleetbrain.ai",
+        "fleetbrain-stan-prod",
+        "stan-fleetbrain-bot",
+        "0-vault",
+        "feb",
+        "google",
+        "chat",
+        "deployment"
+      ]
+    },
+    "memory:memory/2026-02-25.md:67:95": {
+      "key": "memory:memory/2026-02-25.md:67:95",
+      "path": "memory/2026-02-25.md",
+      "startLine": 67,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "- Skipped leads remain in applications.json (flagged, won't resurface) - Pipeline clean for tomorrow's 6:45 AM automated run ### 4. CRON PIPELINE READY FOR TOMORROW (6:00–6:45 AM) - 6:00 AM: Contact CRM Daily Update - 6:15 AM: Daily Briefing → Telegram + Drive (briefings/ folder) - 6:30 AM: X Content Scout → Telegram + Drive (x-drafts/ folder) - 6:45 AM: Job Scout → Telegram + Drive (job-scout/ folder) — **New source hierarchy active** --- ## Key Decisions & Context **Job Scout Targeting Shift:** Casey's profile is rare: 13 years enterprise tech (Red Hat, Kiewit, Burns & McDonnell) + hands-on AI/ML knowledge. He's a sales leader who can build what he sells. Job scout is now optimized for",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "applications.json",
+        "x-drafts",
+        "job-scout",
+        "hands-on",
+        "ai/ml",
+        "skipped",
+        "leads",
+        "remain"
+      ]
+    },
+    "memory:memory/2026-02-08.md:49:73": {
+      "key": "memory:memory/2026-02-08.md:49:73",
+      "path": "memory/2026-02-08.md",
+      "startLine": 49,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "3. **\"Vibe Coaching Specialist\" Role:** Adjacent opportunity — teach other salespeople how to work WITH AI agents as tools (leveraging non-technical background as strength) **Prompt Created for SuperStan:** Full synthesis prompt prepared, ready to send when Casey approves ## GROUP CHAT PARTICIPATION (NEW) **Joined:** Active group chat with Casey & Rosa **Engagement Protocol:** - Respond when: Mentioned, asked question, can add value, witty fit, correct misinformation, summarize when asked - Stay silent when: Casual banter, already answered, would just say \"yeah\", flow is fine, would interrupt vibe - Ready to assist: Logistics, coordination, decision-making, flags ## OPERATIONAL NOTES -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "non-technical",
+        "decision-making",
+        "vibe",
+        "coaching",
+        "specialist",
+        "role",
+        "adjacent",
+        "opportunity"
+      ]
+    },
+    "memory:memory/2026-02-25.md:48:73": {
+      "key": "memory:memory/2026-02-25.md:48:73",
+      "path": "memory/2026-02-25.md",
+      "startLine": 48,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- Refactored job-scout.py to use direct file ID instead of filename search (eliminates collision risk) - Created job-scout/ folder on Drive (ID: 1_r4ykfESPOwiF6I1d3SfCYkjbReAfVEj) - Test write/delete verified **Part D: Live Test (6:45 AM + Re-run at 15:50)** - **First run (aggregator sources):** 5 leads found (3 HIGH, 2 MEDIUM) - Forethought AI (Account Executive – AI/SaaS, Remote, $130K–$160K) — HIGH - Synthflow AI (Senior AE, Remote, $140K–$170K) — HIGH - Virtual Vocations listing (AE, AI/SaaS, Remote, $130K–$160K) — HIGH - Qevlar AI (Enterprise AE, NYC only, $140K–$180K) — MEDIUM (location flag) - GeneMetrics (SaaS AE, Remote, $100K–$130K) — MEDIUM (comp below threshold) - **Re",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "job-scout.py",
+        "job-scout",
+        "write/delete",
+        "re-run",
+        "ai/saas",
+        "refactored",
+        "job",
+        "scout.py"
+      ]
+    },
+    "memory:memory/2026-02-25.md:108:120": {
+      "key": "memory:memory/2026-02-25.md:108:120",
+      "path": "memory/2026-02-25.md",
+      "startLine": 108,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "- Committed: \"Upgrade job scout source hierarchy: prioritize LinkedIn + company career pages, deprioritize aggregators, add company tracking system\" --- ## Notes for SuperStan 1. **Tracker is now current** (Feb 25 reconciliation locked in). 4 major tasks marked complete. Website + ICP work done. 2. **X pipeline & Job Scout infrastructure are production-ready.** Both have dual output (Telegram + Drive archival) and are configured for tomorrow's cron runs. 3. **Job Scout targeting is locked to enterprise sales only.** No more Solutions Architect / SE roles surfacing. Quality should improve significantly with primary source shift. 4. **Application pipeline is clean:** 2 leads TRACKING (monit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "queryHashes": [
+        "c018135d99c4"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "production-ready",
+        "committed",
+        "upgrade",
+        "job",
+        "scout",
+        "source",
+        "hierarchy",
+        "prioritize"
+      ]
+    }
+  }
+}
