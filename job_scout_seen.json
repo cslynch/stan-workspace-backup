@@ -493,6 +493,28 @@
       "source": "job-scout",
       "link": "https://builtin.com/company/jasper/jobs",
       "fit_score": 8.0
+    },
+    {
+      "company": "Squid AI",
+      "title": "Account Executive, Enterprise",
+      "location": "Remote (Menlo Park quarterly onsite)",
+      "industry": "AI / GenAI / Data Infrastructure",
+      "comp": "Not listed (competitive equity)",
+      "added": "2026-05-07T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://getsquid.ai/careers/enterprise-account-executive",
+      "fit_score": 8.5
+    },
+    {
+      "company": "Euno",
+      "title": "Enterprise Account Executive",
+      "location": "Remote (NYC hybrid optional)",
+      "industry": "Data Infrastructure / AI / Active Metadata",
+      "comp": "$300K OTE",
+      "added": "2026-05-07T06:45:00Z",
+      "source": "job-scout",
+      "link": "https://euno.ai/career/enterprise-account-executive",
+      "fit_score": 9.0
     }
   ]
 }
