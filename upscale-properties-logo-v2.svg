@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Single continuous bold line: roof peak → down left → across base → up right → back to peak → chimney up -->
+  <path d="M 300 150 L 200 50 L 100 150 L 100 260 L 300 260 L 300 150 L 200 50 L 200 0" 
+        stroke="#1a1a1a" 
+        stroke-width="6" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Company name -->
+  <text x="200" y="310" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a1a">UPSCALE PROPERTIES</text>
+</svg>

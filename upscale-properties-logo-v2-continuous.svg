@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Continuous bold line house with chimney -->
+  <g id="house">
+    <!-- Main house outline and chimney as one continuous path -->
+    <path d="M 300 140 L 200 60 L 100 140 L 100 240 L 300 240 L 300 140 L 200 60 L 200 10" 
+          stroke="#2c3e50" 
+          stroke-width="5" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">UPSCALE PROPERTIES</text>
+</svg>

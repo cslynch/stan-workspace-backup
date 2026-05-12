@@ -1,12 +1,12 @@
 {
-  "last_query_index": 2,
-  "last_run": "2026-05-07T06:45:00Z",
+  "last_query_index": 5,
+  "last_run": "2026-05-11T11:45:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 10,
-  "qualified_leads_added": 2,
-  "dedup_matches": 6,
-  "notes": "2026-05-07: Queries 6, 0, 1 (rotated from index 5). Query 6 (account executive data infrastructure remote): 10 results. Found DigitalOcean (seen), VAST Data (seen), Kentik (seen) = 3 dedup. Query 0 (enterprise account executive AI SaaS remote): 10 results. Found Level AI (seen) = 1 dedup. New: Squid AI (GenAI/remote), Euno ($300K OTE/data infra/remote), ConnexAI (no comp listed). Query 1 (strategic account executive automation platform): 10 results, mostly articles/blogs. Found Serval (needs location verification). Total dedup: 6. Qualified new: 2 (Squid AI 8.5, Euno 9.0). Next index: 2."
+  "total_leads_found": 0,
+  "qualified_leads_added": 0,
+  "dedup_matches": 0,
+  "notes": "2026-05-11: Queries 3, 4, 5. Query 3 (senior AE developer tools remote): 10 results mostly engineering roles, 0 sales/AE titles. Query 4 (account executive middleware integration SaaS): 10 results mostly educational guides/articles on integration middleware, 0 job postings. Query 5 (sales engineer AI platform remote quota): 10 results from aggregators (Indeed, Built In, SimplyHired, etc.). Found mentions of Arize AI, StackAI, Digital.ai, Level AI (Level AI already seen). Search quality poor - limited actionable job posting details. Next index: 6."
 }
