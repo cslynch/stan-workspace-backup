@@ -54,3 +54,12 @@
 - Stan has NO direct SupaBrain access (no MCP). Bridge script planned.
 - Endpoint: https://olmaksvjanknqzndalzv.supabase.co/functions/v1/brain-api
 - Auth: BRAIN_API_SECRET bearer token (not yet set in Stan env)
+
+## SUPABRAIN (added May 14, 2026)
+- SupaBrain is FleetBrain's shared memory system. You now have read/write access via brain_api.py.
+- Use brain('get_client', client_name='...') BEFORE generating any quote or deliverable.
+- Client profiles store rates, markup, contact info. If a field is null, ask the client.
+- Log all completed quotes via brain('log_quote', ...) so they become searchable prior art.
+- Capture expenses from receipt OCR via brain('capture_expense', ...).
+- Capture important observations via brain('capture', ..., source='telegram', agent='stan').
+- See TOOLS.md for full usage examples.
