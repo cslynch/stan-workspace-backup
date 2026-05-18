@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-06T14:11:19.215Z",
+  "updatedAt": "2026-05-17T11:45:18.386Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -9,18 +9,20 @@
       "endLine": 115,
       "source": "memory",
       "snippet": "6 total leads across all sources and runs today. 2 TRACKING for ongoing review, 4 SKIPPED (decision made). Ready for new leads from tomorrow's automated run. --- ## Files Modified (Summary) **Local:** - job-scout.md (source hierarchy, company tracking rules, weekly reset schedule) - applications.json (5 initial leads appended, then dispositions updated, final state: 2 TRACKING, 4 SKIPPED, 1 new TRACKING) - MEMORY.md (Job Scout Company Watchlist Tracking table added) - tracker.json (4 task completions, 2 updates to notes) **Drive:** - Created x-drafts/ folder (ID: 1FFj2Zv8u6J3LsmTWU5Cn9hxiRHvnKXQf) - Created job-scout/ folder (ID: 1_r4ykfESPOwiF6I1d3SfCYkjbReAfVEj) - Created 2026-02-25-jo",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T11:24:20.690Z",
-      "lastRecalledAt": "2026-05-06T11:24:20.690Z",
+      "lastRecalledAt": "2026-05-17T11:45:18.386Z",
       "queryHashes": [
-        "800cdd3b2c3f"
+        "800cdd3b2c3f",
+        "a8a61131a0c8"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-17"
       ],
       "conceptTags": [
         "job-scout.md",
@@ -477,18 +479,20 @@
       "endLine": 95,
       "source": "memory",
       "snippet": "- Skipped leads remain in applications.json (flagged, won't resurface) - Pipeline clean for tomorrow's 6:45 AM automated run ### 4. CRON PIPELINE READY FOR TOMORROW (6:00–6:45 AM) - 6:00 AM: Contact CRM Daily Update - 6:15 AM: Daily Briefing → Telegram + Drive (briefings/ folder) - 6:30 AM: X Content Scout → Telegram + Drive (x-drafts/ folder) - 6:45 AM: Job Scout → Telegram + Drive (job-scout/ folder) — **New source hierarchy active** --- ## Key Decisions & Context **Job Scout Targeting Shift:** Casey's profile is rare: 13 years enterprise tech (Red Hat, Kiewit, Burns & McDonnell) + hands-on AI/ML knowledge. He's a sales leader who can build what he sells. Job scout is now optimized for",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T14:11:19.215Z",
-      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-17T11:45:18.386Z",
       "queryHashes": [
-        "c018135d99c4"
+        "c018135d99c4",
+        "a8a61131a0c8"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-17"
       ],
       "conceptTags": [
         "applications.json",
@@ -570,18 +574,20 @@
       "endLine": 120,
       "source": "memory",
       "snippet": "- Committed: \"Upgrade job scout source hierarchy: prioritize LinkedIn + company career pages, deprioritize aggregators, add company tracking system\" --- ## Notes for SuperStan 1. **Tracker is now current** (Feb 25 reconciliation locked in). 4 major tasks marked complete. Website + ICP work done. 2. **X pipeline & Job Scout infrastructure are production-ready.** Both have dual output (Telegram + Drive archival) and are configured for tomorrow's cron runs. 3. **Job Scout targeting is locked to enterprise sales only.** No more Solutions Architect / SE roles surfacing. Quality should improve significantly with primary source shift. 4. **Application pipeline is clean:** 2 leads TRACKING (monit",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T14:11:19.215Z",
-      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-17T11:45:18.386Z",
       "queryHashes": [
-        "c018135d99c4"
+        "c018135d99c4",
+        "a8a61131a0c8"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-17"
       ],
       "conceptTags": [
         "production-ready",
