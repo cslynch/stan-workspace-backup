@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T11:45:18.386Z",
+  "updatedAt": "2026-05-20T11:45:47.436Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -135,18 +135,20 @@
       "endLine": 215,
       "source": "memory",
       "snippet": "- **Fix:** Reinstate weekly Casey + SuperStan sync. 30 min checkpoint, Sunday evening. Pull tracker.json → update KANBAN.md. **Blocker 2: OAuth Token Expiry Risk** - **stan@fleetbrain.ai token:** Last verified Feb 11, 2026 (83+ days ago) - **casey@fleetbrain.ai token:** Same age - **Risk:** Next Google API call will fail if token expired - **Fix:** Before ANY Google API call, run token refresh logic (check expiry → refresh + resave) **Blocker 3: Infrastructure Stall (Lightning OAuth)** - **Task LTN-002:** Jake agent deployment blocked since Feb 11, 2026 - **Blocker:** Google Workspace OAuth for jake@fleetbrain.ai not provisioned - **Duration:** 83+ days unresolved - **Impact:** Cannot test",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T11:49:48.119Z",
-      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
       "queryHashes": [
-        "1551c2228d78"
+        "1551c2228d78",
+        "a0be59b61266"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-20"
       ],
       "conceptTags": [
         "tracker.json",
@@ -166,19 +168,21 @@
       "endLine": 148,
       "source": "memory",
       "snippet": "1. Reinstate Sunday 5:00 PM CT sync (Casey + SuperStan, tracker.json review, 30 min) 2. Verify/close Zapier AE (Task 35, $240K–$300K OTE) 3. Resolve Lightning OAuth blocker (escalate to SuperStan if still pending) 4. Sync tracker.json to KANBAN.md (40 days stale) **P1:** 5. Define Cedar Stone role + revenue model 6. Activate FleetBrain sales pipeline (adapt Job Scout to service business prospecting) 7. Deploy StanleyBot demo (public Telegram instance for prospects) 8. Pick first vertical POC (recommend: locksmith shops) --- ## Questions for SuperStan 1. Cedar Stone: Intended role in ecosystem? 2. FleetBrain ICP: Narrow to one vertical (locksmith) or multi-vertical simultaneously? 3. Stanl",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T11:49:48.119Z",
-      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
       "queryHashes": [
         "1551c2228d78",
-        "c018135d99c4"
+        "c018135d99c4",
+        "a0be59b61266"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-20"
       ],
       "conceptTags": [
         "tracker.json",
@@ -512,18 +516,20 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "3. **\"Vibe Coaching Specialist\" Role:** Adjacent opportunity — teach other salespeople how to work WITH AI agents as tools (leveraging non-technical background as strength) **Prompt Created for SuperStan:** Full synthesis prompt prepared, ready to send when Casey approves ## GROUP CHAT PARTICIPATION (NEW) **Joined:** Active group chat with Casey & Rosa **Engagement Protocol:** - Respond when: Mentioned, asked question, can add value, witty fit, correct misinformation, summarize when asked - Stay silent when: Casual banter, already answered, would just say \"yeah\", flow is fine, would interrupt vibe - Ready to assist: Logistics, coordination, decision-making, flags ## OPERATIONAL NOTES -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T14:11:19.215Z",
-      "lastRecalledAt": "2026-05-06T14:11:19.215Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
       "queryHashes": [
-        "c018135d99c4"
+        "c018135d99c4",
+        "a0be59b61266"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-20"
       ],
       "conceptTags": [
         "non-technical",
@@ -598,6 +604,99 @@
         "source",
         "hierarchy",
         "prioritize"
+      ]
+    },
+    "memory:memory/2026-02-09.md:57:86": {
+      "key": "memory:memory/2026-02-09.md:57:86",
+      "path": "memory/2026-02-09.md",
+      "startLine": 57,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "- [x] 7 case studies uploaded to StanBrain/case-studies/ (5 complete, 2 DRAFT) - [x] Baseline + Command Runbook + SuperStan System Prompt docs created in StanBrain/ops/ - [x] Rosa vacation options finalized (Cozumel, Turks & Caicos, Florida Keys - cost breakdowns ready) - [x] Real estate property research begun (gaps identified) **Still In Progress:** - [ ] Case studies #2 & #3 (DRAFT review - awaiting Casey Q&A) - [ ] Telegram log exports (Ryan + Deb for case study #5) - [ ] Twitter launch approval (@itsolz + @stanleybodewell) - [ ] Salesforce Phase 2 (waiting Dev Edition) - [ ] Real estate analysis gaps filled - [ ] Job search Phase 1 automation --- ## Key Reminders for Next Session 1.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-20T11:45:47.436Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
+      "queryHashes": [
+        "a0be59b61266"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "stanbrain/case-studies",
+        "stanbrain/ops",
+        "case",
+        "studies",
+        "uploaded",
+        "stanbrain",
+        "complete",
+        "draft"
+      ]
+    },
+    "memory:memory/2026-05-06.md:92:120": {
+      "key": "memory:memory/2026-05-06.md:92:120",
+      "path": "memory/2026-05-06.md",
+      "startLine": 92,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "- Pricing: $50K–$150K per engagement. Recurring: $5K–$10K/month post-implementation. - Why it works: Higher ACV, stickier relationships, referral engine, defensible. **Stream 3: Enterprise AI Sales Job Search Service** (Prove-of-Concept) - Current: Job Scout infrastructure proven (3-5 leads daily for Casey). Infrastructure works. - If Casey lands next role via pipeline: document time-to-app, interview conversion, offer rate, salary impact. - Productization: Paid job search service (pre-vetted roles, daily lead list, $50/month). ### Cedar Stone Role **Three options:** 1. **Lead gen service:** Find + qualify service business prospects for FleetBrain. Daily list, contact info, first-touch tem",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-20T11:45:47.436Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
+      "queryHashes": [
+        "a0be59b61266"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "10k/month",
+        "post-implementation",
+        "prove-of-concept",
+        "3-5",
+        "time-to-app",
+        "pre-vetted",
+        "50/month",
+        "first-touch"
+      ]
+    },
+    "memory:memory/2026-05-06.md:211:247": {
+      "key": "memory:memory/2026-05-06.md:211:247",
+      "path": "memory/2026-05-06.md",
+      "startLine": 211,
+      "endLine": 247,
+      "source": "memory",
+      "snippet": "- Agent architecture (SuperStan → Casey → Stan) stable + locked - Daily automation pipeline running (6 skills, 5:50 AM–7:00 AM CT) - Contact CRM system operational (daily email + calendar sync) - Job Scout infrastructure working (3-5 leads/day, company watchlist, pipeline tracking) - Research log functioning (append-only, dedup working) - Email/Calendar read access functional (requires token refresh before use) ### AUDIT RECOMMENDATIONS **Immediate (This Week):** 1. Verify tracker.json on Drive modification time (compare local vs Drive timestamp) 2. Run `openclaw cron list` to confirm all 6 skills active + last execution time 3. Implement token refresh before next Google API call (load → c",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-20T11:45:47.436Z",
+      "lastRecalledAt": "2026-05-20T11:45:47.436Z",
+      "queryHashes": [
+        "a0be59b61266"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "3-5",
+        "leads/day",
+        "append-only",
+        "email/calendar",
+        "tracker.json",
+        "architecture",
+        "superstan",
+        "casey"
       ]
     }
   }

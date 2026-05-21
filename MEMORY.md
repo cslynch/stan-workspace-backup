@@ -63,3 +63,42 @@
 - Capture expenses from receipt OCR via brain('capture_expense', ...).
 - Capture important observations via brain('capture', ..., source='telegram', agent='stan').
 - See TOOLS.md for full usage examples.
+
+## JEFF FRIES — Job Tracking (added May 20, 2026)
+**Pricing Model:**
+- Solo jobs: $100/hr overhead, $75/hr labor
+- Joel jobs: +15% markup standard (enforce before logging)
+
+**Contractors:**
+- Joel: primary contractor, BoA Zelle ($4K/day cap), Venmo backup
+
+**Active Jobs (as of 5/19):**
+- Cedar Creek Tile (J-2026-001.1): Work done. Customer owes $9,063.91. Joel owes $535.14.
+- Cedar Creek Paint (J-2026-001.2): Weather delay. Customer owes $2,500.00 (on completion). Joel owes $1,950.00 (on completion).
+- Hattaway Fireplace: 80% complete. $0 owed by customer (paid in full). Joel owes $6,511.00. Note: $4,122 in materials fronted by Jeff at 0% markup (flag for pricing conversation later).
+- Alistair Repair: Invoiced 5/19. Customer owes $330.50.
+- Alistair Mods: Invoiced 5/19. Customer owes $325.00.
+
+**Financials Summary (5/19):**
+- Net cash receivable: $3,223.27
+- Gross when all active jobs close: $4,835.57
+- Outstanding receivables total: $12,219.41
+- Outstanding payables to Joel total: $8,996.14
+
+**Open Threads:**
+- Pending bid Jeff expects to lose (ask why if he hears back: pricing, scope, timing, or just went with someone else)
+- 4th job to capture next session
+
+**Jeff's Communication Style:**
+- Overwhelmed by NUMBERS, not tooling. Keep responses tight: numbers first, prose second.
+- Already burned before on memory loss. Pre-stage table with active jobs is proof of continuity.
+- Explicitly wants to explore fielding jobs and growing LATER — respect that boundary, no unsolicited growth advice.
+- Don't suggest QuickBooks/FreshBooks. Spreadsheet IS the system until he asks for more.
+
+**Intake Discipline:**
+- Use 02_intake_form.md for every new job (one question at a time if tired, batched if moving).
+- Don't skip ahead or ask things you can derive.
+- Never modify original job records mid-stream; create sub-rows for additional work.
+
+**Zelle Cap Alert:**
+- Hattaway has $6,511 outstanding to Joel. BoA Zelle cap is $4K/day. Surface proactively when ready to pay (2+ days minimum).

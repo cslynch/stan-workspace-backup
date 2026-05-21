@@ -1,12 +1,12 @@
 {
-  "last_query_index": 6,
-  "last_run": "2026-05-16T11:45:00Z",
-  "queries_run": 1,
+  "last_query_index": 2,
+  "last_run": "2026-05-20T11:45:00Z",
+  "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 3,
+  "total_leads_found": 30,
   "qualified_leads_added": 2,
-  "dedup_matches": 0,
-  "notes": "2026-05-16: Query 6 (account executive data infrastructure remote): 10 results. Qualified: Salesforce (Data Foundation EAE, TX remote, $123k+ base + commission), Dataminr (AE Enterprise, Remote NE, $231k-$340k OTE, AI platform). Blocked: Algolia (Cloudflare). Already seen: Acceldata, DigitalOcean. Aggregators: Indeed, Wellfound, Built In. Next index: 0 (wrap to start).  "
+  "dedup_matches": 28,
+  "notes": "2026-05-20: Queries 0-2 run (enterprise account executive AI SaaS remote, strategic account executive automation platform, solutions sales AI infrastructure remote). Qualified new leads: CoEnterprise (EAE, SaaS/Managed Services, Remote US), Serval (SAE, automation platform, remote location TBD). Most results were aggregators (Indeed, Glassdoor, Built In, RemoteRocketship, LinkedIn). Dedup against seen.json removed 28 matches. Next index: 3."
 }
