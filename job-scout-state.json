@@ -1,12 +1,12 @@
 {
-  "last_query_index": 2,
-  "last_run": "2026-05-20T11:45:00Z",
+  "last_query_index": 5,
+  "last_run": "2026-05-21T11:46:00Z",
   "queries_run": 3,
   "queries_skipped": 0,
-  "queries_rate_limited": 0,
+  "queries_rate_limited": 2,
   "queries_retried": 0,
-  "total_leads_found": 30,
-  "qualified_leads_added": 2,
-  "dedup_matches": 28,
-  "notes": "2026-05-20: Queries 0-2 run (enterprise account executive AI SaaS remote, strategic account executive automation platform, solutions sales AI infrastructure remote). Qualified new leads: CoEnterprise (EAE, SaaS/Managed Services, Remote US), Serval (SAE, automation platform, remote location TBD). Most results were aggregators (Indeed, Glassdoor, Built In, RemoteRocketship, LinkedIn). Dedup against seen.json removed 28 matches. Next index: 3."
+  "total_leads_found": 0,
+  "qualified_leads_added": 0,
+  "dedup_matches": 0,
+  "notes": "2026-05-21: Queries 3-5 attempted (senior AE developer tools remote, account executive middleware integration SaaS, sales engineer AI platform remote quota). Query 3-4 had SearXNG config issues. Query 5 returned partial results mostly from aggregators (Indeed, Glassdoor, Built In). Zoom Revenue Accelerator Sales Specialist found but couldn't retrieve full details. No new qualified leads after deduplication. Next index: 0 (rotation restart)."
 }
