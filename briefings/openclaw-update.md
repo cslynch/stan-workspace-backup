@@ -1,16 +1,15 @@
 ## OpenClaw Update Available
-Version: 2026.4.12 (current: 2026.2.6)
-Released: April 13, 2026
+**Version:** 2026.5.22 (current: 2026.2.6)
+**Released:** 2026-05-24 01:12:56 UTC
+**Status:** REVIEW
 
-Relevant changes:
-- **Security (7 fixes):** SSRF policy enforcement on browser snapshot/screenshot, config redaction, approval allowlist checks, shell injection hardening, busybox removal
-- **Telegram:** Forum topic name surfacing, credential leasing, heartbeat topic isolation, gateway callback routing
-- **Gateway:** New `commands.list` RPC, startup/runtime lifecycle separation, auth hardening (redacted example credentials), session routing fixes, WebSocket keepalive, cron persistence
-- **Anthropic:** Agent replay with signing, thinking-only recovery, tool call retry improvements
-- **Exec Policy:** New `openclaw exec-policy` CLI for config synchronization and approval management
-- **Config/Auth:** Placeholder token validation, credential redaction, auth config improvements
-- **Sessions:** Cron isolation, transcript routing, heartbeat routing
+### Relevant Changes
+- **Gateway/perf:** Process-stable channel catalog reuse, plugin metadata snapshot caching, lazy-load startup handlers, plugin alias map caching — performance optimizations that improve startup time and reduce CPU overhead
+- **Telegram:** Wildcard topic defaults added to config support
+- **Config:** Signal configPath, Termux home fallback, include-path validation added to documentation
 
-Recommendation: **UPDATE**
+### Summary
+Release 2026.5.22 is primarily performance-focused (gateway caching/lazy-loading) and documentation updates. No security keywords detected. Gateway changes are infrastructure optimizations, not critical rewrites. Telegram support expanded with config options.
 
-Rationale: Multiple security fixes (SSRF, auth, injection), critical gateway infrastructure improvements, and Telegram credential/routing enhancements warrant immediate update.
+### Recommendation
+**REVIEW** — Gateway performance improvements and Telegram config enhancements merit evaluation, but no security issues or critical breaking changes. Consider updating if performance matters for your deployment; otherwise deferrable to next release cycle.
