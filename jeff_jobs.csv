@@ -1,0 +1,43 @@
+SUMMARY,,,,
+Job,Customer,Receivable,Payable (Joel),Status
+Cedar Creek Tile (J-001.1),Rick,9063.91,0.00,Awaiting payment
+Cedar Creek Paint (J-001.2),Rick,2500.00,1950.00,Starts 5/27
+Cedar Creek Railing (J-001.3),Rick,1031.00,927.90,Quoted (90/10 split)
+Hattaway Fireplace,Hattaway,0.00,3171.00,Complete
+Alistair Repair,Alistair,330.50,0.00,Invoiced 5/19
+Alistair Mods,Alistair,325.00,0.00,Invoiced 5/19
+TOTALS,,13249.41,6048.90,
+
+HATTAWAY FIREPLACE DETAIL,,,
+CUSTOMER INVOICE,,
+Original fireplace work,17039.55,
+Electric work add,759.00,
+Total Customer Invoice,17798.55,
+,,
+YOUR COSTS,,
+Materials fronted,4035.00,
+Joel (agreed; includes electric),12022.00,
+Total Cost,16057.00,
+,,
+YOUR MARGIN,1741.55,✓
+,,
+JOEL PAYMENTS (PAYABLE TRACKING),,,
+Date,Amount,Note
+5/24,4000.00,Payment 1
+5/24,4000.00,Payment 2
+5/24,851.00,Payment 3
+Subtotal Paid,8851.00,
+Agreed Total,12022.00,
+BALANCE DUE,3171.00,⚠ Still owed
+
+CEDAR CREEK JOBS,,,
+Job,Quote/Receivable,Joel Payable,Status
+Tile (J-001.1),9063.91 (complete),0.00,Awaiting $9,063.91 from Rick
+Paint (J-001.2),2500.00,1950.00,Starts 5/27
+Railing (J-001.3),1031.00,927.90 (90%) + 103.10 (10% Jeff),Quoted
+
+ALISTAIR JOBS,,
+Job,Receivable,Status
+Repair,330.50,Invoiced 5/19
+Mods,325.00,Invoiced 5/19
+TOTAL,655.50,

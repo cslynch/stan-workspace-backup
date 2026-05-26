@@ -1,21 +1,18 @@
 ## OpenClaw Update Available
-**Version:** 2026.5.16-beta.4 (current: 2026.2.6)
-**Released:** May 17, 2026
-**Type:** Beta
+Version: 2026.5.24-beta.2 (current: 2026.2.6)
+Released: May 24, 2026
+Status: Beta release
 
 ### Relevant Changes
-- **Security:** Exec approvals now bind to executable realpath, preventing symlink-based approval retargeting (#45595)
-- **Security/Audit:** New `security.audit.suppressions` for intentional findings management
-- **Telegram:** Fixed account list defaults, media delivery (forceDocument), mention patterns in media-only messages
-- **Gateway/Performance:** Session usage refresh in background, startup benchmarking improvements
-- **Gateway/Exec Approvals:** Symlink attack mitigation with path allowlist binding
-- **Sessions:** Manual user turns prioritized over queued cron/maintenance
-- **Credentials:** Improved missing API key errors with credential source details
-- **Anthropic:** Reasoning content extraction in assistant replay, Vertex provider fixes
-- **Config:** CLI/config improvements, model/auth provider ordering
+- **Security:** SecretRef preflight validation, secrets prepare timeline, session-route auth refresh
+- **Gateway:** performance caching (plugin metadata, channel catalog, install records), lazy-load optimization, startup latency reduction
+- **Telegram:** wildcard topic defaults, multi-agent group improvements
+- **Config:** secret storage, plaintext boundaries, config-preserving safety
+- **Session:** workflow helpers, realtime consult steering, cross-agent access matcher
+- **Anthropic:** thinking signature handling for Claude models
 
-### Ignored (Not Relevant)
-Discord, Slack, Feishu, macOS, Web UI, i18n, docs, CI, test
+### Note
+Beta release with significant infrastructure work. Includes Discord voice/realtime and documentation-heavy changes alongside core improvements.
 
 ### Recommendation
-**UPDATE** — Contains security fixes (symlink attack prevention, audit controls), critical Telegram/Gateway improvements, and session handling enhancements relevant to your stack.
+**REVIEW** — Contains security and infrastructure changes warranting evaluation before production adoption.

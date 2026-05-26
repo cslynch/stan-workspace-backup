@@ -72,33 +72,39 @@
 **Contractors:**
 - Joel: primary contractor, BoA Zelle ($4K/day cap), Venmo backup
 
-**Active Jobs (as of 5/19):**
-- Cedar Creek Tile (J-2026-001.1): Work done. Customer owes $9,063.91. Joel owes $535.14.
-- Cedar Creek Paint (J-2026-001.2): Weather delay. Customer owes $2,500.00 (on completion). Joel owes $1,950.00 (on completion).
-- Hattaway Fireplace: 80% complete. $0 owed by customer (paid in full). Joel owes $6,511.00. Note: $4,122 in materials fronted by Jeff at 0% markup (flag for pricing conversation later).
+**Pricing Model:**
+- Solo jobs: $100/hr overhead, $75/hr labor
+- Joel jobs: +15% markup standard (enforce before logging)
+
+**Active Jobs (as of 5/25):**
+- Cedar Creek Tile (J-2026-001.1): Work done. Paid Joel $16,000 (4 × $4,000). Customer Rick owes $9,063.91 (second half, pending).
+- Cedar Creek Paint (J-2026-001.2): Bid accepted $2,500. Starts Wednesday 5/27. Customer owes $2,500.00 (on completion). Joel owes $1,950.00 (on completion).
+- Cedar Creek Railing (J-2026-001.3): Tile replacement (3 posts) + caulk sealing (12 posts). Quote $1,031. Customer owes $1,031.00. Joel owes $927.90 (90%), Jeff $103.10 (10%).
+- Hattaway Fireplace: 100% complete. Customer invoice: $17,039.55 + $759 electric = $17,798.55. Materials: $4,035. Joel agreed rate: $12,022. Paid Joel $8,851 to date. Owed: $3,171.
 - Alistair Repair: Invoiced 5/19. Customer owes $330.50.
 - Alistair Mods: Invoiced 5/19. Customer owes $325.00.
 
-**Financials Summary (5/19):**
-- Net cash receivable: $3,223.27
-- Gross when all active jobs close: $4,835.57
-- Outstanding receivables total: $12,219.41
-- Outstanding payables to Joel total: $8,996.14
+**Financials Summary (5/25):**
+- Cedar Creek Tile: Customer receivable $9,063.91 (outstanding)
+- Cedar Creek Paint: Customer receivable $2,500.00 (on completion 5/27+)
+- Cedar Creek Railing: Customer receivable $1,031.00 (quoted)
+- Hattaway Fireplace: Customer invoice $17,798.55 (complete). Materials $4,035. Joel owed $12,022, paid $8,851, balance due $3,171.
 
 **Open Threads:**
 - Pending bid Jeff expects to lose (ask why if he hears back: pricing, scope, timing, or just went with someone else)
-- 4th job to capture next session
 
 **Jeff's Communication Style:**
 - Overwhelmed by NUMBERS, not tooling. Keep responses tight: numbers first, prose second.
 - Already burned before on memory loss. Pre-stage table with active jobs is proof of continuity.
 - Explicitly wants to explore fielding jobs and growing LATER — respect that boundary, no unsolicited growth advice.
 - Don't suggest QuickBooks/FreshBooks. Spreadsheet IS the system until he asks for more.
+- Railing work pricing: 90% Joel, 10% Jeff split.
 
 **Intake Discipline:**
 - Use 02_intake_form.md for every new job (one question at a time if tired, batched if moving).
 - Don't skip ahead or ask things you can derive.
 - Never modify original job records mid-stream; create sub-rows for additional work.
+- Railing work pricing: 90% Joel, 10% Jeff split.
 
 **Zelle Cap Alert:**
-- Hattaway has $6,511 outstanding to Joel. BoA Zelle cap is $4K/day. Surface proactively when ready to pay (2+ days minimum).
+- Hattaway: $3,171 still owed to Joel. BoA Zelle cap is $4K/day.
