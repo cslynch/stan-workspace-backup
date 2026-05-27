@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T11:46:34.930Z",
+  "updatedAt": "2026-05-26T10:50:20.887Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -709,6 +709,192 @@
         "architecture",
         "superstan",
         "casey"
+      ]
+    },
+    "memory:memory/2026-02-12.md:58:92": {
+      "key": "memory:memory/2026-02-12.md:58:92",
+      "path": "memory/2026-02-12.md",
+      "startLine": 58,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "- Google Chat v2 nests everything under \"chat\" object - Solution: Added `ChatMessage.from_api_v2()` classmethod, nested payload parsing **Problem 2: Async Response Pattern** - First attempt sent response in webhook response body - Google Chat v2 requires 200 + separate Chat API call - Solution: Async background thread, Chat API POST **Problem 3: Missing Gateway Integration** - Webhook had no connection to OpenClaw agent - Solution: Implemented `send_message_to_agent()` calling gateway `/v1/responses` HTTP API - Wired system instruction to use casey@fleetbrain.ai workspace **Problem 4: Worker Timeouts & Thread Kills** (Feb 12 evening) - Gunicorn timeout: 60s → too short for agent processin",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "gateway",
+        "chatmessage.from-api-v2",
+        "send-message-to-agent",
+        "v1/responses",
+        "fleetbrain.ai",
+        "google",
+        "chat",
+        "nests"
+      ]
+    },
+    "memory:memory/2026-02-12.md:86:129": {
+      "key": "memory:memory/2026-02-12.md:86:129",
+      "path": "memory/2026-02-12.md",
+      "startLine": 86,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "- `/home/clawdbot/.openclaw/chat-webhook-gunicorn.sh` — gunicorn startup (TEMPLATE) - `/home/clawdbot/.openclaw/chat-webhook.service` — systemd service (TEMPLATE) - `/home/clawdbot/.openclaw/.env` — credentials (LOCAL ONLY, not git) **Environment Variables** ``` GOOGLE_CHAT_SA_CREDENTIALS=/home/clawdbot/.openclaw/credentials/fleetbrain-stan-prod-534550cd7a84.json OPENCLAW_GATEWAY_TOKEN=82d3118d11a2b80f20981529555f87990a84cb9af85e1ce8 ``` **API Endpoints** - Public: `https://clawdbot-vm.tail9ce6a9.ts.net/chat/webhook` - Local gateway: `http://127.0.0.1:18789/v1/responses` - Chat API v1: `https://chat.googleapis.com/v1` **Service Status** ```bash sudo systemctl status chat-webhook # Ch",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "gateway",
+        "home/clawdbot",
+        "openclaw/chat-webhook.service",
+        "google-chat-sa-credentials",
+        "openclaw-gateway-token",
+        "127.0.0.1",
+        "18789/v1/responses",
+        "chat.googleapis.com/v1"
+      ]
+    },
+    "memory:memory/2026-02-12.md:219:259": {
+      "key": "memory:memory/2026-02-12.md:219:259",
+      "path": "memory/2026-02-12.md",
+      "startLine": 219,
+      "endLine": 259,
+      "source": "memory",
+      "snippet": "- Restart chat-webhook service - Test round-trip with follow-up messages - Verify gateway session isolation per space+user - Mark Task 29 DONE when verified --- ## Final Session Summary (Feb 12, 23:12+ CST) ### Tasks Completed Tonight **Task 20: Stan contact vector expansion** ✅ DONE - Google Chat webhook deployed and verified - GCP project, service account, Tailscale Funnel, systemd service all working - Full round-trip: message → webhook → gateway → agent → Chat API reply - Unblocks Task 2 (Personal AI demo) **Task 29: Google Chat session persistence** ✅ DONE - Implemented via OpenResponses `user` field - Stable session per space+user combo (format: `spaces/{space_id}:{user_email}`) -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "gateway",
+        "chat-webhook",
+        "round-trip",
+        "follow-up",
+        "space-id",
+        "user-email",
+        "restart",
+        "chat"
+      ]
+    },
+    "memory:memory/2026-02-08.md:1:34": {
+      "key": "memory:memory/2026-02-08.md:1:34",
+      "path": "memory/2026-02-08.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# Feb 8, 2026 - Session Log (Infrastructure Sync + Strategic Pivots) ## MAJOR COMPLETIONS (Infrastructure & Operations) **Infrastructure Cascade (10 items moved to Done):** - ✅ OpenClaw v2026.2.6 installed & running (Feb 8 09:26) - ✅ Tailscale authenticated, connected (IP: 100.71.67.28, Feb 8 09:46) - ✅ Google Workspace domain verified (fleetbrain.ai active, Feb 8 09:50) - ✅ GPG encrypt .env (Feb 8 03:43, passphrase stored in Bitwarden) - ✅ Email routing verified (cslynch913@gmail.com primary) - ✅ Security audit (file permissions tightened) - ✅ Skills audit (56 eligible, 21 ready, 36 bloat identified) - ✅ Dead reference purge (thebotstan removed, config files deleted) - ✅ Telegram DM polic",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "v2026.2.6",
+        "100.71.67.28",
+        "fleetbrain.ai",
+        "gmail.com",
+        "feb",
+        "log",
+        "infrastructure",
+        "sync"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:45": {
+      "key": "memory:memory/2026-05-06.md:1:45",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Daily Log - May 6, 2026 **Date:** Wednesday, May 6, 2026 **Time Started:** 06:13 CDT **Status:** Awake ## Events - **06:13** Casey checks in. Starting day. # Daily Log - May 6, 2026 **Date:** Wednesday, May 6, 2026 **Time Started:** 06:13 CDT **Status:** Awake, post-update ## Events - **06:13** Pre-compaction memory flush turn initiated. - **06:13** Casey checks in. Confirmed operational. - **06:15** Reviewed OpenClaw 2026.5.5 CHANGELOG. - Key upgrades: Google Meet Twilio voice bridge, streaming reasoning visibility in Discord/Slack, faster Control UI, improved plugin ecosystem. - Voice call support (realtime Gemini bridge) now available if needed for FleetBrain client in",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "post-update",
+        "pre-compaction",
+        "2026.5.5",
+        "discord/slack",
+        "log",
+        "may",
+        "date",
+        "wednesday"
+      ]
+    },
+    "memory:memory/2026-05-06.md:292:323": {
+      "key": "memory:memory/2026-05-06.md:292:323",
+      "path": "memory/2026-05-06.md",
+      "startLine": 292,
+      "endLine": 323,
+      "source": "memory",
+      "snippet": "4. **Undefined Variable** — Missing applications.json or watchlist reference after a code update 5. **Silent Exception Handler** — Skill catches error, logs it, but doesn't propagate failure signal **Action Required:** Pull Job Scout cron execution logs from last 60 days. If no logs exist, manually test the skill with a single watchlist company + mock context. --- ### CAPTURE AUDIT **Query:** `brain_search` for Stan-attributed captures in last 60 days (since Feb 5, 2026). **Expected Result:** Count of working-memory captures logged to SupaBrain. If zero, the cron layer has been producing zero structured output. **Status:** Cannot execute `brain_search` directly. **Requires Casey/OpenCl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "queryHashes": [
+        "44d04653af13"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "applications.json",
+        "brain-search",
+        "stan-attributed",
+        "working-memory",
+        "casey/opencl",
+        "undefined",
+        "variable",
+        "missing"
       ]
     }
   }
