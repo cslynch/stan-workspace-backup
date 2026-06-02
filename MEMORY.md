@@ -76,17 +76,17 @@
 - Solo jobs: $100/hr overhead, $75/hr labor
 - Joel jobs: +15% markup standard (enforce before logging)
 
-**Active Jobs (as of 5/25):**
-- Cedar Creek Tile (J-2026-001.1): Work done. Paid Joel $16,000 (4 × $4,000). Customer Rick owes $9,063.91 (second half, pending).
-- Cedar Creek Paint (J-2026-001.2): Bid accepted $2,500. Starts Wednesday 5/27. Customer owes $2,500.00 (on completion). Joel owes $1,950.00 (on completion).
+**Active Jobs (as of 6/1):**
+- Cedar Creek Tile (J-2026-001.1): Work done. Paid Joel $16,000 (4 × $4,000). Customer Rick paid $8,663.91 (short $400 — Jeff following up).
+- Cedar Creek Paint (J-2026-001.2): Complete. Paid Joel $1,950 (Zelle flagged). Customer paid $2,500.00 ✓
 - Cedar Creek Railing (J-2026-001.3): Tile replacement (3 posts) + caulk sealing (12 posts). Quote $1,031. Customer owes $1,031.00. Joel owes $927.90 (90%), Jeff $103.10 (10%).
 - Hattaway Fireplace: 100% complete. Customer invoice: $17,039.55 + $759 electric = $17,798.55. Materials: $4,035. Joel agreed rate: $12,022. Paid Joel $8,851 to date. Owed: $3,171.
 - Alistair Repair: Invoiced 5/19. Customer owes $330.50.
 - Alistair Mods: Invoiced 5/19. Customer owes $325.00.
 
-**Financials Summary (5/25):**
-- Cedar Creek Tile: Customer receivable $9,063.91 (outstanding)
-- Cedar Creek Paint: Customer receivable $2,500.00 (on completion 5/27+)
+**Financials Summary (6/1):**
+- Cedar Creek Tile: Customer receivable $400.00 (Rick short; Jeff following up)
+- Cedar Creek Paint: ✓ Complete. Customer paid. Joel paid $1,950 (Zelle 6/1).
 - Cedar Creek Railing: Customer receivable $1,031.00 (quoted)
 - Hattaway Fireplace: Customer invoice $17,798.55 (complete). Materials $4,035. Joel owed $12,022, paid $8,851, balance due $3,171.
 

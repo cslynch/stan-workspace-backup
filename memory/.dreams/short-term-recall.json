@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-26T10:50:20.887Z",
+  "updatedAt": "2026-06-01T19:03:10.242Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -895,6 +895,161 @@
         "undefined",
         "variable",
         "missing"
+      ]
+    },
+    "memory:memory/2026-05-14.md:86:114": {
+      "key": "memory:memory/2026-05-14.md:86:114",
+      "path": "memory/2026-05-14.md",
+      "startLine": 86,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "- DD 21.18-acre subject parcel - Browser task initiated (browser-automation skill) ### GATEWAY EVENT - Gateway restarted successfully at 12:27 CDT May 14, 2026 --- ## SUPABRAIN ACTIVATION & JEFF FRIES PROFILE (2:15 PM May 14) ### SupaBrain Go-Live - brain_api.py now active in workspace. Three core workflows unlocked: 1. **Pre-quote:** brain('get_client', client_name='...') → pulls profile, rates, markup, prior quotes 2. **Post-quote:** brain('log_quote', ...) → all quotes become searchable history 3. **Receipt capture:** brain('capture_expense', ...) → OCR → persistent expense tracking tied to job/project ### Jeff Fries Profile Status - **Name:** Jeff Fries Landscape & Irrigat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T19:03:10.242Z",
+      "lastRecalledAt": "2026-06-01T19:03:10.242Z",
+      "queryHashes": [
+        "0b5d4552c33b"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "gateway",
+        "21.18-acre",
+        "browser-automation",
+        "go-live",
+        "brain-api.py",
+        "pre-quote",
+        "get-client",
+        "client-name"
+      ]
+    },
+    "memory:memory/2026-05-14.md:161:186": {
+      "key": "memory:memory/2026-05-14.md:161:186",
+      "path": "memory/2026-05-14.md",
+      "startLine": 161,
+      "endLine": 186,
+      "source": "memory",
+      "snippet": "- Gateway restarted successfully at 12:27 CDT May 14, 2026 --- ## SUPABRAIN ACTIVATION & JEFF FRIES PROFILE (2:15 PM May 14) ### SupaBrain Go-Live - brain_api.py now active in workspace. Three core workflows unlocked: 1. **Pre-quote:** brain('get_client', client_name='...') → pulls profile, rates, markup, prior quotes 2. **Post-quote:** brain('log_quote', ...) → all quotes become searchable history 3. **Receipt capture:** brain('capture_expense', ...) → OCR → persistent expense tracking tied to job/project ### Jeff Fries Profile Status - **Name:** Jeff Fries Landscape & Irrigation, Kansas City metro / Prairie Village - **Background:** Wood + metal + welding shop; future CNC/laser p",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T19:03:10.242Z",
+      "lastRecalledAt": "2026-06-01T19:03:10.242Z",
+      "queryHashes": [
+        "0b5d4552c33b"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "gateway",
+        "go-live",
+        "brain-api.py",
+        "pre-quote",
+        "get-client",
+        "client-name",
+        "post-quote",
+        "log-quote"
+      ]
+    },
+    "memory:memory/2026-05-25.md:1:45": {
+      "key": "memory:memory/2026-05-25.md:1:45",
+      "path": "memory/2026-05-25.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Daily Memory — May 25, 2026 ## JEFF FRIES JOB UPDATES (Session with Jeff) ### Cedar Creek Tile (J-2026-001.1) - **Status:** Work complete. 4 total payments to Joel at $4,000 each = $16,000 paid. - **Outstanding:** Customer Rick owes $9,063.91 (second half payment pending). ### Cedar Creek Paint (J-2026-001.2) — NEW - **Bid:** $2,500 (customer accepted) - **Schedule:** Starts Wednesday 5/27 - **Receivable:** Customer owes $2,500 on completion - **Payable:** Jeff owes Joel $1,950 on completion ### Cedar Creek Railing (J-2026-001.3) — NEW - **Scope:** Replace tile at base of 3 railing posts + caulk seal around 12 remaining posts - **Quote:** $1,031 (materials $350 + labor 3×$115 + 12×$28",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T19:03:10.242Z",
+      "lastRecalledAt": "2026-06-01T19:03:10.242Z",
+      "queryHashes": [
+        "0b5d4552c33b"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "j-2026-001.1",
+        "063.91",
+        "j-2026-001.2",
+        "5/27",
+        "j-2026-001.3",
+        "may",
+        "jeff",
+        "fries"
+      ]
+    },
+    "memory:memory/2026-05-25.md:36:53": {
+      "key": "memory:memory/2026-05-25.md:36:53",
+      "path": "memory/2026-05-25.md",
+      "startLine": 36,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "- Both invoiced 5/19, receivables outstanding ($330.50 + $325.00) --- **Note:** All financials confirmed with Jeff. Awaiting his confirmation on Hattaway electric component treatment for final reconciliation. ## JOB TRACKER FILE SETUP (NEW) - **File:** `/home/clawdbot/.openclaw/workspace/jeff_jobs.xlsx` - **Structure:** Four tabs (Summary | Hattaway | Cedar Creek | Alistair) - **Purpose:** Single source of truth for all Jeff Fries job financials - **Pattern going forward:** Jeff updates in group → Stan reads .xlsx → reconciles → writes updated balances to file - **Hattaway tab includes:** Joel payment log with dates and amounts ## KEY CONFIRMATIONS - Hattaway electric ($660) IS INCLUDED",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T19:03:10.242Z",
+      "lastRecalledAt": "2026-06-01T19:03:10.242Z",
+      "queryHashes": [
+        "0b5d4552c33b"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "5/19",
+        "330.50",
+        "325.00",
+        "home/clawdbot",
+        "both",
+        "invoiced",
+        "receivables",
+        "outstanding"
+      ]
+    },
+    "memory:memory/2026-05-06.md:361:391": {
+      "key": "memory:memory/2026-05-06.md:361:391",
+      "path": "memory/2026-05-06.md",
+      "startLine": 361,
+      "endLine": 391,
+      "source": "memory",
+      "snippet": "- Stan's current state: Cannot find \"Jeff and Stan\" group in `sessions list`. No active session key for that group. - User had previous message access to that group (Stan found chat IDs in past message history before) - @userinfobot not responding to user's forward attempts **Action Needed:** 1. Locate \"Jeff and Stan\" Telegram chat ID (user may need to copy from Telegram app directly) 2. Once chat ID found, use sessions_send() to test routing directly 3. Verify if this is a session recovery issue post-update or a permissions/auth problem **Status:** Awaiting Casey to provide chat ID or locate it in Telegram UI. **Update 9:20 AM CT:** - User forwarded message from \"Jeff and Stan\" group t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T19:03:10.242Z",
+      "lastRecalledAt": "2026-06-01T19:03:10.242Z",
+      "queryHashes": [
+        "0b5d4552c33b"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "sessions-send",
+        "post-update",
+        "permissions/auth",
+        "stan's",
+        "current",
+        "state",
+        "cannot",
+        "find"
       ]
     }
   }
