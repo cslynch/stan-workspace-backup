@@ -1,0 +1,16 @@
+## OpenClaw Update Available
+Version: 2026.6.1-beta.2 (current: 2026.2.6)
+Released: June 1, 2026 (21:56 UTC)
+
+Relevant changes:
+- Gateway: runtime state, plugin metadata, session metadata, and store writes optimized; session UUIDs carried on interactive dispatch events
+- Security/Config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close
+- Telegram: cap request/retry timers and stabilize delivery
+- Credentials: auth profiles written atomically, auth failures dispatched by type, force re-login recovery added
+- Session management: improved recovery from interrupted tool calls, stale session bindings, and media delivery retries
+- SecretRefs: disabled skill env overrides from stale snapshots no longer abort embedded or channel turns (security fix)
+- Config: unsafe parameter lifetimes and timing bounds now enforced
+
+Recommendation: UPDATE
+
+Reasoning: Multiple security hardening changes (OAuth lifetimes, token validation, SecretRef sanitization) plus critical infrastructure improvements to Gateway and session management. This is a significant stability and security release.

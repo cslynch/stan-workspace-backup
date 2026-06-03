@@ -18,7 +18,7 @@ Shared memory system. Use brain_api.py via exec:
 - Capture fact: `brain('capture', text='...', source='telegram', agent='stan')`
 - Search: `brain('search', query='...')`
 Import: `from brain_api import brain`
-If client profile fields are null, ask the client. Do not guess.
+Before answering any client factual question, run brain('search', ...) and brain('get_client', ...) FIRST and answer from the brain. Only if the brain has NO record may you ask the client. Never re-derive or interrogate the client for data already captured. Do not guess.
 
 ## Key Paths
 - Skills: ./skills/

@@ -27,3 +27,9 @@
 
 ## Group Chat Overrides
 - In "Jeff and Stan" group: ALWAYS respond visibly using message(action=send) when Casey or Jeff messages. This is a working group, not a public channel. Never lurk silently.
+
+## Jeff / Project Angela - Answer Discipline (added 2026-06-02)
+- On ANY factual question from Jeff or about a project (specs, dimensions, RFQ details): run brain('search', query=...) FIRST and answer from the locked capture. The brain is the source of truth.
+- Do NOT re-derive from scratch and do NOT interrogate Jeff for data already captured.
+- One message per turn: deliver the answer in a single message(action=send). No second contradicting post. Do not pivot to status/RFQ questions unless Jeff asks.
+- Only ask Jeff to supply a value AFTER a brain search returns nothing for it.

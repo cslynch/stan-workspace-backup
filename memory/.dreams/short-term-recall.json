@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-01T19:03:10.242Z",
+  "updatedAt": "2026-06-02T14:28:04.492Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -1050,6 +1050,192 @@
         "state",
         "cannot",
         "find"
+      ]
+    },
+    "memory:memory/2026-06-01.md:48:82": {
+      "key": "memory:memory/2026-06-01.md:48:82",
+      "path": "memory/2026-06-01.md",
+      "startLine": 48,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "- **Suppliers:** Pentalift (car-display lifts proven), Presto Lifts (Extended Vertical Travel), Southworth (High Rise up to 12'), custom heavy-duty shops - **Skip:** Superlift (wrong category for this application) - **Building permit flag:** Johnson County requires PE stamp for occupied elevated platform — include in timeline ### Angela's Car Collection (5 Makes, Rotation Display) 1. Ferrari 2. Audi R8 3. Corvette 4. BMW 5. Porsche **CRITICAL:** Some may be SUVs/sedans (X5, X7, Cayenne, Panamera) at 4,800–5,800 lbs, not sports cars at 3.5k. ### Design Locked by Casey - **Capacity:** 8–10k class (heaviest car TBD, may include heavy SUVs) - **Height:** 126\" - **Mount:** Pit-mounted, flush d",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "car-display",
+        "heavy-duty",
+        "suvs/sedans",
+        "3.5k",
+        "pit-mounted",
+        "suppliers",
+        "pentalift",
+        "car"
+      ]
+    },
+    "memory:memory/2026-06-01.md:97:122": {
+      "key": "memory:memory/2026-06-01.md:97:122",
+      "path": "memory/2026-06-01.md",
+      "startLine": 97,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "- Design: Mechanical locks, controlled lower for car rotations - **Platform size: Car footprint ONLY** (no separate transfer to mezzanine deck; car stays on lift at 126\") - Longest car length → platform length - Widest car width → platform width - Walk-around space built into mezzanine structure, not lift footprint - Status: Awaiting car specs table from Jeff (make, model, year, curb weight, length, width) - Cost intent: **Catalog equipment** (NOT custom) to control price **Critical Notes:** - Heaviest car sets capacity floor (BMWs X5/X7, Porsche Cayenne/Panamera run 4,800–5,800 lbs) - Pit requirement must be designed into mezzanine framing phase - Johnson County requires building per",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "walk-around",
+        "x5/x7",
+        "cayenne/panamera",
+        "design",
+        "mechanical",
+        "locks",
+        "controlled",
+        "lower"
+      ]
+    },
+    "memory:memory/2026-06-01.md:72:101": {
+      "key": "memory:memory/2026-06-01.md:72:101",
+      "path": "memory/2026-06-01.md",
+      "startLine": 72,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "| # | Make | Model | Year | Curb Wt (lb) | Length (in) | Width (in) | |---|------|-------|------|--------------|-------------|----------| | 1 | | | | | | | | 2 | | | | | | | | 3 | | | | | | | | 4 | | | | | | | | 5 | | | | | | | **Heaviest car sets capacity tier. Longest + widest sets platform footprint.** ### Additional Requirement - **Building permit:** Johnson County requires PE stamp for occupied elevated platform + structural design (pit-mounted + scissor lift system). Include in timeline. ### Next Steps - Wait for car specs + answers 1–6 - Pull 2–3 spec sheets from 8k–10k multi-stage class - Prioritize vendors with published raised-position derate curves - Flag PE design + permit tim",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "pit-mounted",
+        "multi-stage",
+        "raised-position",
+        "model",
+        "curb",
+        "length",
+        "width",
+        "heaviest"
+      ]
+    },
+    "memory:memory/2026-06-01.md:139:165": {
+      "key": "memory:memory/2026-06-01.md:139:165",
+      "path": "memory/2026-06-01.md",
+      "startLine": 139,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "1. Pursue Pentalift custom (8k–10k at 126\" + 190\" platform)? OR 2. Accept platform overhang? (LSH6-128 at 120\" platform + mechanical locks). What's minimum safe platform length? --- ## ANGELA PROJECT — CORRECTIONS & LOCKED SPEC (6/1 PM) **CRITICAL FIX:** - Previous Southworth research was fabricated (model numbers LSH6-128 / LSH10-96 invented, wrong product family pulled) - **CORRECT:** Southworth Spacesaver high-rise line runs up to 12,000 lb AND up to 168\" travel in same series - **NO capacity-vs-height trade-off exists** — 5,000 lb at 126\" is well inside catalog range - **Status:** Reverting to real vendor research (PDF spec sheets only); no more assumed numbers **LOCKED SPEC FOR VEN",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "lsh6-128",
+        "6/1",
+        "lsh10-96",
+        "high-rise",
+        "capacity-vs-height",
+        "trade-off",
+        "pursue",
+        "pentalift"
+      ]
+    },
+    "memory:memory/2026-06-01.md:35:58": {
+      "key": "memory:memory/2026-06-01.md:35:58",
+      "path": "memory/2026-06-01.md",
+      "startLine": 35,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "- Location: DeSoto, Johnson County, KS - Garage: 60' × 40' deep - Raised height: 126\" - Capacity: 8,000–10,000 lbs (heaviest car sets floor; some BMWs/Porsches may be SUVs 4,800–5,800 lbs) - Application: Rotation display (5 cars, one at a time). Parks static at 126\" with mechanical locks + dock-to-structure. Lowers for swaps. - **Mount: PIT-MOUNTED, FLUSH DRIVE-ON (REQUIRED).** Surface-mount ramp will scrape low-slung supercars (3–4\" clearance). Zero-degree approach for all makes. **Pit dug during mezzanine framing or project fails.** ### Critical Engineering Notes (Casey) - **Capacity trap:** Published ratings are for LOWERED position, evenly distributed - **Derate at height:** Off-center",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "bmws/porsches",
+        "dock-to-structure",
+        "pit-mounted",
+        "drive-on",
+        "surface-mount",
+        "low-slung",
+        "zero-degree",
+        "off-center"
+      ]
+    },
+    "memory:memory/2026-06-01.md:157:185": {
+      "key": "memory:memory/2026-06-01.md:157:185",
+      "path": "memory/2026-06-01.md",
+      "startLine": 157,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "- Static hold: Positive mechanical parking locks at 126\", rated for sustained load at full extension. Locks carry the car; cylinders support during raise/lower only. **VENDOR RESEARCH PLAN — PDF SPEC SHEETS ONLY:** 1. Southworth Spacesaver high-rise (correct family: up to 12k lb, up to 168\" travel) 2. Advance Lifts (mezzanine lift line) 3. Autoquip (mezzanine lift line) 4. Pentalift (car-display lifts, proven) 5. Presto Extended Vertical Travel (custom mezzanine option) For each: Model + platform max size + capacity-at-126\"-height from published spec sheet. No derived assumptions. Platform length engineering (single vs. tandem config) is vendor configuration, not custom build — stays in af",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T14:28:04.492Z",
+      "lastRecalledAt": "2026-06-02T14:28:04.492Z",
+      "queryHashes": [
+        "7aad54f652da"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "raise/lower",
+        "high-rise",
+        "car-display",
+        "capacity-at-126",
+        "static",
+        "hold",
+        "positive",
+        "mechanical"
       ]
     }
   }
