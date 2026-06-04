@@ -1,12 +1,12 @@
 {
-  "last_query_index": 5,
-  "last_run": "2026-06-01T11:45:00Z",
+  "last_query_index": 1,
+  "last_run": "2026-06-03T11:47:09.256671+00:00",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 0,
-  "qualified_leads_added": 0,
+  "total_leads_found": 16,
+  "qualified_leads_added": 16,
   "dedup_matches": 0,
-  "notes": "2026-06-01: Queries 3 (senior AE developer tools remote), 4 (account executive middleware integration SaaS), and 5 (sales engineer AI platform remote quota) executed. No new qualified leads. Search results continue to be job board aggregators (Indeed, Glassdoor, LinkedIn, Built In, ZipRecruiter, etc.) without individual company postings or details. No rate limiting encountered. Will continue next rotation indices (6, 0, 1) on next run."
+  "notes": "2026-06-03: Queries 6 (account executive data infrastructure remote), 0 (enterprise account executive AI SaaS remote), and 1 (strategic account executive automation platform) executed. 16 new qualified leads found and added. No rate limiting encountered. No duplicates found. Notable finds: Algolia at $261.5-280K OTE, Datadog, Vultr, Prolific, Infisical, ThousandEyes. Next rotation indices (2, 3, 4) on next run."
 }
