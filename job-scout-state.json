@@ -1,12 +1,12 @@
 {
-  "last_query_index": 1,
-  "last_run": "2026-06-03T11:47:09.256671+00:00",
+  "last_query_index": 4,
+  "last_run": "2026-06-04T11:45:00.000000+00:00",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 16,
-  "qualified_leads_added": 16,
+  "total_leads_found": 0,
+  "qualified_leads_added": 0,
   "dedup_matches": 0,
-  "notes": "2026-06-03: Queries 6 (account executive data infrastructure remote), 0 (enterprise account executive AI SaaS remote), and 1 (strategic account executive automation platform) executed. 16 new qualified leads found and added. No rate limiting encountered. No duplicates found. Notable finds: Algolia at $261.5-280K OTE, Datadog, Vultr, Prolific, Infisical, ThousandEyes. Next rotation indices (2, 3, 4) on next run."
+  "notes": "2026-06-04: Queries 2 (solutions sales AI infrastructure remote), 3 (senior AE developer tools remote), and 4 (account executive middleware integration SaaS) executed. Searches returned job board aggregator pages rather than direct postings. Three detailed postings found via web_fetch but all failed location criteria: (1) AI Data Infrastructure role at globalcareer.io - San Francisco 3-5 days in-office, (2) Retell AI Enterprise AE - Redwood City CA onsite, (3) Cursor Strategic AE - New York office-based. No qualifying remote US or hybrid TX roles discovered. Next rotation indices (5, 6, 0) on next run."
 }

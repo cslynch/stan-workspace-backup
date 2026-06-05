@@ -64,7 +64,12 @@
 - Capture important observations via brain('capture', ..., source='telegram', agent='stan').
 - See TOOLS.md for full usage examples.
 
-## JEFF FRIES — Job Tracking (added May 20, 2026)
+## JEFF FRIES — Job Tracking (added May 20, 2026; updated June 4, 2026)
+**SOURCE OF TRUTH:** Google Sheet "Job Tracker" (shared with stan@fleetbrain.ai)
+- Dashboard, Jobs, Payments, Customers tabs
+- Synced to SupaBrain daily
+- Stan reads sheet → updates brain
+
 **Pricing Model:**
 - Solo jobs: $100/hr overhead, $75/hr labor
 - Joel jobs: +15% markup standard (enforce before logging)
@@ -72,26 +77,22 @@
 **Contractors:**
 - Joel: primary contractor, BoA Zelle ($4K/day cap), Venmo backup
 
-**Pricing Model:**
-- Solo jobs: $100/hr overhead, $75/hr labor
-- Joel jobs: +15% markup standard (enforce before logging)
+**Dashboard Summary (as of 6/4):**
+- Total A/R Outstanding: $13,250.41
+- Total A/P Outstanding: $6,048.90
+- Net Position: $7,201.51
+- Booked Margin: $2,394.65
 
-**Active Jobs (as of 6/1):**
-- Cedar Creek Tile (J-2026-001.1): Work done. Paid Joel $16,000 (4 × $4,000). Customer Rick paid $8,663.91 (short $400 — Jeff following up).
-- Cedar Creek Paint (J-2026-001.2): Complete. Paid Joel $1,950 (Zelle flagged). Customer paid $2,500.00 ✓
-- Cedar Creek Railing (J-2026-001.3): Tile replacement (3 posts) + caulk sealing (12 posts). Quote $1,031. Customer owes $1,031.00. Joel owes $927.90 (90%), Jeff $103.10 (10%).
-- Hattaway Fireplace: 100% complete. Customer invoice: $17,039.55 + $759 electric = $17,798.55. Materials: $4,035. Joel agreed rate: $12,022. Paid Joel $8,851 to date. Owed: $3,171.
-- Alistair Repair: Invoiced 5/19. Customer owes $330.50.
-- Alistair Mods: Invoiced 5/19. Customer owes $325.00.
+**Active Jobs (6 total, 5 open):**
+- J-001.1 Cedar Creek Tile: Awaiting payment, $9,063.91 A/R (2nd-half balance)
+- J-001.2 Cedar Creek Paint: Starts 5/27, $2,500 invoice, $1,950 Joel, $550 margin
+- J-001.3 Cedar Creek Railing: Quoted $1,031, 90/10 split
+- J-002 Hattaway Fireplace: Complete, customer paid $17,798.55, Joel owed $3,171
+- J-003.1 Alistair Repair: Invoiced 5/19, $330.50 A/R
+- J-003.2 Alistair Mods: Invoiced 5/19, $325 A/R
 
-**Financials Summary (6/1):**
-- Cedar Creek Tile: Customer receivable $400.00 (Rick short; Jeff following up)
-- Cedar Creek Paint: ✓ Complete. Customer paid. Joel paid $1,950 (Zelle 6/1).
-- Cedar Creek Railing: Customer receivable $1,031.00 (quoted)
-- Hattaway Fireplace: Customer invoice $17,798.55 (complete). Materials $4,035. Joel owed $12,022, paid $8,851, balance due $3,171.
-
-**Open Threads:**
-- Pending bid Jeff expects to lose (ask why if he hears back: pricing, scope, timing, or just went with someone else)
+**Open Questions:**
+- Hattaway $660 electric: included in Joel's $12,022 or on top? (affects margin)
 
 **Jeff's Communication Style:**
 - Overwhelmed by NUMBERS, not tooling. Keep responses tight: numbers first, prose second.
