@@ -718,6 +718,42 @@
       "notes": "Leading integration/automation platform, mid-market focus, posted 3 days ago",
       "added": "2026-06-03T11:47:09.256671+00:00",
       "source": "job-scout"
+    },
+    {
+      "company": "Glean",
+      "title": "Enterprise Account Executive",
+      "location": "Remote (US)",
+      "industry": "AI / Enterprise SaaS / Knowledge Management",
+      "comp": "$240k - $315k OTE",
+      "link": "https://remote.com/jobs/glean-c1nob70e/enterprise-account-executive-j1k8scwz",
+      "fit_score": 9.0,
+      "notes": "AI-powered enterprise knowledge platform, over 100 enterprise SaaS connectors",
+      "added": "2026-06-05T11:45:00Z",
+      "source": "job-scout"
+    },
+    {
+      "company": "Arize AI",
+      "title": "AI Sales Engineer, US",
+      "location": "Remote (US)",
+      "industry": "AI / ML Observability Platform",
+      "comp": "$140k - $230k OTE + equity",
+      "link": "https://builtin.com/job/ai-sales-engineer-us/8414983",
+      "fit_score": 8.5,
+      "notes": "Series C, $135M funded, 150+ enterprise customers, technical sales engineer role",
+      "added": "2026-06-05T11:45:00Z",
+      "source": "job-scout"
+    },
+    {
+      "company": "Salesforce",
+      "title": "Enterprise Account Executive - Data Foundation",
+      "location": "Remote (TX) / Austin, TX",
+      "industry": "SaaS / Data Integration Platform / Enterprise AI Infrastructure",
+      "comp": "$135.3k - $235.8k base (NY/CA markets, likely 150k+ OTE)",
+      "link": "https://careers.salesforce.com/en/jobs/jr279926/enterprise-account-executive-data-foundation/",
+      "fit_score": 8.0,
+      "notes": "Data Foundation = MuleSoft + Informatica integration, agentforce/AI focus",
+      "added": "2026-06-05T11:45:00Z",
+      "source": "job-scout"
     }
   ]
 }

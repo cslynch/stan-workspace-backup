@@ -1,18 +1,15 @@
 ## OpenClaw Update Available
-Version: 2026.5.24-beta.2 (current: 2026.2.6)
-Released: May 24, 2026
-Status: Beta release
+Version: 2026.6.2-beta.1 (current: 2026.2.6)
+Released: June 3, 2026
+Prerelease: beta.1
 
-### Relevant Changes
-- **Security:** SecretRef preflight validation, secrets prepare timeline, session-route auth refresh
-- **Gateway:** performance caching (plugin metadata, channel catalog, install records), lazy-load optimization, startup latency reduction
-- **Telegram:** wildcard topic defaults, multi-agent group improvements
-- **Config:** secret storage, plaintext boundaries, config-preserving safety
-- **Session:** workflow helpers, realtime consult steering, cross-agent access matcher
-- **Anthropic:** thinking signature handling for Claude models
+Relevant changes:
+- **Telegram/Channels**: safer duplicate transcript mirrors, admin writeback, exec approval allowlists fixes (ask:off support)
+- **Security/Config**: reject corrupt shell snapshots, suspicious gateway startup configs, unsafe exec precheck env, malformed script limits
+- **Gateway/Session**: recover session write-lock release failures, gateway health auth diagnostics, stream-to-parent ACP spawns
+- **Anthropic integration**: strip Kimi-incompatible Anthropic cache markers
+- **Plugin/Install policy**: operator install policy replaces dangerous-code scanner (security improvement)
 
-### Note
-Beta release with significant infrastructure work. Includes Discord voice/realtime and documentation-heavy changes alongside core improvements.
+Recommendation: **UPDATE**
 
-### Recommendation
-**REVIEW** — Contains security and infrastructure changes warranting evaluation before production adoption.
+Rationale: Security hardening (corrupt snapshot rejection, gateway config validation), critical infrastructure improvements (session recovery, gateway diagnostics), and Telegram integration fixes (approval allowlists, admin writeback).
