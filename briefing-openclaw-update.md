@@ -1,15 +1,13 @@
 ## OpenClaw Update Available
-Version: 2026.6.2-beta.1 (current: 2026.2.6)
-Released: June 3, 2026
-Prerelease: beta.1
+Version: 2026.6.5-beta.2 (current: 2026.2.6)
+Released: 2026-06-07
 
 Relevant changes:
-- **Telegram/Channels**: safer duplicate transcript mirrors, admin writeback, exec approval allowlists fixes (ask:off support)
-- **Security/Config**: reject corrupt shell snapshots, suspicious gateway startup configs, unsafe exec precheck env, malformed script limits
-- **Gateway/Session**: recover session write-lock release failures, gateway health auth diagnostics, stream-to-parent ACP spawns
-- **Anthropic integration**: strip Kimi-incompatible Anthropic cache markers
-- **Plugin/Install policy**: operator install policy replaces dangerous-code scanner (security improvement)
+- **Telegram**: QQBot now strips model reasoning/thinking before native delivery, preventing raw scaffold content from leaking into channel replies
+- **Security/Config**: Guard MCP HTTP redirects (SSRF protection); protect global agent config defaults
+- **Anthropic**: Extended-thinking sessions recover after prompt-cache expiry or Gateway restart; better error handling prevents poisoned session history
+- **Session/Credential**: Auth profiles now live in SQLite for durability; session transcript consistency improved
+- **Gateway**: Duplicate Gateway probe warnings reduced; reliability improvements for node pairing and direct sessions
 
-Recommendation: **UPDATE**
-
-Rationale: Security hardening (corrupt snapshot rejection, gateway config validation), critical infrastructure improvements (session recovery, gateway diagnostics), and Telegram integration fixes (approval allowlists, admin writeback).
+Recommendation: REVIEW
+*Note: This is a beta release. Relevant for security (config/credential durability) and Telegram reliability. Defer production deployment until 2026.6.5 stable is available.*

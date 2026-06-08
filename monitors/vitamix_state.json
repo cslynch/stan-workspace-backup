@@ -1,0 +1,17 @@
+{
+  "products": {
+    "propel_750": {
+      "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-propel-750",
+      "last_price": 229.95,
+      "last_in_stock": true
+    },
+    "venturist": {
+      "url": "https://www.vitamix.com/us/en_us/products/certified-reconditioned-v1200",
+      "last_price": 349.95,
+      "last_in_stock": true
+    }
+  },
+  "last_check": "2026-06-08T05:04:58.639146+00:00",
+  "consecutive_failures": 0,
+  "previous_failures": 0
+}

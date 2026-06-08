@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T14:28:04.492Z",
+  "updatedAt": "2026-06-07T22:07:11.376Z",
   "entries": {
     "memory:memory/2026-02-25.md:87:115": {
       "key": "memory:memory/2026-02-25.md:87:115",
@@ -104,18 +104,20 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "- **Impact:** Backup system + recovery procedures ### 3. Email Configuration (Optional, for Week 2) - Gmail label whitelist (which labels can Stan monitor?) - Explicit authorization for email access - **Impact:** Email monitoring capability (not critical for launch) --- ## Timeline Confirmed **Feb 3 (Tomorrow):** - Content approval - Disaster recovery decisions - Spiral-in mode (focus day) **Feb 4-7 (Launch Week Prep):** - Lock posting schedule - Final tests - Warm up infrastructure **Feb 7-9 (Week 1 - Content Validation Phase):** - Tue 4: @itsolz replies only (10/day) - Wed 5: Add @stanleybodewell (2 posts) - Thu 6: @itsolz first originals (2 singles) - Fri 7: Full schedule live - Sun",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T11:49:48.119Z",
-      "lastRecalledAt": "2026-05-06T11:49:48.119Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
       "queryHashes": [
-        "1551c2228d78"
+        "1551c2228d78",
+        "44418364f314"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-06-07"
       ],
       "conceptTags": [
         "backup",
@@ -520,22 +522,24 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "3. **\"Vibe Coaching Specialist\" Role:** Adjacent opportunity — teach other salespeople how to work WITH AI agents as tools (leveraging non-technical background as strength) **Prompt Created for SuperStan:** Full synthesis prompt prepared, ready to send when Casey approves ## GROUP CHAT PARTICIPATION (NEW) **Joined:** Active group chat with Casey & Rosa **Engagement Protocol:** - Respond when: Mentioned, asked question, can add value, witty fit, correct misinformation, summarize when asked - Stay silent when: Casual banter, already answered, would just say \"yeah\", flow is fine, would interrupt vibe - Ready to assist: Logistics, coordination, decision-making, flags ## OPERATIONAL NOTES -",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T14:11:19.215Z",
-      "lastRecalledAt": "2026-05-21T11:46:34.930Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
       "queryHashes": [
         "c018135d99c4",
         "a0be59b61266",
-        "ad40de5484a9"
+        "ad40de5484a9",
+        "44418364f314"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-20",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-06-07"
       ],
       "conceptTags": [
         "non-technical",
@@ -811,18 +815,20 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# Feb 8, 2026 - Session Log (Infrastructure Sync + Strategic Pivots) ## MAJOR COMPLETIONS (Infrastructure & Operations) **Infrastructure Cascade (10 items moved to Done):** - ✅ OpenClaw v2026.2.6 installed & running (Feb 8 09:26) - ✅ Tailscale authenticated, connected (IP: 100.71.67.28, Feb 8 09:46) - ✅ Google Workspace domain verified (fleetbrain.ai active, Feb 8 09:50) - ✅ GPG encrypt .env (Feb 8 03:43, passphrase stored in Bitwarden) - ✅ Email routing verified (cslynch913@gmail.com primary) - ✅ Security audit (file permissions tightened) - ✅ Skills audit (56 eligible, 21 ready, 36 bloat identified) - ✅ Dead reference purge (thebotstan removed, config files deleted) - ✅ Telegram DM polic",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T10:50:20.887Z",
-      "lastRecalledAt": "2026-05-26T10:50:20.887Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
       "queryHashes": [
-        "44d04653af13"
+        "44d04653af13",
+        "44418364f314"
       ],
       "recallDays": [
-        "2026-05-26"
+        "2026-05-26",
+        "2026-06-07"
       ],
       "conceptTags": [
         "v2026.2.6",
@@ -1236,6 +1242,99 @@
         "hold",
         "positive",
         "mechanical"
+      ]
+    },
+    "memory:memory/2026-02-09.md:32:62": {
+      "key": "memory:memory/2026-02-09.md:32:62",
+      "path": "memory/2026-02-09.md",
+      "startLine": 32,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "- **SuperStan now owns Trello writes** (MCP direct API access) - **Stan is read-only on Trello** (pulls to KANBAN.md for local cache only) - **New workflow:** Stan reports work completion → SuperStan updates master tracker + Trello → Stan pulls fresh KANBAN.md - **Implication:** Trello is source of truth; KANBAN.md is local working copy ### Model Runtime Issue **CRITICAL:** Currently running Sonnet (claude-sonnet-4-5), should be Haiku (claude-haiku-4-5) - Cost optimization preference locked in constraints - Corrections loop ensures quality - **Action needed:** Switch runtime back to Haiku when Casey approves ### Compute Diversification Finalized - **SuperStan (claude.ai):** Architecture, d",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-07T22:07:11.376Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
+      "queryHashes": [
+        "44418364f314"
+      ],
+      "recallDays": [
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "read-only",
+        "kanban.md",
+        "claude-sonnet-4-5",
+        "claude-haiku-4-5",
+        "claude.ai",
+        "superstan",
+        "now",
+        "owns"
+      ]
+    },
+    "memory:memory/2026-02-09.md:1:37": {
+      "key": "memory:memory/2026-02-09.md:1:37",
+      "path": "memory/2026-02-09.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# Feb 9, 2026 - Session Work Log ## Real Estate Analysis (PRIORITY LIVE TASK) **Property:** 111 Valley View St, Canyon Lake TX 78133 | $135K listing | MLS#585187 **What We Have:** - 3bed/2bath, 955 sq ft, built 1965 - Listed as \"Multiple family property\" (potential duplex/triplex setup) - Realtor: Chelsea Evans (Real Broker LLC, 15+ yrs exp) - verified solid - Viewing partner: Dwayne Moser - Basic market comp research done **Critical Gaps (NEXT STEPS - before group walkthrough):** - Lot size (affect rental potential, land value) - Tax history + price history (market trend) - Days on market (negotiation signal) - HOA status + fees (if applicable) - Flood zone designation (major risk/insura",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-07T22:07:11.376Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
+      "queryHashes": [
+        "44418364f314"
+      ],
+      "recallDays": [
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "3bed/2bath",
+        "duplex/triplex",
+        "risk/insura",
+        "feb",
+        "log",
+        "real",
+        "estate",
+        "analysis"
+      ]
+    },
+    "memory:memory/2026-05-06.md:58:73": {
+      "key": "memory:memory/2026-05-06.md:58:73",
+      "path": "memory/2026-05-06.md",
+      "startLine": 58,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- **Job search infrastructure:** Daily lead surfacing (3-5 roles/day), company watchlist (23 tracked), full pipeline tracking (Surfaced → Applying → Interviewing → Offer/Rejected). ### What's Stale/Broken 🚨 - **tracker.json:** Last updated 2026-03-03 (40+ DAYS OLD). Unable to verify status of 23+ tasks. No weekly sync since then. - **Deadline passed:** Task 35 (Zapier Enterprise AE, $240K–$300K OTE, deadline 3/31/2026). Status unknown. No one updated tracker. - **Lightning OAuth blocker:** Jake agent deployment blocked since Feb 11, 2026 (83+ days). GCP Workspace OAuth for jake@fleetbrain.ai not provisioned. Unverified if still pending. - **KANBAN.md:** Out of sync. 24 days stale. Reflects",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-07T22:07:11.376Z",
+      "lastRecalledAt": "2026-06-07T22:07:11.376Z",
+      "queryHashes": [
+        "44418364f314"
+      ],
+      "recallDays": [
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "3-5",
+        "roles/day",
+        "offer/rejected",
+        "stale/broken",
+        "tracker.json",
+        "3/31/2026",
+        "fleetbrain.ai",
+        "kanban.md"
       ]
     }
   }
