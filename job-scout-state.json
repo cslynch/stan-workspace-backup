@@ -1,12 +1,12 @@
 {
-  "last_query_index": 6,
-  "last_run": "2026-06-07T11:45:00.000000+00:00",
+  "last_query_index": 2,
+  "last_run": "2026-06-08T11:45:00.000000+00:00",
   "queries_run": 3,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 2,
-  "qualified_leads_added": 2,
+  "total_leads_found": 3,
+  "qualified_leads_added": 3,
   "dedup_matches": 0,
-  "notes": "2026-06-07 6:45 AM: Queries 4 (account executive middleware integration SaaS), 5 (sales engineer AI platform remote quota), 6 (account executive data infrastructure remote) executed. Found 2 new qualified leads: Pipe17 (account executive, remote US, middleware/integration, Series A), Hightouch (account executive, remote US, CDP/data/AI, Series D). Disqualified leads: mystery AI company (requires 3-5 days/week SF office), Faros AI (requires hybrid NY office). Dedup count: 0. Next rotation index: 0 (restart rotation) on next run."
+  "notes": "2026-06-08 6:45 AM: Queries 0 (enterprise account executive AI SaaS remote), 1 (strategic account executive automation platform), 2 (solutions sales AI infrastructure remote) executed. Found 3 new qualified leads: Okta (Strategic Account Executive, remote US, identity/security/SaaS, $308k-$423.5k OTE), Hakimo (Enterprise Account Executive, remote US, AI security, comp TBD), ReflexAI (Enterprise Account Executive, remote US, AI/SaaS, comp not listed). Dedup count: 0. Next rotation index: 3 on next run."
 }
