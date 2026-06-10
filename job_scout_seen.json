@@ -793,7 +793,7 @@
     },
     {
       "company": "Hakimo",
-      "title": "Enterprise Account Executive – AI Security Sales",
+      "title": "Enterprise Account Executive \u2013 AI Security Sales",
       "location": "Remote (US)",
       "industry": "AI / Physical Security / SaaS",
       "comp": "Competitive + uncapped commission (floor not stated)",
@@ -814,6 +814,30 @@
       "notes": "AI tools for support/contact centers, seeking first Account Executive, remote-based",
       "added": "2026-06-08T11:45:00Z",
       "source": "job-scout"
+    },
+    {
+      "company": "Temporal",
+      "title": "Senior Account Executive",
+      "location": "Remote (Western US, including Texas)",
+      "industry": "Developer Tools / Infrastructure",
+      "comp": "$300,000 - $350,000 OTE",
+      "added": "2026-06-09T11:45:00Z",
+      "source": "job-scout",
+      "link": "https://www.indexventures.com/startup-jobs/temporal/senior-account-executive-new-logo-west/",
+      "fit_score": 9.0,
+      "notes": "Posted June 6, 2026. Perfect fit: remote Western US including TX, developer tools, excellent OTE, looking for 7+ years enterprise sales experience. 50/50 split."
+    },
+    {
+      "company": "Anthropic",
+      "title": "Emerging Account Executive, AI Native",
+      "location": "Remote (hybrid, 25% office time)",
+      "industry": "AI/SaaS",
+      "comp": "$172,300 - $222,800 OTE",
+      "added": "2026-06-09T11:45:00Z",
+      "source": "job-scout",
+      "link": "https://job-boards.greenhouse.io/anthropic/jobs/5079916008",
+      "fit_score": 7.5,
+      "notes": "Entry-level AE role, manages 40-50+ startup accounts. Hybrid (25% office). Less senior than typical filter but strong comp and AI focus."
     }
   ]
 }

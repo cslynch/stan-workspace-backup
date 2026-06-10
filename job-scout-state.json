@@ -1,12 +1,12 @@
 {
-  "last_query_index": 2,
-  "last_run": "2026-06-08T11:45:00.000000+00:00",
-  "queries_run": 3,
+  "last_query_index": 5,
+  "last_run": "2026-06-09T11:45:00.000000+00:00",
+  "queries_run": 6,
   "queries_skipped": 0,
   "queries_rate_limited": 0,
   "queries_retried": 0,
-  "total_leads_found": 3,
-  "qualified_leads_added": 3,
+  "total_leads_found": 4,
+  "qualified_leads_added": 1,
   "dedup_matches": 0,
-  "notes": "2026-06-08 6:45 AM: Queries 0 (enterprise account executive AI SaaS remote), 1 (strategic account executive automation platform), 2 (solutions sales AI infrastructure remote) executed. Found 3 new qualified leads: Okta (Strategic Account Executive, remote US, identity/security/SaaS, $308k-$423.5k OTE), Hakimo (Enterprise Account Executive, remote US, AI security, comp TBD), ReflexAI (Enterprise Account Executive, remote US, AI/SaaS, comp not listed). Dedup count: 0. Next rotation index: 3 on next run."
+  "notes": "2026-06-09 6:45 AM: Queries 3 (senior account executive developer tools remote), 4 (account executive middleware integration SaaS remote), 5 (sales engineer AI platform remote quota) executed. Found 1 clearly qualified new lead: Temporal (Senior Account Executive, remote Western US including TX, developer tools, $300k-$350k OTE). Also found 2 Anthropic positions (Emerging AE and Enterprise AE, Industries) with comp $172k-$223k and $290k-$360k respectively, but both have hybrid office requirements (25% time at offices) which may not align with remote-first filter. Dedup count: 0. Previous run (June 8) found 3 leads (Okta, Hakimo, ReflexAI). Next rotation index: 0 (cycle back to beginning)."
 }
